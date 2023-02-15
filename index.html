@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="box">
+                <div class="shadow"></div>
+                <div class="gravity">
+                  <div class="ball"></div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Stadion Arena - Cellatica</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="volleyball.ico" type="image/x-icon">
+    <link rel="icon" href="volleyball.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <style>
+                    #logo {
+                        max-width: 230%;
+                    }
+                </style>
+                <img id="logo" src="imagess/stadionArenaLogo.PNG" alt="Homepage">
+            </a>
+        </div>
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Menu navigazione</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">Informazioni</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="services">Servizi</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contact">Contatti</a></li>
+                    <li><a class="smoothscroll"  href="#news" title="news">Notizie</a></li>
+                    <li><a class="smoothscroll"  href="#reviews" title="news">Recensioni</a></li>
+                    <li><a class="smoothscroll"  href="#supporters" title="news">Sponsor</a></li>
+                    <li><a class="smoothscroll"  href="#faq" title="faq">F.A.Q</a></li>
+                    <li><a style="color:#3a428b"  href="indexStadionVolley.html" title="faq">Stadion Volley</a></li>
+                    <li><a style="color:#f29206"  href="indexArenaBeach.html" title="faq">Arena Beach</a></li>
+                </ul>
+    
+                <p>Segui Stadion Arena su tutti i canali social!</p>
+    
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="https://www.facebook.com/arenabeach.it"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/_arenabeach_/"><i class="fa fa-instagram"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <!-- <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="imagess/CarouselVolley02.jpg" data-position-y=center> -->
+        <section id="home" class="s-home target-section" data-parallax="scroll" data-position-y=center>
+        
+            <!-- video style -->
+            <style>
+                #background-video {
+                    width: 100vw;
+                    height: 100vh;
+                    object-fit: cover;
+                    position: fixed;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    z-index: -1;
+                    }
+            </style>
+        
+            <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            <source src="video/video_background.mp4" type="video/mp4">
+        </video>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main text-center">
+
+                <!-- <h3>Benvenuto su</h3> -->
+
+                <h1>
+                    STADION<br>
+                    <span>ARENA</span><br>
+                </h1>
+
+                <div class="home-content__buttons d-flex justify-content-center gap-5">
+                    <a id="btn__stadionVolley" href="indexStadionVolley.html" class="home__btn">
+                        Stadion Volley
+                    </a>
+                    <a id="btn__arenaBeach" href="indexArenaBeach.html" class="home__btn">
+                        Arena Beach
+                    </a>                    
+                </div>
+
+            </div>
+
+            <!-- <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
+                </a>
+            </div> -->
+
+            <!-- <div class="home-content__line"></div> -->
+
+        </div> <!-- end home-content -->
+
+        <ul class="home-social">
+            <li>
+                <a href="https://www.facebook.com/arenabeach.it"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/_arenabeach_/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+        </ul> 
+        <!-- end home-social -->
+
+        <script src="js/object-fit-videos.js"></script>
+        <script src="js/app.js"></script>
+
+    </section> <!-- end s-home -->
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about" data-parallax="scroll" data-image-src="imagess/CarouselVolley02.jpg" data-position-y=center>
+
+            <style>
+                #hl-a {
+                    color: white;
+                    font-weight: bold;
+                }
+    
+                #a-title {
+                    /* margin-left: 8rem; */
+                    margin-right: 8rem;
+                }
+            </style>
+    
+                <div class="row section-header has-bottom-sep" data-aos="fade-up">
+                    <div id="a-title" class="d-flex justify-content-center align-items-center gap-0 flex-wrap">
+                        <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                        <lord-icon 
+                            src="https://cdn.lordicon.com/rcopausw.json"
+                            trigger="loop"
+                            delay="2000"
+                            colors="primary:#ffffff,secondary:#f8dc14"
+                            style="width:200px;height:200px">
+                        </lord-icon>
+                        <div id="a-title" class="text-start mt-5">
+                            <h3 class="subhead subhead--dark">INFORMAZIONI</h3>
+                            <h1 class="display-1 display-1--light">Ci Presentiamo</h1>
+                        </div>
+                        <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                    </div>
+                </div> <!-- end section-header -->
+    
+            <div class="row about-desc" data-aos="fade-up">
+                <div class="col-full">
+                    <p class="lead text-start">
+                        Stadion Arena Sport è un progetto dedicato a bambini, 
+                        ragazzi e adulti che <a id="hl">amano gli sport</a> sulla sabbia e non. <br><br>
+                        
+                        Il nostro <a id="hl">obiettivo</a> è promuovere lo <a id="hl">sport a 360°</a>, concentrandoci 
+                        sulla formazione dell'atleta attraverso il percorso " <a id="hl">corpo, movimento, prestazione</a> ". <br><br>
+    
+                        Tra le colline di Cellatica, siamo <a id="hl">facilmente raggiungibili</a> 
+                        da tutte le zone della provincia di Brescia. <br><br>
+                        
+                        Partecipa ai nostri eventi, 
+                        competizioni e iniziative, e scopri come <a id="hl">Stadion Arena Sport</a> può 
+                        appassionarti e coinvolgerti nello sport.
+                    </p>
+                </div>
+            </div> <!-- end about-desc -->
+
+            <div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+        
+                <div class="col-block stats__col ">
+                    <div class="stats__count">28</div>
+                    <h5>Eventi sportivi organizzati</h5>
+                </div>
+                <div class="col-block stats__col">
+                    <div class="stats__count">6100</div>
+                    <h5>Atleti che hanno <br> 
+                        partecipato ad eventi <br>
+                        sportivi organizzati</h5>
+                </div>
+                <div class="col-block stats__col">
+                    <div class="stats__count">15230</div>
+                    <h5>Ingressi ai campi</h5>
+                </div>
+                <div class="col-block stats__col">
+                    <div class="stats__count">650</div>
+                    <h5>Ragazze e Ragazzi che hanno <br> partecipato ai Camp Tecnici</h5> 
+                </div>
+    
+            </div> <!-- end about-stats -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id='services' class="s-services">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <style>
+            .material-symbols-outlined {
+                font-size: 60px;              
+                font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48
+                }
+        </style>
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div id="title-services" class="d-flex justify-content-center align-items-center gap-0 ">
+                <lord-icon
+                    src="https://cdn.lordicon.com/ssdupzsv.json"
+                    trigger="loop"
+                    colors="primary:#121331,secondary:#eee966"
+                    style="width:200px;height:200px">
+                </lord-icon>
+                <div class="col-full text-start">
+                    <h3 class="subhead">SERVIZI</h3>
+                    <h1 class="display-1">Tutti i servizi che <br>offriamo</h1>
+                </div>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row services-list block-1-2 block-tab-full">
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="material-symbols-outlined">stadium</i>                     
+                </div>
+                <div class="service-text ">
+                    <h3 class="h2">Vasca in Sabbia</h3>
+                    <p>E' un'area da 2500 metri quadri di sabbia fine, 
+                        specifica per gli sport su sabbia mette a 
+                        disposizione dei giocatori 8 campi che in base 
+                        alle necessità, vengono attrezzati per beach volley, 
+                        beach soccer, beach tennis o beach rugby
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="material-symbols-outlined">restaurant</i>                     
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Ristoro</h3>
+                    <p>Un’area coperta di oltre
+                        400mq composta da
+                        Bar-Ristoro e zona Fitness.
+                        È attrezzata con tavoli, sedie ed
+                        una zona ”lounge” destinata
+                        all’organizzazione di
+                        aperitivi direttamente “sulla
+                        spiaggia”. È, inoltre, presente
+                        una zona fitness per
+                        l’allenamento degli atleti.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="material-symbols-outlined">bungalow</i>                     
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Area Coperta</h3>
+                    <p>Un’area da circa 1800 mq
+                        di sabbia fine, coperta e
+                        riscaldata con all’interno
+                        4 campi da Beach Volley ed
+                        un’area Polifunzionale.
+                        Questo permette l’utilizzo
+                        dell’impianto “Arena
+                        Beach” 365 giorni all’anno.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="material-symbols-outlined">celebration</i>                     
+                </div>
+                <div class="service-text">                    
+                    <h3 class="h2">Organizza i tuoi Eventi</h3>
+                    <p>Arena Beach mette a disposizione la propria struttura ed un qualificato staff per organizzare
+                        Eventi, Meeting, Party e Feste di ogni genere. Un ambiente estivo adatto ad ospitare feste,
+                        eventi privati, eventi pubblici e/o
+                        aziendali.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="material-symbols-outlined">school</i>                     
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Scuola di Pallavolo</h3>
+                    <p><a id="clink" href="indexStadionVolley.html">Stadion Volley</a> è un
+                        progetto per avvicinare i giovanissimi alla pallavolo.
+                        Fornisce una base motoria
+                        adeguata, l’apprendimento delle tecniche base e
+                        la possibilità di <a id="clink-none">giocare</a>, <a id="clink">confrontarsi</a> e <a id="clink">socializzare</a>
+                        con i loro coetanei. 
+                    </p>
+                </div>
+            </div>
+    
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="material-symbols-outlined">sports_volleyball</i>                     
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Corsi</h3>
+                    <p>Facciamo partire corsi di <a id="clink-none" href="indexArenaBeach.html#corsi">Beach Volley</a>, di 
+                        <a id="clink-none" href="indexStadionVolley.html">Pallavolo</a> e <a id="clink-none" href="indexArenaBeach.html#corsi">Attività Motorie</a>
+                        tutto l'anno per tutte le età. 
+                        I nostri corsi sono seguiti dal nostro <a id="clink-none" href="#staff">staff</a> con anni di esperienza nel settore!
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- contact information
+    ================================================== -->
+    <style>
+
+        .s-information {
+            background-color: #151515;
+            /* background-image: url("images/contact-bg.jpg"); */
+            background-repeat: no-repeat;
+            background-position: center, center;
+            padding-top: 3rem;
+            /* gap: 8rem; */
+            padding-bottom: 5rem;
+            color: rgba(255, 255, 255, 0.5);
+            position: relative;
+        }
+    
+        .s-information #ctitle {
+            color: #f8dc14;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    
+        .s-information #cparagraph {
+            color: gray;
+            font-size: 16px;
+        }
+    
+        .s-information #clink, #clink-none {
+            color: #f8dc14;
+        }
+        .s-information #clink:hover {
+            text-decoration: underline;
+        }
+
+        .havecontent {
+            /* margin-left: 90px; */
+            width: 250px;
+            text-align: start;
+        }
+
+        .information-title {
+            margin-top: 3rem;
+            /* margin-left: 3rem; */
+        }
+
+        .information-content {
+            margin-top: 3rem;
+            margin-left: 10rem;
+        }
+
+
+    
+    
+        /* ------------------------------------------------------------------- 
+        * responsive:
+        * about
+        * ------------------------------------------------------------------- */
+        @media only screen and (min-width: 1201px) {
+            .s-information {
+                flex-direction: row-reverse;
+            }
+            .information-title {
+                flex-direction: row-reverse;
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            .s-information {
+                flex-direction: column;
+            }
+            .information-title {
+                flex-direction: row-reverse;
+            }
+        }
+    
+        @media only screen and (max-width: 800px) {
+    
+            .s-information {
+                flex-direction: column;
+            }
+            .information-title {
+                flex-direction: row-reverse;
+            }
+        }
+    
+        @media only screen and (max-width: 700px) {
+            .s-information {
+                flex-direction: column;
+            }
+            .information-title {
+                flex-direction: wrap;
+            }
+        }
+    
+        @media only screen and (max-width: 600px) {
+            .s-information {
+                flex-direction: column;
+            }
+            .information-title {
+                flex-direction: wrap;
+            }
+        }
+    
+        @media only screen and (max-width: 400px) {
+            .s-information {
+                flex-direction: column;
+            }
+            .information-title {
+                flex-direction: wrap;
+            }
+        }
+    </style>
+    <section id='contact' class="s-information d-flex gap-0 justify-content-center">
+                    <!-- aaaaaaaaa -->
+
+                    <div id="title-contact" class="information-title d-flex justify-content-center align-items-center flex-row-reverse gap-0" data-aos="fade-up">
+                        <div class="col-full">
+                            <h3 id="fstitle" class="subhead">CONTATTI</h3>
+                            <h1 class="display-1 display-1--light">Come trovarci</h1>
+                        </div>
+                        <lord-icon
+                            src="https://cdn.lordicon.com/zpxybbhl.json"
+                            trigger="loop"
+                            colors="primary:#ffffff,secondary:#e8e230"
+                            style="width:300px;height:300px">
+                        </lord-icon>
+                    </div> <!-- end section-header -->
+        
+                    <div  class="information-content container d-flex flex-wrap gap-1" data-aos="fade-up">
+
+                        <div id="csection" class="havecontent flex-column justify-content-start align-items-center gap-5" height="auto">
+                            <div class="">
+                                <div class="d-flex justify-content-start align-items-center gap-3">
+                                    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/zzcjjxew.json"
+                                        trigger="loop-on-hover"
+                                        colors="primary:#ffffff,secondary:#e8e230"
+                                        style="width:70px;height:70px">
+                                    </lord-icon>
+                                    <h5 id="ctitle">Trovaci!</h5>
+                                </div>
+                                <p id="cparagraph">
+                                    Via Breda, Vecchia
+                                    25060 Cellatica, BS
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div id="csection" class="havecontent flex-column justify-content-start align-items-center" height="auto">
+                            <div class="">
+                                <div class="d-flex justify-content-start align-items-center gap-3">
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/fwafvpnq.json"
+                                        trigger="loop-on-hover"
+                                        colors="primary:#ffffff,secondary:#e8e230"
+                                        style="width:70px;height:70px">
+                                    </lord-icon>
+                                    <h5 id="ctitle">Chiamaci!</h5>
+                                </div>
+                                <p id="cparagraph">
+                                    <a id="clink-none">Segreteria </a> <br> - 334 997 0261 <br><br>
+                                    <a id="clink-none">Paolo Iervolino</a> <br> - 333 203 9442
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="csection" class="havecontent flex-column justify-content-start align-items-center" height="auto">
+                            <div class="">
+                                <div class="d-flex justify-content-start align-items-center gap-3">
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/rhvddzym.json"
+                                        trigger="loop-on-hover"
+                                        colors="primary:#ffffff,secondary:#08a88a"
+                                        style="width:70px;height:70px">
+                                    </lord-icon>
+                                    <h5 id="ctitle">Hai Qualche Domanda?</h5>
+                                </div>
+                                <p id="cparagraph">
+                                    controlla le <a id="clink" href="#faq">FAQ.</a> <br><br>
+                                    oppure <a id="clink-none">scrivici</a> <br> - info@arenabeach.it<br>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="csection" class="havecontent flex-column justify-content-start align-items-center" height="auto">
+                            <div class="">
+                                <div id="csection" class="d-flex justify-content-start align-items-center gap-3">
+                                    <lord-icon
+                                    src="https://cdn.lordicon.com/kbtmbyzy.json"
+                                    trigger="hover"
+                                    colors="primary:#ffffff,secondary:#eee966"
+                                    style="width:70px;height:70px">
+                                </lord-icon>
+                                    <h5 id="ctitle">Gli Orari</h5>
+                                </div>
+                                <p id="cparagraph">
+                                    <a id="clink" href="indexArenaBeach.html#contact">Arena Beach</a> - clicca <a id="clink" href="indexArenaBeach.html#contact">qui!</a><br><br>
+                                    <a id="clink" href="indexStadionVolley.html#contact">Stadion Volley</a> - clicca <a id="clink" href="indexStadionVolley.html">qui!</a><br><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>       
+    
+    </section>
+
+    
+    <!-- news
+    ================================================== -->
+    <style>
+        .card-news {
+            transition: all .3s ease-in-out;
+        width: 390px;
+        height: 354px;
+        position: relative;
+        background: transparent;
+        /* background-color: #151515; */
+        border-radius: 28px;
+        /* transition: box-shadow .3s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+        }
+
+        .card-news:hover {
+        transition: all .3s ease-in-out;
+        width: 460px;
+        /* height: 384px; */
+        border-radius: 28px;
+        }
+
+        .card-news-img {
+        /* position: absolute; */
+        height: 100%;
+        width: auto;
+        /* border-radius: 28px; */
+        }
+
+        .card-news-img img {
+            transition: all .3s ease-in-out;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            /* filter: brightness(40%); */
+            border-radius: 28px;
+        }
+        .card-news-img img:hover {
+            transform: translateY(-25%);
+        }
+
+
+
+        .card-news-info {
+            /* background-color: black; */
+            /* background-color:#151515; */
+            background-color: white;
+            border-radius: 28px;
+            /* color: white; */
+            color: #151515;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            padding: 1rem;
+            padding-bottom: 0.2rem;
+            padding-left: 2rem;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+
+        .card-news-icon {
+        opacity: 0;
+        transform: translateX(-20%);
+        width: 2em;
+        height: 2em;
+        transition: all .3s ease-in-out;
+        }
+
+        svg {
+        --size: 20px;
+        width: var(--size);
+        height: var(--size);
+        }
+
+        /*Text*/
+        p {
+        line-height: 140%;
+        }
+
+        .text-title {
+        font-weight: 900;
+        font-size: 18px;
+        margin-bottom: 1.5rem;
+        margin-top: 2rem;
+        }
+
+        .text-subtitle {
+        color: #333;
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 2rem;
+        }
+
+        /*Hover*/
+        .card-news:hover {
+        box-shadow: 0 10px 20px 4px rgba(35, 35, 35, .1);
+        }
+
+        .card-news:hover .card-news-icon {
+        opacity: 1;
+        transform: translateX(20%);
+        }
+
+        /* ===================================================================
+        * # staff style
+        *
+        * ------------------------------------------------------------------- */
+        .s-news {
+            /* display: flex; */
+            padding-top: 6.2rem;
+            padding-bottom: 6.2rem;
+            background-color: var(--primario);
+            color: #010507;
+            position: relative;
+        }
+
+        .s-news .section-header.has-bottom-sep::before {
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+
+        .about-desc {
+            font-size: 2.4rem;
+            line-height: 1.75;
+            text-align: center;
+            max-width: 1024px;
+        }
+
+
+        /* ------------------------------------------------------------------- 
+        * responsive:
+        * staff
+        * ------------------------------------------------------------------- */
+        @media only screen and (max-width: 1200px) {
+            
+        }
+
+        @media only screen and (max-width: 800px) {
+            
+        }
+
+        @media only screen and (max-width: 700px) {
+            
+        }
+
+        @media only screen and (max-width: 600px) {
+            .s-news {
+                padding-top: 12rem;
+            }
+            .about-desc {
+                font-size: 1.9rem;
+            }
+            
+        }
+
+        @media only screen and (max-width: 400px) {
+            .about-desc {
+                font-size: 1.8rem;
+            }
+        }
+
+        .row {
+        --bs-gutter-x: 0rem;
+        }
+
+    </style>
+    <section id='news' class="s-news d-flex justify-content-center align-items-center flex-wrap">
+
+        <style>
+            #hl {
+                color: white;
+                font-weight: bold;
+            }
+        </style>
+
+            <div class="row section-header has-bottom-sep" data-aos="fade-up">
+                <div id="title-services" class="d-flex justify-content-center align-items-center gap-0">
+                    <lord-icon
+                    src="https://cdn.lordicon.com/qduilmpq.json"
+                    trigger="loop"
+                    colors="primary:#ffffff,secondary:#ffffff"
+                    style="width:200px;height:200px">
+                </lord-icon>
+                <div class="col-full text-start">
+                    <h3 class="subhead subhead--dark">NOTIZIE</h3>
+                    <h1 class="display-1 display-1--light">Tutte le Notizie e Novità</h1>
+                </div>
+                </div>
+            </div> <!-- end section-header -->
+    
+            <div class="d-flex flex-wrap gap-4 justify-content-center align-items-center m-3" data-aos="fade-up">
+
+                <div class="card-news">
+                    <div class="card-news-img">
+                        <img src="imagess/newsImg03.jpg" alt="">
+                    </div>
+                      <div class="card-news-info">
+                        <div class="card-news-text">
+                          <p class="text-title">Riparte il corso di pallavolo</p>
+                          <p class="text-subtitle">È ripartito il corso di pallavolo, all'appello più di 50 ragazze e ragazzi ...</p>
+                        </div>
+                        <div class="card-news-icon">
+                          <svg viewBox="0 0 28 25">
+                            <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+                          </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-news">
+                    <div class="card-news-img">
+                        <img src="imagess/newsImg02.jpg" alt="">
+                    </div>
+                      <div class="card-news-info">
+                        <div class="card-news-text">
+                          <p class="text-title">La Femminile Stadion Volley vince! </p>
+                          <p class="text-subtitle">Nell'ultima partita di campionato della pallavolo femminile la nostra squadra ...</p>
+                        </div>
+                        <div class="card-news-icon">
+                            <svg viewBox="0 0 28 25">
+                                <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+                              </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-news">
+                    <div class="card-news-img">
+                        <img src="imagess/photo1673376535.jpeg" alt="">
+                    </div>
+                      <div class="card-news-info">
+                        <div class="card-news-text">
+                          <p class="text-title">Evento del 15 Febbraio</p>
+                          <p class="text-subtitle">È ormai vicino l'evento della settimana prossima che coinvolgerà decine di ragazze e ragazzi con le loro famiglie ...</p>
+                        </div>
+                        <div class="card-news-icon">
+                          <svg viewBox="0 0 28 25">
+                            <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+                          </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-news">
+                    <div class="card-news-img">
+                        <img src="imagess/beach-volley.jpg" alt="">
+                    </div>
+                      <div class="card-news-info">
+                        <div class="card-news-text">
+                          <p class="text-title">Iervolino agli Europei</p>
+                          <p class="text-subtitle">Riccardo Iervolino, anno 2003, è stato selezionato tra 18 atleti come rappresentante dell’Italia agli Europei di Beach Volley U18 del 2020 ...</p>
+                        </div>
+                        <div class="card-news-icon">
+                          <svg viewBox="0 0 28 25">
+                            <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+                          </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-news">
+                    <div class="card-news-img">
+                        <img src="imagess/CarouselBeach03.jpeg" alt="">
+                    </div>
+                      <div class="card-news-info">
+                        <div class="card-news-text">
+                          <p class="text-title">Aggiornamenti nell'area Coperta</p>
+                          <p class="text-subtitle">Sono stati aggiornati gli impianti dell'area coperta ...</p>
+                        </div>
+                        <div class="card-news-icon">
+                          <svg viewBox="0 0 28 25">
+                            <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+                          </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-news">
+                    <div class="card-news-img">
+                        <img src="imagess/beach-tennis.jpg" alt="">
+                    </div>
+                      <div class="card-news-info">
+                        <div class="card-news-text">
+                          <p class="text-title">Arena Beach, scopri tutti gli sport</p>
+                          <p class="text-subtitle">Scopri tutti gli sport che puoi praticare nella nostra arena!</p>
+                        </div>
+                        <div class="card-news-icon">
+                          <svg viewBox="0 0 28 25">
+                            <path d="M13.145 2.13l1.94-1.867 12.178 12-12.178 12-1.94-1.867 8.931-8.8H.737V10.93h21.339z"></path>
+                          </svg>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end about-desc -->
+
+    </section> <!-- end s-news -->
+
+    <!-- review
+    ================================================== -->
+    <style>
+        /* css recensioni */
+    
+    .s-clients {
+        background-color: whitesmoke;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    #testimonials{
+        font-family: Poppins;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width:100%;
+    }
+    .testimonial-heading{
+        letter-spacing: 1px;
+        margin: 30px 0px;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .testimonial-heading h1{
+        font-size: 35.2px;
+        font-weight: 500;
+        background-color: #202020;
+        color: #ffffff;
+        padding: 10px 20px;
+    }
+    .testimonial-heading span{
+        font-size: 1.3rem;
+        color: #252525;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    .testimonial-box-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width:100%;
+    }
+    .testimonial-box{
+        width:500px;
+        font-size: 16px;
+        box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+        background-color: #ffffff;
+        padding: 20px;
+        margin: 15px;
+        cursor: pointer;
+        border-radius: 28px;
+        transition: all ease 0.3s;
+    }
+    .profile-img{
+        width:50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px;
+    }
+    .profile-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .profile{
+        display: flex;
+        align-items: center;
+    }
+    .name-user{
+        display: flex;
+        flex-direction: column;
+    }
+    .name-user strong{
+        color: #3d3d3d;
+        font-size: 2rem;
+        letter-spacing: 0.5px;
+        font-weight: bold;
+    }
+    .name-user span{
+        color: #979797;
+        font-size: 1.35rem;
+    }
+    .reviews{
+        color: #f9d71c;
+    }
+    .box-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .client-comment p{
+        font-size: 1.75rem;
+        color: #4b4b4b;
+    }
+    .testimonial-box:hover{
+        transform: translateY(-10px);
+        transition: all ease 0.3s;
+    }
+     
+    @media(max-width:1060px){
+        .testimonial-box{
+            width:45%;
+            padding: 10px;
+        }
+    }
+    @media(max-width:790px){
+        .testimonial-box{
+            width:100%;
+        }
+        .testimonial-heading h1{
+            font-size: 1.4rem;
+        }
+    }
+    @media(max-width:340px){
+        .box-top{
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+        .reviews{
+            margin-top: 10px;
+        }
+    }
+    ::selection{
+        color: #ffffff;
+        background-color: #252525;
+    }
+
+    #utitle {
+        font-family: "montserrat-semibold", sans-serif;
+        font-weight: bold;
+    }
+
+    </style>
+    <section id="reviews" class="s-clients">
+        <section id="testimonials">
+
+            <div class="row section-header has-bottom-sep" data-aos="fade-up">
+                <div id="title-services" class="d-flex justify-content-center align-items-center gap-0">
+                    <lord-icon 
+                        src="https://cdn.lordicon.com/etwtznjn.json"
+                        trigger="loop"
+                        colors="primary:#eee966,secondary:#242424"
+                        style="width:200px;height:200px">
+                    </lord-icon>
+                    <div class="col-full text-start">
+                        <h3 class="subhead">RECENSIONI</h3>
+                        <h1 class="display-1">Alcune delle nostre<br>migliori recensioni</h1>
+                    </div>
+                </div>
+            </div> <!-- end section-header -->
+
+            <!--testimonials-box-container------>
+            <div class="testimonial-box-container">
+                <!--BOX-1-------------->
+                <div class="testimonial-box">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                            <div class="profile-img">
+                                <img src="images/reviews/Loris.png" />
+                            </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong id="utitle">Loris Palmarin</strong> 
+                                <span>4 Anni fa</span>
+                            </div>
+                        </div>
+                        <!--reviews------>
+                        <div class="reviews">
+                            <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><!--Empty star-->
+                        </div>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <p>Unico punto di ritrovo per gli amanti del beach volley nella zona. Luogo un po' fuori dal centro ma ampio e con ottimo sevizio che include bar, spogliatoi e bagni.</p>
+                    </div>
+                </div>
+                <!--BOX-2-------------->
+                <div class="testimonial-box">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                            <div class="profile-img">
+                                <img src="images/reviews/flavio.png" />
+                            </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong id="utitle">Flavio Ciombo</strong>
+                                <span>9 Mesi fa</span>
+                            </div>
+                        </div>
+                        <!--reviews------>
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><!--Empty star-->
+                        </div></div>
+                        <!--Comments---------------------------------------->
+                        <div class="client-comment">
+                            <p>Posto meraviglioso e curato
+                                Adatto per un sacco di sport dal beach volley al rugby beach ed altro gestore molto molto professionale.
+                                Complimenti, lo consiglio.</p>
+                        </div>
+                    </div>
+                    <!--BOX-3-------------->
+                    <div class="testimonial-box">
+                        <!--top------------------------->
+                        <div class="box-top">
+                            <!--profile----->
+                            <div class="profile">
+                                <!--img---->
+                                <div class="profile-img">
+                                    <img src="images/reviews/marco.png" />
+                                </div>
+                                <!--name-and-username-->
+                                <div class="name-user">
+                                    <strong id="utitle">Andrea B.</strong>
+                                    <span>3 Anni fa </span>
+                                </div>
+                            </div>
+                            <!--reviews------>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><!--Empty star-->
+                            </div>
+                        </div>
+                        <!--Comments---------------------------------------->
+                        <div class="client-comment">
+                            <p>Posto fantastico...un'oasi estiva per gli sportivi. Da visitare e da provare. Possibilità di fare attività sportiva su sabbia volley, rugby, soccer, tennis e un'area relax fornitissima.</p>
+                        </div>
+                    </div>
+                    <!--BOX-4-------------->
+                    <div class="testimonial-box">
+                        <!--top------------------------->
+                        <div class="box-top">
+                            <!--profile----->
+                            <div class="profile">
+                                <!--img---->
+                                <div class="profile-img">
+                                    <img src="images/reviews/Longo.png" />
+                                </div>
+                                <!--name-and-username-->
+                                <div class="name-user">
+                                    <strong id="utitle" >Davide Longo</strong>
+                                    <span>2 anni fa</span>
+                                </div>
+                            </div>
+                            <!--reviews------>
+                            <div class="reviews">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><!--Empty star-->
+                            </div>
+                        </div>
+                        <!--Comments---------------------------------------->
+                        <div class="client-comment">
+                            <p>Bella la struttura anche se un po' fuori da Brescia. Sabbia molto bella e campi tenuti bene. Prezzi economici in generale e annesso il servizio bar per il Pirlo per tutti i veri sportivi.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </section>
+
+    <!-- sponsor
+    ================================================== -->
+    <style>
+        /* css recensioni */
+    
+    .s-sponsor {
+        background-color: var(--primario);
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    ::selection{
+        color: #ffffff;
+        background-color: #252525;
+    }
+
+    #utitle {
+        font-family: "montserrat-semibold", sans-serif;
+        font-weight: bold;
+    }
+
+    </style>
+    <style>
+        /*--------------------------------------------------------------
+# Sponsors Section
+--------------------------------------------------------------*/
+#supporters {
+  padding: 60px 0;
+}
+
+#supporters .supporters-wrap {
+  /* border-top: 1px solid #e0e5fa; */
+  /* border-left: 1px solid #e0e5fa; */
+  margin-bottom: 30px;
+}
+
+#supporters .supporter-logo {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-right: 1px solid #e0e5fa; */
+  /* border-bottom: 1px solid #e0e5fa; */
+  overflow: hidden;
+  /* background: rgba(255, 255, 255, 0.5); */
+  background-color: white;
+  height: 160px;
+  margin: 5px;
+  border-radius: 28px;
+}
+
+#supporters .supporter-logo:hover img {
+  transform: scale(1.2);
+}
+
+#supporters img {
+  transition: all 0.4s ease-in-out;
+}
+    </style>
+    <section id="supporters" class="s-sponsor">
+        <section id="testimonials">
+
+            <style>
+                #s-title-content {
+                    margin-left: 12rem;
+                }
+            </style>
+            <div class="row section-header has-bottom-sep" data-aos="fade-up">
+                <div id="title-services" id="s-title-content" class="d-flex justify-content-center align-items-center gap-0">
+                    <lord-icon 
+                        src="https://cdn.lordicon.com/yeallgsa.json"
+                        trigger="loop"
+                        delay="2000"
+                        colors="primary:#ffffff,secondary:#ffffff"
+                        style="width:200px;height:200px">
+                    </lord-icon>
+                    <div class="col-full text-start">
+                        <h3 class="subhead subhead--dark">SPONSOR</h3>
+                        <h1 class="display-1 display-1--light">Ecco i nostri Sponsor!</h1>
+                    </div>
+                </div>
+            </div> <!-- end section-header -->
+
+            <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+    
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                     <div class="supporter-logo">
+                      <img src="imagess/logoRegesta.png" class="img-fluid" alt="">
+                     </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="supporter-logo">
+                      <img src="imagess/sponsor01.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="supporter-logo">
+                      <img src="imagess/sponsor02.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="supporter-logo">
+                      <img src="imagess/sponsor03.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="supporter-logo">
+                      <img src="imagess/sponsor04.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="supporter-logo">
+                      <img src="imagess/sponsor05.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="supporter-logo">
+                      <img src="imagess/sponsor06.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-xs-6">
+                    <div class="supporter-logo">
+                      <img src="imagess/sponsor07.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+        
+              </div>
+            
+        </section>
+    </section>
+
+    
+    <!-- faq
+    ================================================== -->
+    <style>
+        .s-faq {
+            background-color: #151515;
+            /* background-image: url("images/contact-bg.jpg"); */
+            background-repeat: no-repeat;
+            background-position: center, center;
+            padding-top: 5rem;
+            /* gap: 5rem; */
+            padding-bottom: 5rem;
+            /* color: rgba(255, 255, 255, 0.5); */
+            position: relative;
+        }
+        .s-faq {
+            background-color: #151515;
+            /* background-image: url("images/contact-bg.jpg"); */
+            background-repeat: no-repeat;
+            background-position: center, center;
+            padding-top: 3rem;
+            /* gap: 5rem; */
+            padding-bottom: 5rem;
+            color: rgba(255, 255, 255, 0.5);
+            position: relative;
+        }
+
+        .s-faq #ctitle {
+            color: #f8dc14;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .s-faq #cparagraph {
+            color: white;
+        }
+
+        .s-faq #clink {
+            color: #f8dc14;
+        }
+        .s-faq #clink:hover {
+            text-decoration: underline;
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: #151515;
+            background-color: #f8dc14;
+            border: 2px solid #f8dc14;
+        }
+        .accordion-button {
+            background-color: #151515;
+            border: 2px solid #f8dc14;
+            color: white;
+        }
+        .accordion-button:hover {
+            background-color: #f8dc14;
+            border: 2px solid #f8dc14;
+        }
+        .accordion-collapse {
+            background-color: #151515;
+            border: 2px solid #f8dc14;
+            padding-bottom: 0;
+            color: white;
+        }
+        .accordion-collapse:hover {
+            background-color: transparent;
+        }
+        .accordion-item {
+            background-color: transparent;
+        }
+        .accordion-item:hover {
+            background-color: transparent;
+        }
+        .accordion-body {
+            background-color: transparent;
+            margin-bottom: 10px;
+            border: 2px solid #f8dc14;
+            transition: all 0.5s ease-in-out;
+        }
+
+
+        .faq-title {
+            margin-top: 3rem;
+            margin-left: 3rem;
+        }
+
+        .faq-content {
+            margin-top: 3rem;
+            margin-right: 3rem;
+        }
+
+        #hl {
+                color: white;
+                font-weight: bold;
+            }
+
+        @media only screen and (max-width: 1200px) {
+            
+        }
+
+        @media only screen and (max-width: 800px) {
+            .s-faq {
+                flex-direction: column;
+            }
+            .faq-title {
+                margin-left: 0;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+            .s-faq {
+                flex-direction: column;
+            }
+            .faq-title {
+                margin-left: 0rem;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .s-faq {
+                flex-direction: column;
+            }
+            .faq-title {
+                margin-left: 0rem;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            .s-faq {
+                flex-direction: column;
+            }
+            .faq-title {
+                margin-left: 0rem;
+            }
+        }
+    </style>
+    <section id='faq' class="s-faq d-flex justify-content-center align-items-center" >
+
+        <style>
+            #hl {
+                color: white;
+                font-weight: bold;
+            }
+            .subhead--dark #fstitle {
+                color: #f8dc14;
+            }
+        </style>
+
+            <div id="title-contact" class="faq-title d-flex justify-content-center align-items-center flex-row-reverse gap-0" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 id="fstitle" class="subhead">F.A.Q.</h3>
+                    <h1 class="display-1 display-1--light">Hai dei dubbi?</h1>
+                </div>
+                <lord-icon
+                    src="https://cdn.lordicon.com/uukerzzv.json"
+                    trigger="loop"
+                    colors="primary:#ffffff,secondary:#eee966"
+                    style="width:300px;height:300px">
+                </lord-icon>
+            </div> <!-- end section-header -->
+
+            <div class="faq-content container" data-aos="fade-up">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Come si prenota il campo? e quali requisiti necessita la prenotazione?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Per prenotare il campo bisogna contattare il numero della <a id="clink" href="#contact">segreteria</a> nella sezione <a id="clink" href="indexArenaBeach.html#contact">Stadion Arena</a></div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        È possibile iscriversi durante tutta la durata dell'anno ai corsi?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Per quanto riguarda i corsi di <a id="clink" href="indexStadionVolley.html">Stadion Volley</a> l'iscrizione è da effettuare prima dell'inizio del corso, entro una data specifica. <br>
+                        Mentre per quanto riguarda i corsi di <a id="clink" href="indexArenaBeach.html">Arena Beach</a> è possibile iscriversi anche quanto il corso è già partito.</div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            L'accompagnatore di un minore paga?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body"><a id="clink-none">NO!</a> l'accompagnatore di un minore non ha l'obbligo di pagare.</div>
+                        </div>
+                      </div>                    
+                    </div>
+                    <p>Se non abbiamo risposto alla tua domanda puoi sempre contattarci cliccando <a id="clink" href="#contact">qui</a></p>
+                    <!-- <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Gli spogliatoi sono gratuiti? come funzionano?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Gli spogliatoi sono gratuiti, suddivisi per genere e forniti di tutti i comfort necessari al proprio benessere.</div>
+                        </div>
+                      </div>                    
+                    </div> -->
+            </div>       
+            </div>
+
+    </section><!-- End  F.A.Q Section -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <style>
+            .footer-main {
+                background-color: #151515;
+                padding-inline: 10rem;
+                padding-block: 8rem;
+            }
+
+            .footer-bottom {
+                background-color: #151515;
+                padding-block: 2rem;
+                width: auto;
+                max-width: none;
+            }
+        </style>
+        <div class="row footer-main">
+
+            <div class="col-six tab-full left footer-desc">
+
+                <!-- <div class="footer-logo"></div> -->
+                <style>
+                    #logo-footer {
+                        max-width: 60%;
+                        margin-bottom: 1rem;
+                    }
+                </style>
+                <img id="logo-footer" src="imagess/stadionArenaLogo.PNG" alt="">
+                <img id="logo-footer" src="imagess/logoRegesta.png" alt="">
+
+                <p style="font-size: 18px;" class="mt-3" >Stadion Arena è una realtà innovativa che invoglia e coinvolge persone di tutte le età all'insegna del divertimento e dello sport.</p>
+
+            </div>
+
+            <div class="col-six tab-full right footer-subscribe">
+
+                <h3 style="color: white;">Link Utili</h4>
+                <ul style="font-size: 14px;" class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">- Home</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contact">- Contatti</a></li>
+                    <li><a class="smoothscroll"  href="#faq" title="faq">- F.A.Q</a></li>
+                    <li><a style="color:#3a428b"  href="indexStadionVolley.html" title="faq">- Stadion Volley</a></li>
+                    <li><a style="color:#f29206"  href="indexArenaBeach.html" title="faq">- Arena Beach</a></li>
+                </ul>
+
+            </div>
+
+        </div> <!-- end footer-main -->
+
+    </footer> <!-- end footer -->
+
+    <div class="row footer-bottom">
+
+        <div class="col-twelve">
+            <div class="copyright">
+                <div class="copyright">
+                    &copy; Copyright <a id="clink-none" class="smoothscroll" href="#home">Stadion Arena</a>. All Rights Reserved
+                  </div>
+                  <div class="credits">
+                  <!--
+                    All the links in the footer should remain intact.
+                    You can delete the links only if you purchased the pro version.
+                    Licensing information: https://bootstrapmade.com/license/
+                    Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+                  -->
+                    Designed by Students from I.T.I.S. Beretta, Gardone VT</a>
+                  </div>
+            </div>
+
+            <div class="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+    </div> <!-- end footer-bottom -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
