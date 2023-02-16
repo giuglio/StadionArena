@@ -1379,6 +1379,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     .section-header.has-bottom-sep::before {
         width: 250px;
     }
+ 
+ .section-header {
+ flex-direction: column;
+ }
+ 
+ 
 }
 
 
