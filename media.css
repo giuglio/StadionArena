@@ -1,0 +1,85 @@
+/* ------------------------------------------------------------------- 
+        * responsive:
+        * about
+        * ------------------------------------------------------------------- */
+        @media only screen and (min-width: 1201px) {
+            .s-informazioni {
+                flex-direction: row-reverse;
+            }
+            .titolo-sezione {
+                flex-direction: row-reverse;
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            .s-informazioni {
+                flex-direction: column;
+            }
+            .titolo-sezione {
+                flex-direction: row-reverse;
+            }
+        }
+    
+        @media only screen and (max-width: 800px) {
+    
+            .s-informazioni {
+                flex-direction: column;
+            }
+            .titolo-sezione {
+                flex-direction: row-reverse;
+            }
+        }
+    
+        @media only screen and (max-width: 700px) {
+            .s-informazioni {
+                flex-direction: column;
+            }
+            .titolo-sezione {
+                flex-direction: wrap;
+            }
+        }
+    
+        @media only screen and (max-width: 600px) {
+            .s-informazioni {
+                flex-direction: column;
+            }
+            .titolo-sezione {
+                flex-direction: wrap;
+            }
+        }
+    
+        @media only screen and (max-width: 480px) {
+
+            .home-titolo {
+                font-size: 75px !important;
+                padding-top: 25px !important;
+            }
+
+            .sottotitolo-sezione {
+                font-size: 25px !important;
+            }
+
+            .s-informazioni {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .titolo-sezione {
+                flex-direction: wrap;
+            }
+
+            #sub-box-buttons{
+                flex-direction: column !important;
+            }
+
+            #titolo-sezione{
+                font-size: 24px;
+            }
+
+            #sottotitolo-sezione{
+                font-size: 36px;
+            }
+
+            #testo-sezione{
+                font-size: 16px;
+            }
+        }
