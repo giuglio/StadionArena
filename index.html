@@ -2,19 +2,6 @@
 <html lang="it">
 
 <head>
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader">
-            <div class="box">
-                <div class="shadow"></div>
-                <div class="gravity">
-                  <div class="ball"></div>
-                </div>
-              </div>
-        </div>
-    </div>
-
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
@@ -29,9 +16,6 @@
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--- icons
@@ -46,31 +30,29 @@
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- favicons
     ================================================== -->
-    <link rel="shortcut icon" href="assets/icons/volleyball.ico" type="image/x-icon">
     <link rel="icon" href="assets/icons/volleyball.ico" type="image/x-icon">
 
 </head>
 
 <!-- Colori principali della pagina -->
-<style> 
+<style>
     :root {
         --primario : #f8dc14f2;
         --primario-trasparente : #f8de14f9;
         --secondario : #ffffff;
         --dark : #0b0b0b;
-        --dark-light : #383838;
+        --dark-light : #585858;
     }
 
-    body {
+    /* body {
         height: 100vh;
-    }
+    } */
 
     /* debug */
     /* * {border: 2px solid red;} */
@@ -88,18 +70,17 @@
 
 <!-- CSS generale delle sezioni -->
 <style>
-    #titolo-sezione {color: var(--dark); font-size: 22px; font-family: "montserrat-regular"; font-weight: bolder; letter-spacing: 1.8px;}
-    #titolo-sezione-bianco {color: var(--secondario); font-size: 22px; font-family: "montserrat-regular"; font-weight: bolder; letter-spacing: 1.8px;}
+    .titolo-sezione {color: var(--dark); font-family: "montserrat-regular"; font-weight: bolder; letter-spacing: 1.8px;}
+    .titolo-sezione-bianco {color: var(--secondario); font-family: "montserrat-regular"; font-weight: bolder; letter-spacing: 1.8px;}
 
-    #sottotitolo-sezione {color: var(--primario); font-size: 72px; font-family: 'montserrat-regular', sans-serif; font-weight: bolder;}
-    #sottotitolo-sezione-nero {color: var(--dark); font-size: 72px; font-family: 'montserrat-regular', sans-serif; font-weight: bolder;}
-    #sottotitolo-sezione-bianco {color: var(--secondario); font-size: 72px; font-family: 'montserrat-regular', sans-serif; font-weight: bolder;}
+    .sottotitolo-sezione {color: var(--primario); font-family: 'montserrat-regular', sans-serif; font-weight: bolder;}
+    .sottotitolo-sezione-nero {color: var(--dark); font-family: 'montserrat-regular', sans-serif; font-weight: bolder;}
 
     #testo-sezione {
-        color: var(--dark); font-size: 25px; font-family: 'montserrat-regular'; text-align: center;
+        color: var(--dark); font-family: 'montserrat-regular'; text-align: center;
     }
     #testo-sezione-card {
-        color: var(--dark); font-size: 20px; font-family: 'montserrat-regular'; text-align: start;
+        color: var(--dark); font-family: 'montserrat-regular'; text-align: start;
     }
 
     #testo-evidenziato-bianco {color: var(--secondario); font-weight: bolder;}
@@ -107,7 +88,7 @@
 
     #main-container {
         display: flex; justify-content: center; align-items: center;
-        width: 100%; height: 800px;
+        width: 100%;
     }
 
     #s-home {
@@ -119,19 +100,14 @@
 
     <!-- INIZIO DELLE SEZIONI DELLA PAGINA -->
 
-    <!-- <-- LEGGERE IL COMMENTO QUA A SINISTRA-->
-    
     <!-- HEADER
     ================================================== -->
     <header class="s-header">
 
         <!-- Navbar con logo -->
-        <nav class="navbar fixed-top" style="background-color: transparent;">
-            <div class="container-fluid justify-content-end mt-4">
-                
-                <!-- Logo piccolo in alto a sinistra -->
-                <!-- <img id="logo" style="width: 160px; height: auto;" src="assets/img/logo/stadionArenaLogo.PNG" alt="Homepage"> -->
-              
+        <nav class="navbar fixed-top">
+            <div class="container-fluid justify-content-end">
+
                 <!-- Style del button per il menu -->
                 <style>
                     #box-menu {background-color: transparent;border-radius: 20px;transition: all .3s ease-in-out; padding: 3px;}
@@ -149,7 +125,7 @@
                         var boxMenu = document.getElementById('box-menu');
                         var titleMenu = document.getElementById('header-titolo');
                         var scrollPosition = window.scrollY;
-                
+
                         if (scrollPosition > 600) {
                             boxMenu.classList.add('box-menu-scrolled');
                             titleMenu.classList.add('header-titolo-scrolled');
@@ -160,8 +136,8 @@
                     });
                 </script>
                 <div id="box-menu">
-                    <button class="button-toggler centrato gap-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span id="header-titolo">menu</span>
+                    <button class="navbar-toggler d-flex justify-content-center align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="d-none d-sm-block" id="header-titolo">menu</span>
                         <lord-icon
                             src="https://cdn.lordicon.com/wgwcqouc.json"
                             colors="primary:#f5f5f5,secondary:#08a88a"
@@ -173,7 +149,7 @@
                 <!-- Style Offcanvas -->
                 <style>
                     #offcanvasNavbar { background-color: var(--dark); width: 280px;}
-                    #title-offcanvas {
+                    .title-offcanvas {
                         font-family: "montserrat-semibold", sans-serif; color: var(--primario);
                         font-size: 10px; line-height: 1.5; text-transform: uppercase;
                         letter-spacing: .25rem; margin-top: 0.5rem; padding-left: 1.2rem;
@@ -182,10 +158,10 @@
 
                 <!-- Offcanvas Navbar -->
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header centrato justify-content-around mt-3 gap-3">
+                    <div class="offcanvas-header">
 
                         <!-- offcanvas title -->
-                        <h5 id="title-offcanvas" data-aos="fade-left">MENU NAVIGAZIONE</h5>
+                        <h5 class="title-offcanvas" id="offcanvasNavbarLabel">MENU NAVIGAZIONE</h5>
 
                         <!-- toggle button -->
                         <lord-icon
@@ -198,7 +174,7 @@
 
                     </div>
 
-                    <div class="header-nav__content">
+                    <div class="offcanvas-body">
 
                         <!-- navbar list style -->
                         <style>
@@ -216,13 +192,14 @@
                             }
                             .header-nav__list li:hover {
                                 list-style: square;
+                                color: var(--dark-light);
                             }
                             .header-nav__list li:hover a {
                                 padding-left: 15px;
                                 transition: all .1s ease-in-out;
                             }
                         </style>
-                        
+
                         <ul class="header-nav__list">
                             <li><a id="offcanvas-link"  href="#s-home" title="home">Home</a></li>
                             <li><a id="offcanvas-link"  href="#s-informazioni" title="about">Informazioni</a></li>
@@ -235,9 +212,9 @@
                             <li><a id="offcanvas-link" style="color:#3a428b"  href="indexStadionVolley.html" title="faq">Stadion Volley</a></li>
                             <li><a id="offcanvas-link" style="color:#f29206"  href="indexArenaBeach.html" title="faq">Arena Beach</a></li>
                         </ul>
-            
-                        <p style="margin-left: 2rem;">Segui Stadion Arena su tutti i canali social!</p>
-            
+
+                        <p style="margin-left: 2rem; color: var(--dark-light)">Segui Stadion Arena su tutti i canali social!</p>
+
                         <ul class="header-nav__social centrato justify-content-start gap-3">
                             <li style="list-style: none;">
                                 <a href="https://www.facebook.com/arenabeach.it"><i style="color: var(--dark-light);" class="bi bi-facebook"></i></a>
@@ -246,8 +223,8 @@
                                 <a href="https://www.instagram.com/_arenabeach_/"><i style="color: var(--dark-light);" class="bi bi-instagram"></i></a>
                             </li>
                         </ul>
-        
-                    </div> <!-- end header-nav__content -->
+
+                    </div> <!-- end offcanvas-body -->
                 </div>
 
             </div>
@@ -261,63 +238,38 @@
 
         <!-- Background Video e Filter style -->
         <style>
-                    #background-video {
-                        width: 100vw;
-                        height: 100vh;
-                        object-fit: cover;
-                        position: fixed;
-                        left: 0;
-                        right: 0;
-                        top: 0;
-                        bottom: 0;
-                        z-index: -1;
-                        }
-                    .shadow-overlay {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        opacity: .4;
-                        background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
-                        background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
-                        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
-                        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000', GradientType=0);
-                        }
-        
-                    .overlay {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        opacity: .6;
-                        background-color: #000000;
-                        }
+            #background-video {
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+            }
         </style>
-            
+
         <!-- Video in Background -->
         <video id="background-video" autoplay loop muted poster="">
-        <source src="assets/video/video_background.mp4" type="video/mp4">
+            <source src="assets/video/video_background.mp4" type="video/mp4">
         </video>
         <!-- Filtro davanti al video in Background -->
-        <div class="overlay"></div>
-        <div class="shadow-overlay"></div>
+        <div class="position-absolute top-0 end-0 bottom-0 start-0" style="background-color: rgba(0, 0, 0, 0.6)"></div>
 
         <!-- Home style -->
         <style>
-            #box-title_button {
-                display: flex; justify-content: center; align-items: center; flex-direction: column;
-                width: 80%; height: 80%; position: absolute;
-            }
             .home-titolo {
-                font-size: 200px; font-family: 'alien_aiitalic'; color: var(--secondario);
+                font-size: calc(1rem + 8vw);
+                font-family: 'alien_aiitalic'; color: var(--secondario);
             }
             .home__btn{
-                font-family: "montserrat-medium", sans-serif; font-size: 14px;letter-spacing: 2px;text-transform: uppercase; text-decoration: none; text-align: center;
+                font-family: "montserrat-medium", sans-serif; letter-spacing: 2px;text-transform: uppercase; text-decoration: none; text-align: center;
                 transition: all .5s ease 0s;
-                width: 280px; padding: 5px;
-                color: white; 
+                width: 200px;
+                padding: 5px;
+                color: white;
                 border: 2px solid white; border-width: 2px;border-radius: 28px; background-color: transparent;
             }
 
@@ -325,35 +277,40 @@
                 color: white;
                 transition: all .5s ease 0s;
                 background-color: var(--primario);
-                width: 300px;
+                width: 210px;
                 border-color: var(--primario);
             }
         </style>
 
-        <!-- # Container Principale 
+        <!-- Container Principale
             contiene tutti i Box-->
         <div id="main-container">
 
-            <!-- # Box Titolo e Buttons 
+            <!-- Box Titolo e Buttons
             contiene il titolo con il logo e i buttons-->
-            <div id="box-title_button">
+            <div class="d-flex flex-column align-items-center my-4 vh-100" style="z-index: 1;">
 
                 <!-- logo -->
-                <img id="logo" style="width: 160px; height: auto;" src="assets/img/logo/stadionArenaLogo.PNG" alt="Homepage">
+                <div class="d-block p-5">
+                    <img id="logo" style="max-width: 200px;" src="assets/img/logo/stadionArenaLogo.png" alt="StadionArena logo">
+                </div>
 
                 <!-- sub-box titolo -->
-                <h1 class="home-titolo" data-aos="fade-up">STADION</h1><h1 style="color: var(--primario);" class="home-titolo" data-aos="fade-up">ARENA</h1>
+                <div class="text-center p-4">
+                    <h1 class="home-titolo">STADION</h1>
+                    <h1 class="home-titolo" style="color: var(--primario);">ARENA</h1>
+                </div>
 
                 <!-- sub-box buttons -->
-                <div class="centrato gap-5 mt-5" data-aos="fade-up">
+                <div class="d-flex flex-column d-sm-flex flex-sm-row gap-4 p-5" data-aos="fade-up">
                         <!-- stadion volley button -->
-                        <a id="btn__stadionVolley" href="stadionVolley.html" class="home__btn">
+                        <a id="btn__stadionVolley" href="stadionVolley.html" class="small home__btn">
                             Stadion Volley
                         </a>
                         <!-- arena beach button -->
-                        <a id="btn__arenaBeach" href="arenaBeach.html" class="home__btn">
+                        <a id="btn__arenaBeach" href="arenaBeach.html" class="small home__btn">
                             Arena Beach
-                        </a>                    
+                        </a>
                 </div>
 
             </div>
@@ -366,32 +323,26 @@
     ================================================== -->
     <section id="s-informazioni">
 
-        <!-- Informazioni style -->
-        <style>
-
-        </style>
-
-         <!-- # Container Principale 
+         <!-- Container Principale
             contiene tutti i Box-->
-        <div id="main-container" style="background-color: whitesmoke; flex-direction: column; justify-content: start; height: 950px;">
+        <div class="py-4" style="background-color: whitesmoke;">
 
-            <!-- Titolo sezione -->
-            <div style="width: 100%; height: 45px; margin-top: 100px;" class="centrato"><span id="titolo-sezione" data-aos="fade-up">INFORMAZIONI</span></div>
-
-            <!-- # Box titolo con icona -->
-            <div class="centrato flex-wrap">
-                <h3 id="sottotitolo-sezione" data-aos="fade-left">CI PRESENTIAMO</h3>
+            <!-- Titolo e sottotitolo sezione -->
+            <div class="text-center py-3 py-lg-5" style="overflow-x: hidden;">
+                <span class="h4 titolo-sezione" data-aos="fade-up">INFORMAZIONI</span>
+                <h3 class="display-2 sottotitolo-sezione" data-aos="fade-left">CI PRESENTIAMO</h3>
             </div>
 
             <!-- Carousel Style -->
             <style>
                 .carousel-illustrazione {
-                    width: 900px; height: auto;
+                    max-width: 900px;
+                    max-height: 500px;
                 }
             </style>
 
             <!-- Carousel con informazioni -->
-            <div id="carousel-informazioni" class="carousel slide" style="margin-top: 4rem;" data-bs-ride="true">
+            <div id="carousel-informazioni" class="carousel slide my-lg-4" data-bs-ride="true">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carousel-informazioni" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carousel-informazioni" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -402,56 +353,56 @@
 
                     <!-- Prima Slide -->
                   <div class="carousel-item active">
-                    
+
                     <div class="centrato flex-column">
-                        
-                        <p id="testo-sezione" style="padding-inline: 300px;">
-                            Stadion Arena Sport è un progetto dedicato a bambini, 
+
+                        <p class="fs-4 px-5" id="testo-sezione">
+                            Stadion Arena Sport è un progetto dedicato a bambini,
                             ragazzi e adulti che <a id="testo-evidenziato-giallo">amano gli sport</a> sulla sabbia e non.</p>
-                        <img class="carousel-illustrazione" src="assets/img/sezione-informazioni/beach-volleyball-animate.svg" class="d-block w-100" alt="...">
-                        
+                        <img class="carousel-illustrazione" src="assets/img/sezione-informazioni/beach-volleyball-animate.svg" alt="Image #1">
+
                     </div>
 
                   </div>
 
                   <!-- Seconda Slide -->
                   <div class="carousel-item ">
-                    
+
                     <div class="centrato flex-column">
-                        
-                        <p id="testo-sezione" style="padding-inline: 300px;">
-                            Il nostro <a id="testo-evidenziato-giallo">obiettivo</a> è promuovere lo <a id="testo-evidenziato-giallo">sport a 360°</a>, concentrandoci 
-                    sulla formazione dell'atleta attraverso il percorso " <a id="testo-evidenziato-giallo">corpo, movimento, prestazione</a></p>
-                        <img class="carousel-illustrazione" src="assets/img/sezione-informazioni/coaches-animate.svg" class="d-block w-100" alt="...">
-                        
+
+                        <p class="fs-4 px-5" id="testo-sezione">
+                            Il nostro <a id="testo-evidenziato-giallo">obiettivo</a> è promuovere lo <a id="testo-evidenziato-giallo">sport a 360°</a>, concentrandoci
+                    sulla formazione dell'atleta attraverso il percorso <a id="testo-evidenziato-giallo">corpo, movimento, prestazione</a></p>
+                        <img class="carousel-illustrazione" src="assets/img/sezione-informazioni/coaches-animate.svg" alt="Image #2">
+
                     </div>
 
                   </div>
 
                   <!-- Terza Slide -->
                   <div class="carousel-item">
-                    
+
                     <div class="centrato flex-column">
-                        
-                        <p id="testo-sezione" style="padding-inline: 300px;">
-                            Tra le colline di Cellatica, siamo <a id="testo-evidenziato-giallo">facilmente raggiungibili</a> 
+
+                        <p class="fs-4 px-5" id="testo-sezione">
+                            Tra le colline di Cellatica, siamo <a id="testo-evidenziato-giallo">facilmente raggiungibili</a>
                             da tutte le zone della provincia di Brescia</p>
-                        <img class="carousel-illustrazione" src="assets/img/sezione-informazioni/forest-animate.svg" class="d-block w-100" alt="...">
-                        
+                        <img class="carousel-illustrazione" src="assets/img/sezione-informazioni/forest-animate.svg" alt="Image #3">
+
                     </div>
 
                   </div>
 
                   <!-- Quarta Slide -->
                   <div class="carousel-item">
-                    
+
                     <div class="centrato flex-column">
-                        
-                        <p id="testo-sezione" style="padding-inline: 300px;">
-                            Partecipa ai nostri eventi,competizioni e iniziative, e scopri come <a id="testo-evidenziato-giallo">Stadion Arena Sport</a> può 
+
+                        <p class="fs-4 px-5" id="testo-sezione">
+                            Partecipa ai nostri eventi, competizioni e iniziative, e scopri come <a id="testo-evidenziato-giallo">Stadion Arena Sport</a> può
                             appassionarti e coinvolgerti nello sport.</p>
-                        <img class="carousel-illustrazione" style="width: 600px;" src="assets/img/sezione-informazioni/winners-animate.svg" class="d-block w-100" alt="...">
-                        
+                        <img class="carousel-illustrazione" src="assets/img/sezione-informazioni/winners-animate.svg" alt="Image #4">
+
                     </div>
 
                   </div>
@@ -471,67 +422,64 @@
         </div>
 
     </section> <!-- end of INFORMAZIONI ===================== -->
-    
+
     <!-- SERVIZI
     ================================================== -->
     <section id="s-servizi">
 
-        <!-- # Container Principale 
+        <!-- Container Principale
             contiene tutti i Box-->
-            <div id="main-container" style="background-color: whitesmoke; flex-direction: column; justify-content: start; height: 1150px;">
+        <div class="py-4" style="background-color: whitesmoke;">
 
-            <!-- Titolo sezione -->
-            <div style="width: 100%; height: 45px; margin-top: 100px;" class="centrato"><span id="titolo-sezione" data-aos="fade-up">SERVIZI</span></div>
-
-            <!-- # Box titolo con icona -->
-            <div class="centrato flex-wrap">
-                <h3 id="sottotitolo-sezione" data-aos="fade-left">I NOSTRI SERVIZI</h3>
+            <!-- Titolo e sottotitolo sezione -->
+            <div class="text-center py-3 py-lg-5" style="overflow-x: hidden;">
+                <span class="h4 titolo-sezione" data-aos="fade-up">SERVIZI</span>
+                <h3 class="display-2 sottotitolo-sezione" data-aos="fade-left">I NOSTRI SERVIZI</h3>
             </div>
 
 
             <!-- Servizi Box Style -->
             <style>
-               
+
             .box-servizio{
-                width:500px; font-size: 16px; box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
-                background-color: #ffffff; padding: 20px; margin: 15px; cursor: pointer;
+                max-width: 500px; max-height: 250px; box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+                background-color: #ffffff; padding: 20px; cursor: pointer;
                 border-radius: 28px; transition: all ease 0.3s;
             }
             .box-servizio:hover{transform: translateY(-10px); transition: all ease 0.3s;}
 
-            #titolo-servizio {
-                color: var(--dark); font-size: 28px; font-family: "montserrat-regular"; font-weight: bolder; text-transform: uppercase; text-align: center; padding-right: 20px;
+            .titolo-servizio {
+                color: var(--dark); font-family: "montserrat-regular"; font-weight: bolder; text-transform: uppercase; text-align: center; padding-right: 20px;
             }
-     
-            
+
+
             </style>
 
-            <!-- # Box Servizi -->
-            <div class="centrato flex-wrap" style="margin-top: 60px;">
-                
-                <div data-aos="fade-up" class="centrato flex-wrap">
-                <!-- Servizio 1 -->
-                <div class="box-servizio">
-                        <!-- Titolo e Icona -->
-                        <div class="centrato flex-row justify-content-start gap-5">
-                            <div style="width: 80px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(234, 241, 21, 0.663);">
-                                <lord-icon
-                                src="https://cdn.lordicon.com/ndgqmiem.json"
-                                trigger="hover"
-                                colors="primary:#0b0b0b,secondary:#0b0b0b"
-                                style="width:80px;height:80px">
-                            </lord-icon>
-                            </div>
-                            <h3 style="padding-top: 8px;" id="titolo-servizio">VASCA IN SABBIA</h3>
-                        </div>
+            <!-- Box Servizi -->
+            <div class="d-flex flex-wrap justify-content-center my-lg-4 px-3 gap-4">
 
-                        <p id="testo-sezione-card" style="margin-top: 10px; text-align:center;" >
-                            Vuoi giocare? 2500 metri quadri di sabbia fine, 8 campi per qualsiasi sport su sabbia!
-                        </p>
+                <!-- Servizio 1 -->
+                <div class="box-servizio" data-aos="fade-up">
+                    <!-- Titolo e Icona -->
+                    <div class="centrato flex-row justify-content-start gap-5">
+                        <div style="width: 80px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(234, 241, 21, 0.663);">
+                            <lord-icon
+                            src="https://cdn.lordicon.com/ndgqmiem.json"
+                            trigger="hover"
+                            colors="primary:#0b0b0b,secondary:#0b0b0b"
+                            style="width:80px;height:80px">
+                        </lord-icon>
+                        </div>
+                        <h3 style="padding-top: 8px;" class="h3 titolo-servizio">VASCA IN SABBIA</h3>
+                    </div>
+
+                    <p class="fs-5" id="testo-sezione-card" style="margin-top: 10px; text-align:center;" >
+                        Vuoi giocare? 2500 metri quadri di sabbia fine, 8 campi per qualsiasi sport su sabbia!
+                    </p>
                 </div>
 
                 <!-- Servizio 2 -->
-                <div class="box-servizio">
+                <div class="box-servizio" data-aos="fade-up">
                     <!-- Titolo e Icona -->
                     <div class="centrato flex-row justify-content-start" style="gap: 60px;">
                         <div style="width: 80px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(234, 241, 21, 0.663);">
@@ -542,17 +490,16 @@
                             style="width:80px;height:80px">
                         </lord-icon>
                         </div>
-                        <h3 style="padding-top: 8px;" id="titolo-servizio">AREA RISTORO</h3>
+                        <h3 style="padding-top: 8px;" class="h3 titolo-servizio">AREA RISTORO</h3>
                     </div>
 
-                    <p id="testo-sezione-card" style="margin-top: 10px; text-align:center;" >
+                    <p class="fs-5" id="testo-sezione-card" style="margin-top: 10px; text-align:center;" >
                         Hai fame? Un ampio spazio coperto con bar, ristorante, zona fitness e lounge!
                     </p>
                 </div>
-                </div>  
 
                 <!-- Servizio 3 -->
-                <div class="box-servizio">
+                <div class="box-servizio" data-aos="fade-up">
                     <!-- Titolo e Icona -->
                     <div class="centrato flex-row justify-content-start gap-5">
                         <div style="width: 80px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(234, 241, 21, 0.663);">
@@ -563,19 +510,18 @@
                             style="width:80px;height:80px">
                         </lord-icon>
                         </div>
-                        <h3 style="padding-top: 8px;" id="titolo-servizio">CAMPI COPERTI</h3>
+                        <h3 style="padding-top: 8px;" class="h3 titolo-servizio">CAMPI COPERTI</h3>
                     </div>
 
-                    <p id="testo-sezione-card" style="margin-top: 10px; text-align:center;" >
+                    <p class="fs-5" id="testo-sezione-card" style="margin-top: 10px; text-align:center;" >
                         Sabbia riscaldata, campi e aree polifunzionali, disponibili in qualsiasi periodo dell'anno!
                     </p>
                 </div>
 
                 <!-- Servizio 4 -->
-                <div class="box-servizio">
-
+                <div class="box-servizio" data-aos="fade-up">
                     <!-- Titolo e Icona -->
-                    <div class="centrato flex-row justify-content-start gap-2">
+                    <div class="centrato flex-row justify-content-start gap-3">
                         <div style="width: 80px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(234, 241, 21, 0.663);">
                             <lord-icon
                             src="https://cdn.lordicon.com/lupuorrc.json"
@@ -584,17 +530,16 @@
                             style="width:80px;height:80px">
                         </lord-icon>
                         </div>
-                        <h3 style="padding-top: 8px;" id="titolo-servizio">ORGANIZZA I TUOI EVENTI</h3>
+                        <h3 style="padding-top: 8px;" class="h3 titolo-servizio">ORGANIZZA I TUOI EVENTI</h3>
                     </div>
 
-                    <p id="testo-sezione-card" style="margin-top: 10px; text-align:center;" >
+                    <p class="fs-5" id="testo-sezione-card" style="margin-top: 10px; text-align:center;" >
                         Il luogo perfetto per festeggiare, struttura fornita e staff esperto a tua disposizione!
                     </p>
-                </div> 
+                </div>
 
                 <!-- Servizio 5 -->
-                <div class="box-servizio">
-
+                <div class="box-servizio" data-aos="fade-up">
                     <!-- Titolo e Icona -->
                     <div class="centrato flex-row justify-content-start gap-3">
                         <div style="width: 80px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(234, 241, 21, 0.663);">
@@ -605,17 +550,16 @@
                             style="width:80px;height:80px">
                         </lord-icon>
                         </div>
-                        <h3 style="padding-top: 8px;" id="titolo-servizio">SCUOLA DI PALLAVOLO</h3>
+                        <h3 style="padding-top: 8px;" class="h3 titolo-servizio">SCUOLA DI PALLAVOLO</h3>
                     </div>
 
-                    <p id="testo-sezione-card" style="margin-top: 10px; text-align:center;" >
+                    <p class="fs-5" id="testo-sezione-card" style="margin-top: 10px; text-align:center;" >
                         La porta d'ingresso alla pallavolo per giovani, con base motoria e tecnica solida!
                     </p>
                 </div>
 
                 <!-- Servizio 6 -->
-                <div class="box-servizio">
-
+                <div class="box-servizio" data-aos="fade-up">
                     <!-- Titolo e Icona -->
                     <div class="centrato flex-row justify-content-start">
                         <div style="width: 80px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(234, 241, 21, 0.663);">
@@ -626,18 +570,14 @@
                             style="width:80px;height:80px">
                         </lord-icon>
                         </div>
-                        <h3 style="padding-top: 8px; margin-left: 3rem;" id="titolo-servizio">CORSI E ATTIVITà</h3>
+                        <h3 style="padding-top: 8px; margin-left: 3rem;" class="h3 titolo-servizio">CORSI E ATTIVITà</h3>
                     </div>
 
-                    <p id="testo-sezione-card" style="margin-top: 10px; text-align:center;" >
+                    <p class="fs-5" id="testo-sezione-card" style="margin-top: 10px; text-align:center;" >
                         Corsi e Attività Motorie tutto l'anno per tutte le età, seguiti dal nostro staff esperto!
                     </p>
                 </div>
-                
             </div>
-
-
-
         </div>
 
     </section> <!-- end of SERVIZI ===================== -->
@@ -646,203 +586,185 @@
     ================================================== -->
     <section id="s-contatti">
 
-        <!-- # Container Principale 
+        <!-- Container Principale
             contiene tutti i Box-->
-            <div id="main-container" style="background-color: var(--primario); flex-direction: column; justify-content: start; height:1500px">
+        <div class="py-4" style="background-color: var(--primario);">
 
-            <!-- Titolo sezione -->
-            <div style="width: 100%; height: 45px; margin-top: 100px;" class="centrato">
-                <span id="titolo-sezione-bianco" data-aos="fade-up">CONTATTI</span></div>
-
-            <!-- # Box titolo con icona -->
-            <div class="centrato flex-wrap">
-                <h3 id="sottotitolo-sezione-nero" data-aos="fade-left">COME PUOI TROVARCI</h3>
+            <!-- Titolo e sottotitolo sezione -->
+            <div class="text-center py-3 py-lg-5" style="overflow-x: hidden;">
+                <span class="h4 titolo-sezione-bianco" data-aos="fade-up">CONTATTI</span>
+                <h3 class="display-2 sottotitolo-sezione-nero" data-aos="fade-left">COME PUOI TROVARCI</h3>
             </div>
 
            <!-- Servizi Box Style -->
            <style>
-               
+
             .box-contatto{
-                width:400px; height: 205px; font-size: 16px; box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
-                background-color: var(--secondario); padding: 20px; margin: 15px; cursor: pointer;
-                border-radius: 28px; transition: all ease 0.3s; 
+                max-width: 730px; max-height: 700px; box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+                background-color: var(--secondario); padding: 10px; cursor: pointer;
+                border-radius: 28px; transition: all ease 0.3s;
             }
             .box-contatto:hover{transform: translateY(-10px); transition: all ease 0.3s;}
 
-            #info-contatto {
-                font-weight: bold; font-style: italic; font-size: 18px;
+            .info-contatto {
+                font-weight: bold; font-style: italic;
             }
 
-            #titolo-contatto {
-                color: var(--dark); font-size: 28px; font-family: "montserrat-regular"; font-weight: bolder; text-transform: uppercase; text-align: center; padding-right: 20px;
+            .nominazione-contatto {
+                font-family: "montserrat-regular"; font-weight: bolder; text-transform: uppercase; font-style: normal;
             }
 
-            #nominazione-contatto {
-                color: var(--dark); padding-block: 5px; font-size: 18px; font-family: "montserrat-regular"; font-weight: bolder; text-transform: uppercase; text-align: center; border-radius: 28px;font-style: normal;
-            }
-     
-            
             </style>
 
-            <!-- # Box Servizi -->
-            <div class="centrato flex-column" style="margin-top: 60px;">
-                
-                <div data-aos="fade-up" class="centrato flex-wrap w-100">
-                
-                    <!-- Numeri telefono -->
-                    <div class="box-contatto">
-                            <!-- Titolo e Icona -->
-                            <div class="centrato flex-row justify-content-start gap-5">
-                            
-                                <div class="centrato flex-row" style="width: 480px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(234, 241, 21, 0.663);">
-                                    <lord-icon
-                                    src="https://cdn.lordicon.com/ltxkhbfa.json"
-                                    trigger="hover"
-                                    colors="primary:#000000,secondary:#000000"
-                                    style="width:80px;height:80px">
-                                    </lord-icon>
-                                    
-                                </div>
-                                <!-- <h3 style="padding-top: 8px;" id="titolo-contatto">CHIAMACI</h3> -->
+            <!-- Box Servizi -->
+            <div class="d-flex flex-column flex-sm-row justify-content-center my-lg-4 px-3 gap-4">
 
-                            </div>
+                <!-- Numeri telefono -->
+                <div class="box-contatto" data-aos="fade-up">
+                    <!-- Titolo e Icona -->
+                    <div class="centrato">
 
-                            <p id="testo-sezione-card" style="margin-top: 10px; text-align:start;" >
-                                <div style="row-gap: 10px; display: flex; justify-content: start; flex-direction: column;">
-                                    <span id="info-contatto"><a id="nominazione-contatto">Segreteria</a> - 334 997 0261</span>
-                                    <span id="info-contatto"><a id="nominazione-contatto">Paolo Iervolino</a> - 333 203 9442</span></div>
-                            </p>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="box-contatto">
-                        <!-- Titolo e Icona -->
-                        <div class="centrato flex-row justify-content-start gap-5">
-                        
-                            <div class="centrato flex-row" style="width: 480px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(234, 241, 21, 0.663);">
-                                <lord-icon
-                                src="https://cdn.lordicon.com/tkgyrmwc.json"
-                                trigger="morph"
-                                colors="primary:#000000,secondary:#000000"
-                                style="width:80px;height:80px">
-                                </lord-icon>
-                                
-                            </div>
+                        <div class="centrato" style="width: 340px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(234, 241, 21, 0.663);">
+                            <lord-icon
+                            src="https://cdn.lordicon.com/ltxkhbfa.json"
+                            trigger="hover"
+                            colors="primary:#000000,secondary:#000000"
+                            style="width:80px;height:80px">
+                            </lord-icon>
 
                         </div>
 
-                        <p id="testo-sezione-card" style="margin-top: 10px; text-align:start;" >
-                            <div style="row-gap: 10px; display: flex; justify-content: start; flex-direction: column;">
-                                <span id="info-contatto" style="width: 100%; text-align: center;"><a id="nominazione-contatto">arenabeach@gmail.com</a></span>
-                                <span id="info-contatto" style="width: 100%; text-align: center;"><a id="nominazione-contatto">stadionvolley@gmail.com</a></span>
-                        </p>
                     </div>
 
+                    <p id="testo-sezione-card" style="margin-top: 10px;" >
+                        <div class="text-center" style="row-gap: 10px; display: flex; justify-content: start; flex-direction: column;">
+                            <span class="fs-6 info-contatto"><span class="fs-6 nominazione-contatto">Segreteria</span> - 334 997 0261</span>
+                            <span class="fs-6 info-contatto"><span class="fs-6 nominazione-contatto">Paolo Iervolino</span> - 333 203 9442</span>
+                        </div>
+                    </p>
                 </div>
 
-            </div>
+                <!-- Email -->
+                <div class="box-contatto" data-aos="fade-up">
+                    <!-- Titolo e Icona -->
+                    <div class="centrato">
 
-            <!-- Mappa -->
-            <div class="box-contatto" style="width: 820px; height: 530px;">
-                <!-- Titolo e Icona -->
-                <div class="centrato flex-row justify-content-start gap-5">
-                   
-                    <div class="centrato flex-row" style="width: 780px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(234, 241, 21, 0.663);">
-                        <lord-icon
-                        src="https://cdn.lordicon.com/xtkehzkm.json"
-                        trigger="morph"
-                        colors="primary:#000000,secondary:#000000"
-                        style="width:80px;height:80px">
-                         </lord-icon>
-                        
-                    </div>
-
-                </div>
-
-                <!-- Mappa Style -->
-                <style>
-                    .google-map {
-                        padding-bottom: 50%;
-                        position: relative;
-                    }
-
-                    .google-map iframe {
-                        height: 100%;
-                        width: 100%;
-                        left: 0;
-                        top: 0;
-                        position: absolute;
-                        border-radius: 28px;
-                        margin-top: 20px;
-                    }
-                </style>
-
-                <div class="google-map" data-aos="fade-up">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2792.464924219066!2d10.171321876378276!3d45.58119777107616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478177372709b707%3A0x5c5d18262ed0c7cf!2sArena%20Beach!5e0!3m2!1sit!2sit!4v1685894680452!5m2!1sit!2sit" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-            </div>
-
-            <!-- # Box Servizi 2 -->
-            <div class="centrato flex-column">
-                
-                <div data-aos="fade-up" class="centrato flex-wrap w-100">
-                
-                    <!-- Email -->
-                    <div class="box-contatto">
-                            <!-- Titolo e Icona -->
-                            <div class="centrato flex-row justify-content-start gap-5">
-                            
-                                <div class="centrato flex-row" style="width: 480px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(234, 241, 21, 0.663);">
-                                    <lord-icon
-                                    src="https://cdn.lordicon.com/tkgyrmwc.json"
-                                    trigger="hover"
-                                    colors="primary:#000000,secondary:#000000"
-                                    style="width:80px;height:80px">
-                                    </lord-icon>
-                                    
-                                </div>
-                                <!-- <h3 style="padding-top: 8px;" id="titolo-contatto">CHIAMACI</h3> -->
-
-                            </div>
-
-                            <p id="testo-sezione-card" style="margin-top: 10px; text-align:start;" >
-                                <div style="row-gap: 10px; display: flex; justify-content: start; flex-direction: column;">
-                                    <span id="info-contatto" style="width: 100%; text-align: center;"><a id="nominazione-contatto">arenabeach@gmail.com</a></span>
-                                <span id="info-contatto" style="width: 100%; text-align: center;"><a id="nominazione-contatto">stadionvolley@gmail.com</a></span></div>
-                            </p>
-                    </div>
-
-                    <!-- Orari -->
-                    <div class="box-contatto">
-                        <!-- Titolo e Icona -->
-                        <div class="centrato flex-row justify-content-start gap-5">
-                        
-                            <div class="centrato flex-row" style="width: 480px; height: 80px; border-radius: 28px; background-color: var(--primario);box-shadow: 2px 2px 30px rgba(234, 241, 21, 0.663);">
-                                <lord-icon
-                                src="https://cdn.lordicon.com/fbmlrfcd.json"
-                                trigger="hover"
-                                colors="primary:#000000,secondary:#000000"
-                                style="width:80px;height:80px">
-                                </lord-icon>
-                                
-                            </div>
-                            <!-- <h3 style="padding-top: 8px;" id="titolo-contatto">CHIAMACI</h3> -->
+                        <div class="centrato" style="width: 340px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(234, 241, 21, 0.663);">
+                            <lord-icon
+                            src="https://cdn.lordicon.com/tkgyrmwc.json"
+                            trigger="morph"
+                            colors="primary:#000000,secondary:#000000"
+                            style="width:80px;height:80px">
+                            </lord-icon>
 
                         </div>
 
-                        <p id="testo-sezione-card" style="margin-top: 10px; text-align:start;" >
-                            <div style="row-gap: 10px; display: flex; justify-content: start; flex-direction: column;">
-                                <span id="info-contatto" style="width: 100%; text-align: center;"><a id="nominazione-contatto">Hai qualche domanda?</a></span>
-                                <span id="info-contatto" style="width: 100%; text-align: center;"><a style="color: var(--primario);" href="mainPage.html#s-faq" id="nominazione-contatto">controlla le F.A.Q</a></span></div>
-                        </p>
                     </div>
 
-                </div>    
-                
-
+                    <p id="testo-sezione-card" style="margin-top: 10px;" >
+                        <div class="text-center" style="row-gap: 10px; display: flex; justify-content: start; flex-direction: column;">
+                            <span class="fs-6 nominazione-contatto">arenabeach@gmail.com</span>
+                            <span class="fs-6 nominazione-contatto">stadionvolley@gmail.com</span>
+                        </div>
+                    </p>
+                </div>
             </div>
 
+            <div class="d-flex justify-content-center my-4 px-3">
+                <!-- Mappa -->
+                <div class="box-contatto w-100" data-aos="fade-up">
+                    <!-- Titolo e Icona -->
+                    <div class="centrato">
+
+                        <div class="centrato w-100" style="border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(234, 241, 21, 0.663);">
+                            <lord-icon
+                            src="https://cdn.lordicon.com/xtkehzkm.json"
+                            trigger="morph"
+                            colors="primary:#000000,secondary:#000000"
+                            style="width:80px;height:80px">
+                             </lord-icon>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Mappa Style -->
+                    <style>
+                        .google-map {
+                            padding-bottom: 50%;
+                            position: relative;
+                        }
+
+                        .google-map iframe {
+                            height: 100%;
+                            width: 100%;
+                            left: 0;
+                            top: 0;
+                            position: absolute;
+                            border-radius: 28px;
+                            padding-top: 10px;
+                        }
+                    </style>
+
+                    <div class="google-map" data-aos="fade-up">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2792.464924219066!2d10.171321876378276!3d45.58119777107616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478177372709b707%3A0x5c5d18262ed0c7cf!2sArena%20Beach!5e0!3m2!1sit!2sit!4v1685894680452!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Box Servizi 2 -->
+            <div class="d-flex flex-column flex-sm-row justify-content-center my-lg-4 px-3 gap-4">
+                <!-- Email -->
+                <div class="box-contatto" data-aos="fade-up">
+                    <!-- Titolo e Icona -->
+                    <div class="centrato">
+
+                        <div class="centrato" style="width: 340px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(234, 241, 21, 0.663);">
+                            <lord-icon
+                            src="https://cdn.lordicon.com/tkgyrmwc.json"
+                            trigger="hover"
+                            colors="primary:#000000,secondary:#000000"
+                            style="width:80px;height:80px">
+                            </lord-icon>
+
+                        </div>
+
+                    </div>
+
+                    <p id="testo-sezione-card" style="margin-top: 10px;" >
+                        <div class="text-center" style="row-gap: 10px; display: flex; justify-content: start; flex-direction: column;">
+                            <span class="fs-6 nominazione-contatto">arenabeach@gmail.com</span>
+                            <span class="fs-6 nominazione-contatto">stadionvolley@gmail.com</span>
+                        </div>
+                    </p>
+                </div>
+
+                <!-- Orari -->
+                <div class="box-contatto" data-aos="fade-up">
+                    <!-- Titolo e Icona -->
+                    <div class="centrato">
+
+                        <div class="centrato" style="width: 340px; height: 80px; border-radius: 28px; background-color: var(--primario);box-shadow: 2px 2px 30px rgba(234, 241, 21, 0.663);">
+                            <lord-icon
+                            src="https://cdn.lordicon.com/fbmlrfcd.json"
+                            trigger="hover"
+                            colors="primary:#000000,secondary:#000000"
+                            style="width:80px;height:80px">
+                            </lord-icon>
+
+                        </div>
+
+                    </div>
+
+                    <p id="testo-sezione-card" style="margin-top: 10px;" >
+                        <div class="text-center" style="row-gap: 10px; display: flex; justify-content: start; flex-direction: column;">
+                            <span class="fs-6 nominazione-contatto">Hai qualche domanda?</span>
+                            <span class="fs-6 nominazione-contatto"><a style="color: var(--primario);" href="mainPage.html#s-faq">controlla le FAQ</a></span>
+                        </div>
+                    </p>
+                </div>
+            </div>
         </div>
 
     </section> <!-- end of CONTATTI ===================== -->
@@ -851,36 +773,36 @@
     ================================================== -->
     <footer style="position: fixed-bottom;">
 
-        <div id="main-container" style="background-color: #181717; flex-direction: row; justify-content: center; height: 450px; gap: 250px;">
+        <div class="d-flex flex-column flex-sm-row justify-content-evenly px-4 py-2 py-lg-4" style="background-color: #181717;">
 
 
             <!-- Footer Style -->
             <style>
-                #titolo-footer {
-                    font-size: 22px; color: var(--secondario); font-weight: bold;
+                .titolo-footer {
+                    color: var(--secondario); font-weight: bold;
                 }
                 .link-footer {
                     color: var(--secondario); text-decoration: none;transition: all .2s ease-in-out;
                 }
                 .link-footer:hover {
-                    padding-left: 20px;transition: all .2s ease-in-out; color: var(--secondario); font-weight: bold;
+                    transition: all .2s ease-in-out; color: var(--secondario); font-weight: bold;
                 }
                 .footer-bottom {
-                    height: 50px; background-color: var(--dark); color: var(--secondario);
+                    background-color: var(--dark); color: var(--secondario);
                 }
             </style>
 
 
-            <div class="d-flex align-item-center justify-content-center flex-column gap-3">
-                <img src="assets/img/logo/stadionArenaLogo.PNG" style="width: 350px; height: auto;" alt="">
-                <img src="assets/img/sponsor/logoRegesta.png" style="width: 350px; height: auto;" alt="">
-                <p style="font-size: 15px; width: 350px; color: var(--dark-light);" class="mt-3" >Stadion Arena è una realtà innovativa che invoglia e coinvolge persone di tutte le età all'insegna del divertimento e dello sport.</p>
+            <div class="d-flex flex-column justify-content-center gap-3">
+                <img src="assets/img/logo/stadionArenaLogo.PNG" style="max-width: 350px; height: auto;" alt="">
+                <img src="assets/img/sponsor/logoRegesta.png" style="max-width: 350px; height: auto;" alt="">
+                <p style="width: 350px; color: var(--dark-light);" class="small mt-3" >Stadion Arena è una realtà innovativa che invoglia e coinvolge persone di tutte le età all'insegna del divertimento e dello sport.</p>
             </div>
 
-            <div class="d-flex justify-content-start align-items-start flex-column">
+            <div class="d-flex flex-column justify-content-center align-items-center">
 
-                    <h3 id="titolo-footer">Link Utili</h4>
-                    <ul style="font-size: 20px; line-height: 3rem; font-family: 'montserrat-regular'; color: var(--secondario);">
+                    <h3 class="h3 titolo-footer">Link Utili</h4>
+                    <ul class="fs-6" style="line-height: 3rem; font-family: 'montserrat-regular'; color: var(--secondario);">
                         <li><a class="link-footer"  href="#s-home" title="home">Home</a></li>
                         <li><a class="link-footer"  href="#s-contatti" title="contact">Contatti</a></li>
                         <li><a class="link-footer"  href="mainPage.html#s-faq" title="faq">F.A.Q</a></li>
@@ -891,32 +813,18 @@
             </div>
 
         </div>
-        <div class="footer-bottom centrato">
-
-            <div class="col-twelve">
-                <div class="copyright">
-                    <span>© Copyright studenti dell'Istituto Istruzione Superiore Carlo Beretta, Gardone Val Trompia (BS)</span> 
-                    <a href="https://storyset.com/people" style="color: var(--dark-light);">People illustrations by Storyset</a>
-                </div>
-
-                <div class="go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
-                </div>
+        <div class="footer-bottom">
+            <div class="d-flex flex-column justify-content-around small text-center p-2">
+                <span>&copy; Copyright studenti dell'Istituto Istruzione Superiore Carlo Beretta Gardone Val Trompia (BS)</span>
+                <a href="https://storyset.com/people" style="color: var(--dark-light);">People illustrations by Storyset</a>
             </div>
-
         </div> <!-- end footer-bottom -->
 
     </footer> <!-- end FOOTER -->
 
-    <!-- Visualizzazione mobile del video -->
-    <script src="js/object-fit-videos.js"></script>
-    <script src="js/app.js"></script>
-
     <script>
         AOS.init();
     </script>
-
-<!-- <a href="https://storyset.com/people">People illustrations by Storyset</a> -->
 
 </body>
 </html>
