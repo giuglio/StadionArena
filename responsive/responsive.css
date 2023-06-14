@@ -1,0 +1,86 @@
+
+/* Mobile devices */
+@media only screen and (max-width: 480px) {
+    /* Stili specifici per i dispositivi mobili */
+
+    .google-map {
+      width: 100% !important;
+      height: 80% !important;
+    }
+    .box-mappa {
+      width: 40% !important;
+    }
+    .box-contatto {
+      width: 80% !important;
+    }
+
+    .accordion-item {width: 115%;}
+
+    #sponsor-immagine {width: 15%;}
+
+  }
+  
+  /* iPads, Tablets */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Stili specifici per iPads e tablet */
+
+    .google-map {
+      width: 100% !important;
+      height: 80% !important;
+    }
+    .box-mappa{
+      width: 65% !important;
+    }
+    .box-contatto {
+      width: 65% !important;
+    }
+
+    .accordion-item {width: 115%;}
+
+    #sponsor-immagine {width: 10%;}
+
+  }
+
+  /* iPads, Tablets */
+  @media only screen and (min-width: 768px) and (max-width: 887px) {
+    /* Stili specifici per iPads e tablet */
+
+    .google-map {
+      width: 100% !important;
+      height: 80% !important;
+    }
+    .box-mappa{
+      width: 70% !important;
+    }
+    .box-contatto {
+      width: 70% !important;
+    }
+
+    .accordion-item {width: 115%;}
+
+  }
+  
+  /* Small screens, laptops */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Stili specifici per schermi piccoli e laptop */
+    
+    #sponsor-immagine {width: 10%;}
+
+  }
+  
+  /* Desktops, large screens */
+  @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    /* Stili specifici per desktop e schermi grandi */
+
+    #sponsor-immagine {width: 8%;}
+
+  }
+  
+  /* Extra large screens, TV */
+  @media only screen and (min-width: 1201px) {
+    /* Stili specifici per schermi extra large e TV */
+    
+    #sponsor-immagine {width: 8%;}
+
+  }
+  
