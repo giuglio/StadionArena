@@ -28,6 +28,8 @@
 
     <!-- CSS
     ================================================== -->
+    <link rel="stylesheet" href="assets/css/mainstyle.css">
+    <link rel="stylesheet" href="assets/responsive/responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
@@ -78,45 +80,11 @@
     /* puntatore per divisore attivo */
     .puntatore {border: 2px solid green;}
 
-    /* shortcut */
-    .centrato {display: flex; align-items: center; justify-content: center;}
-
-
-</style>
-
-<!-- CSS generale delle sezioni -->
-<style>
-    #titolo-sezione {color: var(--dark); font-size: 22px; font-family: "montserrat-regular"; font-weight: bolder; letter-spacing: 1.8px;}
-    #titolo-sezione-bianco {color: var(--secondario); font-size: 22px; font-family: "montserrat-regular"; font-weight: bolder; letter-spacing: 1.8px;}
-
-    #sottotitolo-sezione {color: var(--primario); font-size: 72px; font-family: 'montserrat-regular', sans-serif; font-weight: bolder;}
-    #sottotitolo-sezione-nero {color: var(--dark); font-size: 72px; font-family: 'montserrat-regular', sans-serif; font-weight: bolder;}
-    #sottotitolo-sezione-bianco {color: var(--secondario); font-size: 72px; font-family: 'montserrat-regular', sans-serif; font-weight: bolder;}
-
-    #testo-sezione {
-        color: var(--dark); font-size: 25px; font-family: 'montserrat-regular'; text-align: center;
-    }
-    #testo-sezione-card {
-        color: var(--dark); font-size: 20px; font-family: 'montserrat-regular'; text-align: start;
-    }
-
-    #testo-evidenziato-bianco {color: var(--secondario); font-weight: bolder;}
-    #testo-evidenziato-giallo {color: var(--primario); font-weight: bolder;}
-
-    #main-container {
-        display: flex; justify-content: center; align-items: center;
-        width: 100%; height: 800px;
-    }
-
-    #s-home {
-        position: relative;
-    }
 </style>
 
 <body>
 
     <!-- INIZIO DELLE SEZIONI DELLA PAGINA -->
-
     
     <!-- HEADER
     ================================================== -->
@@ -131,14 +99,7 @@
               
                 <!-- Style del button per il menu -->
                 <style>
-                    #box-menu {background-color: transparent;border-radius: 20px;transition: all .3s ease-in-out; padding: 3px;}
-                    #box-menu:hover {transform: translateY(-5px); transition: all ease .3s;}
-                    #box-menu:active, #box-menu:focus:not()  {border: none !important;transition: all .3s ease-in-out;}
-                    .button-toggler {background-color: transparent; border: none; transition: all .3s ease-in-out;}
                     .box-menu-scrolled {background-color: var(--primario) !important; transition: all .3s ease-in-out; box-shadow: 2px 2px 30px rgba(226, 141, 14, 0.825);}
-
-                    #header-titolo {font-size: 12px; color: var(--primario); letter-spacing: .3rem; text-transform: uppercase;font-family: "montserrat-medium", sans-serif;}
-                    .header-titolo-scrolled {color: var(--secondario) !important;}
                 </style>
                 <!-- Script per lo scroll ed il cambio di colore per il button del menu -->
                 <script>
@@ -167,22 +128,12 @@
                     </button>
                 </div>                
 
-                <!-- Style Offcanvas -->
-                <style>
-                    #offcanvasNavbar { background-color: var(--dark); width: 280px;}
-                    #title-offcanvas {
-                        font-family: "montserrat-semibold", sans-serif; color: var(--primario);
-                        font-size: 10px; line-height: 1.5; text-transform: uppercase;
-                        letter-spacing: .25rem; margin-top: 0.5rem; padding-left: 1.2rem;
-                    }
-                </style>
-
                 <!-- Offcanvas Navbar -->
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header centrato justify-content-around mt-3 gap-3">
 
                         <!-- offcanvas title -->
-                        <h5 id="title-offcanvas" data-aos="fade-left">MENU NAVIGAZIONE</h5>
+                        <h5 id="title-offcanvas" data-aos="fade-right">MENU NAVIGAZIONE</h5>
 
                         <!-- toggle button -->
                         <lord-icon
@@ -196,41 +147,19 @@
                     </div>
 
                     <div class="header-nav__content">
-
-                        <!-- navbar list style -->
-                        <style>
-                            #offcanvas-link {
-                                color: var(--secondario);text-decoration: none;font-size: 18px; line-height: 1.8;font-family: "montserrat-regular", sans-serif;
-                                transition: all .1s ease-in-out;
-                            }
-                            .header-nav__list {
-                                list-style: none;
-                                padding-left: 2.2rem;
-                                margin-top: 25px;
-                            }
-                            .header-nav__list li {
-                                margin-block: 15px;
-                            }
-                            .header-nav__list li:hover {
-                                list-style: square;
-                            }
-                            .header-nav__list li:hover a {
-                                padding-left: 15px;
-                                transition: all .1s ease-in-out;
-                            }
-                        </style>
                         
                         <ul class="header-nav__list">
                             <li><a id="offcanvas-link"  href="#s-home" title="home">Home</a></li>
                             <li><a id="offcanvas-link"  href="#s-informazioni" title="about">Informazioni</a></li>
-                            <li><a id="offcanvas-link"  href="#s-servizi" title="services">Servizi</a></li>
+                            <li><a id="offcanvas-link"  href="#s-corsi" title="corsi">Corsi</a></li>
+                            <li><a id="offcanvas-link"  href="#s-annunci" title="news">Notizie</a></li>
+                            <li><a id="offcanvas-link"  href="#s-galleria" title="galleria">Galleria</a></li>
+                            <li><a id="offcanvas-link"  href="#s-complesso" title="complesso">Il Complesso</a></li>
+                            <li><a id="offcanvas-link"  href="#s-eventi" title="eventi">Eventi</a></li>
                             <li><a id="offcanvas-link"  href="#s-contatti" title="contact">Contatti</a></li>
-                            <li><a id="offcanvas-link"  href="#s-notizie" title="news">Notizie</a></li>
-                            <li><a id="offcanvas-link"  href="#s-recensioni" title="news">Recensioni</a></li>
-                            <li><a id="offcanvas-link"  href="#s-sponsor" title="news">Sponsor</a></li>
-                            <li><a id="offcanvas-link"  href="#s-faq" title="faq">F.A.Q</a></li>
-                            <li><a id="offcanvas-link" style="color:#3a428b"  href="indexStadionVolley.html" title="faq">Stadion Volley</a></li>
-                            <li><a id="offcanvas-link" style="color:#f29206"  href="indexArenaBeach.html" title="faq">Arena Beach</a></li>
+                            <li><a id="offcanvas-link"  href="#s-footer" title="news">Sponsor</a></li>
+                            <li><a id="offcanvas-link" style="color:#eaf206"  href="index.html" title="faq">Torna alla Home</a></li>
+                            <li><a id="offcanvas-link" style="color:#3a428b"  href="stadionVolley.html" title="faq">Stadion Volley</a></li>
                         </ul>
             
                         <p style="margin-left: 2rem;">Segui Stadion Arena su tutti i canali social!</p>
@@ -272,7 +201,7 @@
             }
         </style>
 
-        <!-- Background Video e Filter style -->
+        <!-- Background e Filter style -->
         <style>
                     .shadow-overlay {
                         position: absolute;
@@ -302,32 +231,6 @@
         <div class="overlay"></div>
         <div class="shadow-overlay"></div>
 
-        <!-- Home style -->
-        <style>
-            #box-title_button {
-                display: flex; justify-content: center; align-items: center; flex-direction: column;
-                width: 80%; height: 80%; position: absolute;
-            }
-            .home-titolo {
-                font-size: 200px; font-family: 'alien_aiitalic'; color: var(--secondario);
-            }
-            .home__btn{
-                font-family: "montserrat-medium", sans-serif; font-size: 14px;letter-spacing: 2px;text-transform: uppercase; text-decoration: none; text-align: center;
-                transition: all .5s ease 0s;
-                width: 280px; padding: 5px;
-                color: white; 
-                border: 2px solid white; border-width: 2px;border-radius: 28px; background-color: transparent;
-            }
-
-            .home__btn:hover {
-                color: white;
-                transition: all .5s ease 0s;
-                background-color: var(--primario);
-                width: 300px;
-                border-color: var(--primario);
-            }
-        </style>
-
         <!-- # Container Principale 
             contiene tutti i Box-->
         <div id="main-container">
@@ -340,11 +243,11 @@
                 <img id="logo" style="width: 160px; height: auto;" src="assets/img/logo/stadionArenaLogo.PNG" alt="Homepage">
 
                 <!-- sub-box titolo -->
-                <h1 class="home-titolo" data-aos="fade-left">ARENA</h1>
+                <h1 style="margin-top: 2%;" class="home-titolo" data-aos="fade-right">ARENA</h1>
                 <h1 style="color: var(--primario);" class="home-titolo" data-aos="fade-right">BEACH</h1>
 
                 <!-- sub-box buttons -->
-                <div class="centrato gap-5 mt-5" data-aos="fade-up">
+                <div class="centrato gap-5 mt-5 flex-wrap" data-aos="fade-up">
                         <!-- stadion volley button -->
                         <a id="btn__stadionVolley" href="index.html" class="home__btn">
                             Torna alla Home
@@ -365,33 +268,21 @@
     ================================================== -->
     <section id="s-informazioni">
 
-        <!-- Informazioni style -->
-        <style>
-
-        </style>
-
          <!-- # Container Principale 
             contiene tutti i Box-->
-        <div id="main-container" style="background-color: whitesmoke; flex-direction: column; justify-content: start; height: 1150px;">
+            <div id="main-container" style="background-color: whitesmoke; flex-direction: column; justify-content: start; height: auto; padding-bottom: 50px;">
 
             <!-- Titolo sezione -->
             <div style="width: 100%; height: 45px; margin-top: 100px;" class="centrato"><span id="titolo-sezione" data-aos="fade-up">INFORMAZIONI</span></div>
 
             <!-- # Box titolo con icona -->
             <div class="centrato flex-wrap">
-                <h3 id="sottotitolo-sezione" data-aos="fade-left">L'ARENA BEACH</h3>
+                <h3 id="sottotitolo-sezione" data-aos="fade-right">L'ARENA BEACH</h3>
             </div>
 
-            <!-- Carousel Style -->
-            <style>
-                .carousel-illustrazione {
-                    width: 800px; height: auto;
-                }
-            </style>
-
             <!-- Carousel con informazioni -->
-            <div id="carousel-informazioni" class="carousel slide" style="margin-top: 4rem;" data-bs-ride="true">
-                <div class="carousel-indicators">
+            <div id="carousel-informazioni" class="carousel slide" style="margin-top: 4rem;" data-interval="false" data-touch="true">
+                <div class="carousel-indicators" id="carousel-indicators-info">
                   <button type="button" data-bs-target="#carousel-informazioni" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carousel-informazioni" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carousel-informazioni" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -406,8 +297,10 @@
                         <p id="testo-sezione" style="padding-inline: 300px;">
                             Il progetto Arena Beach nasce agli inizi degli anni 90 da un’intuizione <a id="testo-evidenziato-giallo">Paolo Iervolino</a> 
                         che intravede la possibilità di realizzare una <a id="testo-evidenziato-giallo">“spiaggia”</a> in città per tutti gli atleti che amano gli sport sulla sabbia. <a id="testo-evidenziato-giallo">pallavolo</a>. </p>
-                        <img style="width: 990px;" class="carousel-illustrazione" src="assets/img/ArenaBeach/sezioneInformazioni/beach-volleyball-animate.svg" class="d-block w-100" alt="...">
-                        
+                        <div class="centrato" style="width: 100%; height: 100%;">
+                            <img class="carousel-illustrazione" src="assets/img/ArenaBeach/sezioneInformazioni/beach-volleyball-animate.svg" class="d-block w-100" alt="...">
+                        </div>
+
                     </div>
 
                   </div>
@@ -420,8 +313,10 @@
                         <p id="testo-sezione" style="padding-inline: 300px;">
                             Arena beach è un complesso sportivo adibito a tutti gli sport su sabbia, dal beach volley ai racchettoni, che si estende su una superficie di <a id="testo-evidenziato-giallo">8000mq</a> tra le colline di Cellatica,
                             siamo <a id="testo-evidenziato-giallo">facilmente raggiungibili</a> da tutte le zone della provincia di Brescia. </p>
-                        <img class="carousel-illustrazione" src="assets/img/ArenaBeach/sezioneInformazioni/tennis-animate.svg" class="d-block w-100" alt="...">
-                        
+                            <div class="centrato" style="width: 100%; height: 100%;">
+                                <img class="carousel-illustrazione" src="assets/img/ArenaBeach/sezioneInformazioni/tennis-animate.svg" class="d-block w-100" alt="...">
+                            </div>
+
                     </div>
 
                   </div>
@@ -434,8 +329,10 @@
                         <p id="testo-sezione" style="padding-inline: 300px;">
                             Arena Beach mette a disposizione campi perfettamente attrezzati per la pratica 
                         di <a id="testo-evidenziato-giallo">beach volley</a>, <a id="testo-evidenziato-giallo">beach soccer</a>, <a id="testo-evidenziato-giallo">beach tennis</a> e <a id="testo-evidenziato-giallo">beach rugby</a>.</p>
-                        <img class="carousel-illustrazione" src="assets/img/ArenaBeach/sezioneInformazioni/junior-soccer-animate.svg" class="d-block w-100" alt="...">
-                        
+                        <div class="centrato" style="width: 100%; height: 100%;">
+                            <img class="carousel-illustrazione" src="assets/img/ArenaBeach/sezioneInformazioni/junior-soccer-animate.svg" class="d-block w-100" alt="...">
+                        </div>
+
                     </div>
 
                   </div>
@@ -451,6 +348,67 @@
                 </button>
               </div>
 
+              <!-- Animazione Statistiche -->
+              <script>
+                /* Stat Counter
+                * ------------------------------------------------------ */
+                var clStatCount = function() {
+                    
+                    var statSection = $(".about-stats"),
+                        stats = $(".stats__count");
+
+                    statSection.waypoint({
+
+                        handler: function(direction) {
+
+                            if (direction === "down") {
+
+                                stats.each(function () {
+                                    var $this = $(this);
+
+                                    $({ Counter: 0 }).animate({ Counter: $this.text() }, {
+                                        duration: 4000,
+                                        easing: 'swing',
+                                        step: function (curValue) {
+                                            $this.text(Math.ceil(curValue));
+                                        }
+                                    });
+                                });
+
+                            } 
+
+                            // trigger once only
+                            this.destroy();
+
+                        },
+
+                        offset: "90%"
+
+                    });
+                };
+              </script>
+
+              <!-- Statistiche -->
+            <div class="about-stats stats centrato align-items-start flex-wrap gap-5 mt-5" data-aos="fade-up">
+                    
+                <div style="width: auto; padding-inline: 20px;">
+                    <div class="stats__count">535</div>
+                    <h5>Ragazze e Ragazzi che <br> hanno partecipato alla <br>Scuola di Pallavolo</h5>
+                </div>
+                <div style="width: auto; padding-inline: 20px">
+                    <div class="stats__count">1120</div>
+                    <h5>Atleti che hanno <br> 
+                        partecipato ad eventi <br>
+                        sportivi organizzati</h5>
+                </div>
+                <div style="width: auto; padding-inline: 20px">
+                    <div class="stats__count">122</div>
+                    <h5>Società Sportive affiliate
+                        <br>CONI - CSI - UISP</h5>
+                </div>                
+
+            </div>
+
 
         </div>
 
@@ -458,7 +416,7 @@
 
     <!-- CORSI
     ================================================== -->
-    <section id="s-corsi">
+    <section id="s-corsi" style="height: auto;">
 
         <!-- Informazioni style -->
         <style>
@@ -467,46 +425,29 @@
 
          <!-- # Container Principale 
             contiene tutti i Box-->
-        <div id="main-container" style="background-color: whitesmoke; flex-direction: column; justify-content: start; height: 950px;">
+        <div id="main-container" style="background-color: whitesmoke; flex-direction: column; justify-content: start; height: 100%;">
 
             <!-- Titolo sezione -->
-            <div style="width: 100%; height: 45px; margin-top: 100px;" class="centrato"><span id="titolo-sezione" data-aos="fade-up">IL COMPLESSO</span></div>
+            <div style="width: 100%; height: 45px; margin-top: 100px;" class="centrato"><span id="titolo-sezione" data-aos="fade-up">I NOSTRI CORSI</span></div>
 
             <!-- # Box titolo con icona -->
             <div class="centrato flex-wrap">
-                <h3 id="sottotitolo-sezione" data-aos="fade-left">I NOSTRI CORSI</h3>
+                <h3 id="sottotitolo-sezione" data-aos="fade-right">I NOSTRI CORSI</h3>
             </div>
             
             <!-- box-corsi -->
             <style>
-                .box-corso {
-                    color: var(--dark); font-family: 'montserrat-regular', sans-serif;
-                    background-color: transparent;
-                }
-                .box-corso:active {
-                    color: var(--dark); font-family: 'montserrat-regular', sans-serif;
-                }
                 .rounded {
                     border-radius: 28px !important;
                 }
-                .box-orari {
-                    background-color: var(--secondario);
-                    font-family: 'montserrat-regular', sans-serif; font-size: 18px; color: var(--dark);
-                }
                 .box-orari-giorno {
-                    font-family: 'montserrat-regular', sans-serif; font-size: 25px; color: var(--secondario);
+                    font-family: 'montserrat-regular', sans-serif; font-size: min(max(25px), 4.5vw); color: var(--secondario);
                     background-color: var(--primario); box-shadow: 2px 2px 30px rgba(246, 137, 35, 0.689);
                     border-radius: 28px; padding: 20px;
                 }
-                .box-orari-orario {
-                    margin-top: 28px; font-family: 'montserrat-regular', sans-serif; font-size: 23px; color: var(--dark);
-                }
-                .testo-categoria, .testo-categoria:active, .testo-categoria:hover {
-                    color: var(--primario);
-                }
-                .box-orari-info {font-family: 'montserrat-regular', sans-serif; font-size: 25px; color: var(--dark);}
                 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
                 background-color: var(--primario) !important;
+                color: var(--secondario) !important;
                 box-shadow: 2px 2px 30px rgba(246, 137, 35, 0.689);
                 }
             </style>
@@ -528,7 +469,7 @@
                             <a class="nav-link rounded-pill testo-categoria" data-bs-toggle="pill" href="#tab-4">ADULTI</a>
                         </li>
                     </ul>
-                    <ul class="nav nav-pills d-inline-flex d-md-none flex-column justify-content-center bg-dark text-uppercase mb-5 p-3" style="border-radius: 5px;">
+                    <ul class="nav nav-pills d-inline-flex d-md-none flex-column justify-content-center bg-light text-uppercase mb-5 p-3" style="border-radius: 5px;">
                         <li class="box-corso">
                             <a class="nav-link testo-categoria active" data-bs-toggle="pill" href="#tab-1" style="border-radius: 5px;">BAMBINI 2012-2016</a>
                         </li>
@@ -654,254 +595,172 @@
 
     </section> <!-- end of CORSI ===================== -->
 
-    <!-- CONTATTI
+    <!-- ANNUNCI
     ================================================== -->
-    <section id="s-contatti" style="background-image: url(assets/img/ArenaBeach/CarouselBeach01.jpeg); background-position: center; background-repeat: no-repeat; background-size: cover; background-color: #f29406e3;">
+    <section id="s-annunci" style="height: 720px;">
 
-        <!-- # Container Principale 
+            <!-- # Container Principale 
             contiene tutti i Box-->
-            <div id="main-container" style="background-color: #f29406e8; flex-direction: column; justify-content: start; height:1500px">
+            <div id="main-container" style="background-color: transparent; flex-direction: column; justify-content: start; height: 100%;">
+    
+                <div id="carouselNotizie" style="height: 100%; width: 100%;" class="carousel slide" data-bs-ride="carousel" data-interval="false">
+                    <div class="carousel-inner" style="height: 100%; width: 100%;">
+                      
+                        <!-- Primo annuncio -->
+                        <div class="carousel-item active" style="height: 100%;">
+                        
+                            <!-- Contenuto della notizia -->
+                            <div id="aree-carousel-container" style="border-radius: 0px; background-image: url(assets/img/ArenaBeach/sezioneAnnunci/News01.jpg); height: 100%; width: 100%;">
+                                <!-- text container -->
+                                <div class="d-flex align-content-around justify-content-center flex-column w-100 h-100" style="backdrop-filter: brightness(40%);">
+                                    <h2 class="w-auto h-auto text-center" id="titolo-carousel-annunci">
+                                        Nuova Area Coperta</h2>
+                                    <h4 class="w-auto h-auto text-center" id="sottotitolo-carousel-annunci">
+                                        È stata inaugurata la nuova zona di Arena Beach fornita di campi al coperto, saranno aperti e potranno essere prenotati tutto l'anno! ...</h4>
+                                    <div class="centrato w-100 mt-5">
+                                        <a id="btn__stadionVolley" href="" class="home__btn">
+                                            Scopri di più
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
 
+                        <!-- Seconda annuncio -->
+                        <div class="carousel-item" style="height: 100%; width: 100%;">
+                        
+                            <!-- Contenuto della notizia -->
+                            <div id="aree-carousel-container" style="border-radius: 0px; background-image: url(assets/img/ArenaBeach/sezioneAnnunci/News02.jpg); height: 100%; width: 100%;">
+                                <!-- text container -->
+                                <div class="d-flex align-content-around justify-content-center flex-column w-100 h-100" style="backdrop-filter: brightness(40%);">
+                                    <h2 class="w-auto h-auto text-center" id="titolo-carousel-annunci">
+                                        Scopri tutti gli Sport</h2>
+                                    <h4 class="w-auto h-auto text-center" id="sottotitolo-carousel-annunci">
+                                        Scopri tutti gli sport che puoi praticare qua ad Arena Beach! (fidati, sono tanti) ...</h4>
+                                    <div class="centrato w-100 mt-5">
+                                        <a id="btn__stadionVolley" href="" class="home__btn">
+                                            Scopri di più
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+
+                        <!-- Terzo annuncio -->
+                        <div class="carousel-item" style="height: 100%; width: 100%;">
+                        
+                            <!-- Contenuto della notizia -->
+                            <div id="aree-carousel-container" style="border-radius: 0px; background-image: url(assets/img/ArenaBeach/sezioneAnnunci/News03.jpg); height: 100%; width: 100%;">
+                                <!-- text container -->
+                                <div class="d-flex align-content-around justify-content-center flex-column w-100 h-100" style="backdrop-filter: brightness(40%);">
+                                    <h2 class="w-auto h-auto text-center" id="titolo-carousel-annunci">
+                                        I Prossimi Eventi</h2>
+                                    <h4 class="w-auto h-auto text-center" id="sottotitolo-carousel-annunci">
+                                       Ecco i prossimi eventi che si svolgeranno ad Arena Beach, scopri come partecipare ...</h4>
+                                    <div class="centrato w-100 mt-5">
+                                        <a id="btn__stadionVolley" href="" class="home__btn">
+                                            Scopri di più
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselNotizie" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselNotizie" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+    
+            </div>
+    
+    </section> <!-- end of ANNUNCI ===================== -->
+
+    <!-- GALLERIA
+    ================================================== -->
+    <section id="s-galleria" style="height: auto;">
+
+        <div id="main-container" style="background-color: whitesmoke; flex-direction: column; justify-content: start; height: 100%; padding-bottom: 100px;">
+        
             <!-- Titolo sezione -->
-            <div style="width: 100%; height: 45px; margin-top: 100px;" class="centrato">
-                <span id="titolo-sezione" data-aos="fade-up">CONTATTI</span></div>
+            <div style="width: 100%; height: 45px; margin-top: 100px;" class="centrato"><span id="titolo-sezione" data-aos="fade-up">GALLERIA</span></div>
 
             <!-- # Box titolo con icona -->
             <div class="centrato flex-wrap">
-                <h3 id="sottotitolo-sezione-bianco" data-aos="fade-left">COME PUOI TROVARCI</h3>
+                <h3 id="sottotitolo-sezione" data-aos="fade-right" style="padding-inline: 10%;">FOTO DELLE NOSTRE GIORNATE</h3>
             </div>
 
-           <!-- Servizi Box Style -->
-           <style>
-               
-            .box-contatto{
-                width:400px; height: 205px; font-size: 16px; box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
-                background-color: var(--secondario); padding: 20px; margin: 15px; cursor: pointer;
-                border-radius: 28px; transition: all ease 0.3s; 
-            }
-            .box-contatto:hover{transform: translateY(-10px); transition: all ease 0.3s;}
-
-            #info-contatto {
-                font-weight: bold; font-style: italic; font-size: 18px;
-            }
-
-            #titolo-contatto {
-                color: var(--dark); font-size: 28px; font-family: "montserrat-regular"; font-weight: bolder; text-transform: uppercase; text-align: center; padding-right: 20px;
-            }
-
-            #nominazione-contatto {
-                color: var(--dark); padding-block: 5px; font-size: 18px; font-family: "montserrat-regular"; font-weight: bolder; text-transform: uppercase; text-align: center; border-radius: 28px;font-style: normal;
-            }
-     
-            
-            </style>
-
-            <!-- # Box Servizi -->
-            <div class="centrato flex-column" style="margin-top: 60px;">
-                
-                <div data-aos="fade-up" class="centrato flex-wrap w-100">
-                
-                    <!-- Numeri telefono -->
-                    <div class="box-contatto">
-                            <!-- Titolo e Icona -->
-                            <div class="centrato flex-row justify-content-start gap-5">
-                            
-                                <div class="centrato flex-row" style="width: 480px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(241, 149, 21, 0.861);">
-                                    <lord-icon
-                                    src="https://cdn.lordicon.com/ltxkhbfa.json"
-                                    trigger="hover"
-                                    colors="primary:#ffffff,secondary:#ffffff"
-                                    style="width:80px;height:80px">
-                                    </lord-icon>
-                                    
-                                </div>
-                                <!-- <h3 style="padding-top: 8px;" id="titolo-contatto">CHIAMACI</h3> -->
-
-                            </div>
-
-                            <p id="testo-sezione-card" style="margin-top: 10px; text-align:start;" >
-                                <div style="row-gap: 10px; display: flex; justify-content: start; flex-direction: column;">
-                                    <span id="info-contatto"><a id="nominazione-contatto">Segreteria</a> - 334 997 0261</span>
-                                    <span id="info-contatto"><a id="nominazione-contatto">Paolo Iervolino</a> - 333 203 9442</span></div>
-                            </p>
-                    </div>
-
-                    <!-- Orari -->
-                    <div class="box-contatto">
-                        <!-- Titolo e Icona -->
-                        <div class="centrato flex-row justify-content-start gap-5">
-                        
-                            <div class="centrato flex-row" style="width: 480px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(241, 149, 21, 0.861);">
-                                <lord-icon
-                                src="https://cdn.lordicon.com/kbtmbyzy.json"
-                                trigger="hover"
-                                colors="primary:#ffffff,secondary:#ffffff"
-                                style="width:80px;height:80px">
-                                </lord-icon>
-                                
-                            </div>
-                            <!-- <h3 style="padding-top: 8px;" id="titolo-contatto">CHIAMACI</h3> -->
-
-                        </div>
-
-                        <p id="testo-sezione-card" style="margin-top: 10px; text-align:start;" >
-                            <div style="row-gap: 10px; display: flex; justify-content: start; flex-direction: column;">
-                                <span id="info-contatto"><a id="nominazione-contatto">Segreteria</a> - 334 997 0261</span>
-                                <span id="info-contatto"><a id="nominazione-contatto">Paolo Iervolino</a> - 333 203 9442</span></div>
-                        </p>
-                    </div>
-
-                </div>    
-                
-
-            </div>
-
-            <!-- Mappa -->
-            <div class="box-contatto" style="width: 820px; height: 530px;">
-                <!-- Titolo e Icona -->
-                <div class="centrato flex-row justify-content-start gap-5">
-                   
-                    <div class="centrato flex-row" style="width: 780px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(241, 149, 21, 0.861);">
-                        <lord-icon
-                        src="https://cdn.lordicon.com/xtkehzkm.json"
-                        trigger="morph"
-                        colors="primary:#ffffff,secondary:#ffffff"
-                        style="width:80px;height:80px">
-                         </lord-icon>
-                        
-                    </div>
+            <!-- Carousel Galleria -->
+            <div id="carouselGalleria" class="carousel slide" data-touch="true" style="padding-inline: 10%; width: 100%; margin-top: 60px;">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselGalleria" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselGalleria" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselGalleria" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselGalleria" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner" id="carousel-inner-galleria" data-aos="fade-up">
+                  
+                    <div class="carousel-item active"><div id="aree-carousel-container-galleria" style="background-image: url(assets/img/ArenaBeach/sezioneGalleria/gallery05.jpeg); "></div></div>
+                    <div class="carousel-item "><div id="aree-carousel-container-galleria" style="background-image: url(assets/img/ArenaBeach/sezioneGalleria/gallery04.jpg); "></div></div>
+                    <div class="carousel-item "><div id="aree-carousel-container-galleria" style="background-image: url(assets/img/ArenaBeach/sezioneGalleria/gallery03.jpg); "></div></div>
+                    <div class="carousel-item "><div id="aree-carousel-container-galleria" style="background-image: url(assets/img/ArenaBeach/sezioneGalleria/gallery01.jpg); "></div></div>
 
                 </div>
-
-                <!-- Mappa Style -->
-                <style>
-                    .google-map {
-                        padding-bottom: 50%;
-                        position: relative;
-                    }
-
-                    .google-map iframe {
-                        height: 100%;
-                        width: 100%;
-                        left: 0;
-                        top: 0;
-                        position: absolute;
-                        border-radius: 28px;
-                        margin-top: 20px;
-                    }
-                </style>
-
-                <div class="google-map" data-aos="fade-up">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2792.464924219066!2d10.171321876378276!3d45.58119777107616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478177372709b707%3A0x5c5d18262ed0c7cf!2sArena%20Beach!5e0!3m2!1sit!2sit!4v1685894680452!5m2!1sit!2sit" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
+                <button class="carousel-control-prev" id="aree-carousel-btn-1"type="button" data-bs-target="#carouselGalleria" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" id="aree-carousel-btn-2" type="button" data-bs-target="#carouselGalleria" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
             </div>
-
-            <!-- # Box Servizi 2 -->
-            <div class="centrato flex-column">
-                
-                <div data-aos="fade-up" class="centrato flex-wrap w-100">
-                
-                    <!-- Email -->
-                    <div class="box-contatto">
-                            <!-- Titolo e Icona -->
-                            <div class="centrato flex-row justify-content-start gap-5">
-                            
-                                <div class="centrato flex-row" style="width: 480px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(241, 149, 21, 0.861);">
-                                    <lord-icon
-                                    src="https://cdn.lordicon.com/tkgyrmwc.json"
-                                    trigger="hover"
-                                    colors="primary:#ffffff,secondary:#ffffff"
-                                    style="width:80px;height:80px">
-                                    </lord-icon>
-                                    
-                                </div>
-                                <!-- <h3 style="padding-top: 8px;" id="titolo-contatto">CHIAMACI</h3> -->
-
-                            </div>
-
-                            <p id="testo-sezione-card" style="margin-top: 10px; text-align:start;" >
-                                <div style="row-gap: 10px; display: flex; justify-content: start; flex-direction: column;">
-                                    <span id="info-contatto" style="width: 100%; text-align: center;"><a id="nominazione-contatto">arenabeach@gmail.com</a></span>
-                                <span id="info-contatto" style="width: 100%; text-align: center;"><a id="nominazione-contatto">stadionvolley@gmail.com</a></span></div>
-                            </p>
-                    </div>
-
-                    <!-- Orari -->
-                    <div class="box-contatto">
-                        <!-- Titolo e Icona -->
-                        <div class="centrato flex-row justify-content-start gap-5">
-                        
-                            <div class="centrato flex-row" style="width: 480px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(241, 149, 21, 0.861);">
-                                <lord-icon
-                                src="https://cdn.lordicon.com/fbmlrfcd.json"
-                                trigger="hover"
-                                colors="primary:#ffffff,secondary:#ffffff"
-                                style="width:80px;height:80px">
-                                </lord-icon>
-                                
-                            </div>
-                            <!-- <h3 style="padding-top: 8px;" id="titolo-contatto">CHIAMACI</h3> -->
-
-                        </div>
-
-                        <p id="testo-sezione-card" style="margin-top: 10px; text-align:start;" >
-                            <div style="row-gap: 10px; display: flex; justify-content: start; flex-direction: column;">
-                                <span id="info-contatto" style="width: 100%; text-align: center;"><a id="nominazione-contatto">Hai qualche domanda?</a></span>
-                                <span id="info-contatto" style="width: 100%; text-align: center;"><a style="color: var(--primario);" href="mainPage.html#s-faq" id="nominazione-contatto">controlla le F.A.Q</a></span></div>
-                        </p>
-                    </div>
-
-                </div>    
-                
-
-            </div>
-            
 
         </div>
 
-    </section> <!-- end of CONTATTI ===================== -->
+    </section><!-- end of EVENTI ===================== -->
 
     <!-- IL COMPLESSO
     ================================================== -->
-    <section id="s-complesso">
+    <section id="s-complesso" style="background-image: url(assets/img/ArenaBeach/CarouselBeach01.jpeg); background-position: center; background-repeat: no-repeat; background-size: cover; background-color: #f29406e3;">
 
-        <!-- Informazioni style -->
-        <style>
-
-        </style>
-
-         <!-- # Container Principale 
+        <!-- # Container Principale 
             contiene tutti i Box-->
-        <div id="main-container" style="background-color: var(--primario-trasparente); flex-direction: column; justify-content: start; height: 1050px;">
+        <div id="main-container" style="background-color: var(--primario-trasparente); flex-direction: column; justify-content: start; height: auto; padding-bottom: 80px;">
 
             <!-- Titolo sezione -->
             <div style="width: 100%; height: 45px; margin-top: 100px;" class="centrato"><span id="titolo-sezione" data-aos="fade-up">IL COMPLESSO</span></div>
 
             <!-- # Box titolo con icona -->
             <div class="centrato flex-wrap">
-                <h3 id="sottotitolo-sezione-bianco" data-aos="fade-left">LE 3 AREE DEL COMPLESSO</h3>
+                <h3 id="sottotitolo-sezione-bianco" data-aos="fade-right">LE 3 AREE DEL COMPLESSO</h3>
             </div>
 
             <!-- Carousel Aree -->
-            <div id="carouselAree" class="carousel slide" data-bs-ride="false" style="padding-inline: 100px; margin-top: 60px;">
+            <div id="carouselAree" class="carousel slide" data-touch="true" style="padding-inline: 10%; width: 100%; margin-top: 60px;">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselAree" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselAree" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselAree" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div class="carousel-inner" style="background-color: white;
-                padding: 15px;
-                border-radius: 66px;" data-aos="fade-up">
+                <div class="carousel-inner" id="carousel-inner-galleria" style="border-radius: 58px;" data-aos="fade-up">
                   
                     <!-- Area coperta -->
                     <div class="carousel-item active" >
                         
-                        <div id="aree-carousel-container" style="background-image: url(assets/img/ArenaBeach/CarouselBeach01.jpeg); ">
+                        <div id="aree-carousel-container-aree" style="background-image: url(assets/img/ArenaBeach/CarouselBeach01.jpeg); ">
                             <!-- text container -->
-                            <div class="d-flex align-content-around justify-content-center flex-column w-100 h-100" style="backdrop-filter: brightness(40%); border-radius: 58px;">
-                                <h2 class="w-auto h-auto text-center" style="color: #f2f2f2; font-size: 100px; font-family: 'montserrat-regular', sans-serif;">Area Coperta</h2>
-                                <h4 class="w-auto h-auto text-center" style="color: #f2f2f2; font-size: 22px; padding-inline: 200px; font-family: 'montserrat-regular', sans-serif;">Un’area coperta di oltre 400mq composta da Bar-Ristoro e zona Fitness. È attrezzata con tavoli, sedie ed una zona ”lounge” destinata all’organizzazione di aperitivi direttamente “sulla spiaggia”.</h4>
+                            <div class="d-flex align-content-around justify-content-center flex-column w-100 h-100" style="backdrop-filter: brightness(40%);">
+                                <h2 class="w-auto h-auto text-center" id="titolo-carousel-annunci">Area Coperta</h2>
+                                <h4 class="w-auto h-auto text-center" id="sottotitolo-carousel-annunci">Un’area coperta di oltre 400mq composta da Bar-Ristoro e zona Fitness. È attrezzata con tavoli, sedie ed una zona ”lounge” destinata all’organizzazione di aperitivi direttamente “sulla spiaggia”.</h4>
                             </div>
                         </div>
 
@@ -910,11 +769,11 @@
                     <!-- Area Di Gioco -->
                     <div class="carousel-item" >
                         
-                        <div id="aree-carousel-container" style="background-image: url(assets/img/ArenaBeach/CarouselBeach02.jpg); ">
+                        <div id="aree-carousel-container-aree" style="background-image: url(assets/img/ArenaBeach/CarouselBeach02.jpg); ">
                             <!-- text container -->
-                            <div class="d-flex align-content-around justify-content-center flex-column w-100 h-100" style="backdrop-filter: brightness(40%); border-radius: 58px;">
-                                <h2 class="w-auto h-auto text-center" style="color: #f2f2f2; font-size: 100px; font-family: 'montserrat-regular', sans-serif; ">Area di Gioco</h2>
-                                <h4 class="w-auto h-auto text-center" style="color: #f2f2f2; font-size: 22px; padding-inline: 200px; font-family: 'montserrat-regular', sans-serif; ">Una parte composta da 6 campi in sabbia fine, attrezzati per il beach volley, ma attrezzabili in base alle necessità anche per beach soccer, beach tennis o beach rugby. <br><br> Mentre una seconda parte attrezzata con 4 campi da gioco con sabbia fine.</h4>
+                            <div class="d-flex align-content-around justify-content-center flex-column w-100 h-100" style="backdrop-filter: brightness(40%);">
+                                <h2 class="w-auto h-auto text-center" id="titolo-carousel-annunci">Area di Gioco</h2>
+                                <h4 class="w-auto h-auto text-center" id="sottotitolo-carousel-annunci">Una parte composta da 6 campi in sabbia fine, attrezzati per il beach volley, ma attrezzabili in base alle necessità anche per beach soccer, beach tennis o beach rugby. <br><br> Mentre una seconda parte attrezzata con 4 campi da gioco con sabbia fine.</h4>
                             </div>
                         </div>
 
@@ -922,45 +781,16 @@
 
                     <!-- Area Ristoro -->
                     <div class="carousel-item">
-                        <div id="aree-carousel-container" style="background-image: url(assets/img/ArenaBeach/CarouselBeach03.jpg);">
+                        <div id="aree-carousel-container-aree" style="background-image: url(assets/img/ArenaBeach/CarouselBeach03.jpg);">
                             <!-- text container -->
-                            <div class="d-flex align-content-around justify-content-center flex-column w-100 h-100" style="backdrop-filter: brightness(40%); border-radius: 58px;">
-                                <h2 class="w-auto h-auto text-center" style="color: #f2f2f2; font-size: 100px; font-family: 'montserrat-regular', sans-serif;">Area Ristoro</h2>
-                                <h4 class="w-auto h-auto text-center" style="color: #f2f2f2; font-size: 22px; padding-inline: 200px; font-family: 'montserrat-regular', sans-serif">La prima composta da 6 campi in sabbia fine, atrezzati per il beach volley, ma attrezzabili in, base alle necessità, anche per beach soccer, beach tennis o beach rugby. La seconda attrezzata con 4 campi da gioco con sabbia fine.</h4>
+                            <div class="d-flex align-content-around justify-content-center flex-column w-100 h-100" style="backdrop-filter: brightness(40%);">
+                                <h2 class="w-auto h-auto text-center" id="titolo-carousel-annunci">Area Ristoro</h2>
+                                <h4 class="w-auto h-auto text-center" id="sottotitolo-carousel-annunci">La prima composta da 6 campi in sabbia fine, atrezzati per il beach volley, ma attrezzabili in, base alle necessità, anche per beach soccer, beach tennis o beach rugby. La seconda attrezzata con 4 campi da gioco con sabbia fine.</h4>
                             </div>
                         
                         </div>  
 
                     </div>
-                    
-                <style>
-                    #aree-carousel-btn-1 {
-                        top: 17rem; left: 12rem;
-                        border-radius: 28px;
-                        width: 40px; height: 40px;
-                    }
-                    #aree-carousel-btn-2 {
-                        top: 17rem; right: 12rem;
-                        border-radius: 28px;
-                        width: 40px; height: 40px;
-                    }
-                    #aree-carousel-btn-1:hover, #aree-carousel-btn-2:hover {
-                        background-color: #010507;
-                        color: white;
-                    }
-                    #aree-carousel-container {
-                        display: flex; 
-                        justify-content: center; 
-                        align-items: center; 
-                        width: 100%; 
-                        height: 600px;
-                        background-repeat: no-repeat; 
-                        background-position: center; 
-                        background-size: cover; 
-                        background-image: url(imagess/CarouselBeach-02.jpg); 
-                        border-radius: 58px;
-                    }
-                </style>
 
                 </div>
                 <button class="carousel-control-prev" id="aree-carousel-btn-1"type="button" data-bs-target="#carouselAree" data-bs-slide="prev">
@@ -982,36 +812,23 @@
     ================================================== -->
     <section id="s-eventi">
 
-        <div id="main-container" style="background-color: var(--secondario); flex-direction: column; justify-content: start; height: 950px;">
+        <div id="main-container" style="background-color: var(--secondario); flex-direction: column; justify-content: start; height: auto; width: 100%; padding-bottom: 80px;">
 
             <!-- Titolo sezione -->
             <div style="width: 100%; height: 45px; margin-top: 100px;" class="centrato"><span id="titolo-sezione" data-aos="fade-up">GLI EVENTI</span></div>
 
             <!-- # Box titolo con icona -->
             <div class="centrato flex-wrap">
-                <h3 id="sottotitolo-sezione" data-aos="fade-left">I NOSTRI EVENTI</h3>
+                <h3 id="sottotitolo-sezione" data-aos="fade-right">I NOSTRI EVENTI</h3>
             </div>
 
             <!-- Accordion Style -->
             <style>
 
-                .accordion-item {width: 800px; border: none;}
-
-                .accordion-button {margin-block: 20px; background-color: var(--secondario); border-radius: 28px !important; color: var(--dark); font-family: 'montserrat-regular';box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1); transition: all .5s ease-in-out;}
-                .accordion-button:active, .accordion-button:focus  {border: none;}
                 .accordion-button:not(.collapsed) {margin-block: 20px; border: 2px solid var(--primario); background-color: var(--secondario); border-radius: 28px !important; color: var(--dark); font-family: 'montserrat-regular';box-shadow: 2px 2px 30px rgba(239, 165, 80, 0.33);transition: all .5s ease-in-out;}
 
-                .accordion-header {
-                    border-radius: 28px;
-                }
-
-                .accordion-body {
-                    border-radius: 20px; background-color: var(--secondario);box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
-                    transition: all .5s ease-in-out; font-family: "montserrat-regular"; font-size: 20px;
-                }
-
                 #titolo-accordion {
-                    border-radius: 16px; padding: 5px; background-color: #f29206; color: var(--secondario); font-size: 22px; width: 85%; text-align: center; box-shadow: 2px 2px 30px rgba(235, 147, 45, 0.665);
+                    border-radius: 16px; padding-top: 9px !important; padding-inline: 10px; background-color: #f29206; color: var(--secondario); font-size: min(max(22px), 4.7vw); width: 85%; text-align: center; box-shadow: 2px 2px 30px rgba(235, 147, 45, 0.665);
                 }
 
                 #icona-accordion {
@@ -1022,7 +839,7 @@
             </style>
             
             <!-- Accordion -->
-            <div class="accordion accordion-flush" id="accordionFlushExample" style="margin-top: 60px;">
+            <div class="accordion accordion-flush d-flex align-items-center justify-content-center flex-column" id="accordionFlushExample" style="margin-top: 60px; width: 80%;">
                 
                 <!-- Eventi Beach Volley -->
                 <div class="accordion-item">
@@ -1152,17 +969,227 @@
 
     </section> <!-- end of EVENTI ===================== -->
 
+    <!-- CONTATTI
+    ================================================== -->
+    <section id="s-contatti" style="background-image: url(assets/img/ArenaBeach/CarouselBeach01.jpeg); background-position: center; background-repeat: no-repeat; background-size: cover; background-color: #f29406e3;">
+
+        <!-- # Container Principale 
+            contiene tutti i Box-->
+            <div id="main-container" style="background-color: #f29406e8; flex-direction: column; justify-content: start; height:auto; padding-bottom: 80px;">
+
+            <!-- Titolo sezione -->
+            <div style="width: 100%; height: 45px; margin-top: 100px;" class="centrato">
+                <span id="titolo-sezione" data-aos="fade-up">CONTATTI</span></div>
+
+            <!-- # Box titolo con icona -->
+            <div class="centrato flex-wrap">
+                <h3 id="sottotitolo-sezione-bianco" data-aos="fade-right">COME PUOI TROVARCI</h3>
+            </div>
+
+            <!-- # Box Servizi -->
+            <div class="centrato flex-column" style="margin-top: 60px; width: 100%;">
+                
+                <div class="centrato flex-wrap w-100">
+                
+                    <!-- Numeri telefono -->
+                    <div class="box-contatto">
+                            <!-- Titolo e Icona -->
+                            <div class="centrato flex-row justify-content-start gap-5">
+                            
+                                <div class="centrato flex-row" style="width: 480px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(241, 149, 21, 0.861);">
+                                    <lord-icon
+                                    src="https://cdn.lordicon.com/ltxkhbfa.json"
+                                    trigger="hover"
+                                    colors="primary:#ffffff,secondary:#ffffff"
+                                    style="width:80px;height:80px">
+                                    </lord-icon>
+                                    
+                                </div>
+                                <!-- <h3 style="padding-top: 8px;" id="titolo-contatto">CHIAMACI</h3> -->
+
+                            </div>
+
+                            <p id="testo-sezione-card" style="margin-top: 10px; text-align:start;" >
+                                <div style="row-gap: 10px; display: flex; justify-content: start; flex-direction: column;">
+                                    <span id="info-contatto"><a id="nominazione-contatto">Segreteria</a> - 334 997 0261</span>
+                                    <span id="info-contatto"><a id="nominazione-contatto">Paolo Iervolino</a> - 333 203 9442</span></div>
+                            </p>
+                    </div>
+
+                    <!-- Orari -->
+                    <div class="box-contatto">
+                        <!-- Titolo e Icona -->
+                        <div class="centrato flex-row justify-content-start gap-5">
+                        
+                            <div class="centrato flex-row" style="width: 480px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(241, 149, 21, 0.861);">
+                                <lord-icon
+                                src="https://cdn.lordicon.com/kbtmbyzy.json"
+                                trigger="hover"
+                                colors="primary:#ffffff,secondary:#ffffff"
+                                style="width:80px;height:80px">
+                                </lord-icon>
+                                
+                            </div>
+                            <!-- <h3 style="padding-top: 8px;" id="titolo-contatto">CHIAMACI</h3> -->
+
+                        </div>
+
+                        <p id="testo-sezione-card" style="margin-top: 10px; text-align:start;" >
+                            <div style="row-gap: 10px; display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 0.4rem;">
+                                <span style="width: 100%; text-align: center;" id="info-contatto"><a style="font-size: 18px;" id="nominazione-contatto">
+                                   tutta settimana su prenotazione</a> </span>
+                                <span style="width: 100%; text-align: center;" id="info-contatto">
+                                    <a>09:00 - 13:00</a> | <a>15:00 - 23:30</a> </span>
+
+                            </div>
+                        </p>
+                    </div>
+
+                </div>    
+                
+
+            </div>
+
+            <!-- Mappa -->
+            <div class="box-contatto" style="width: 820px; height: 530px;">
+                <!-- Titolo e Icona -->
+                <div class="centrato flex-row justify-content-start gap-5">
+                   
+                    <div class="centrato flex-row" style="width: 780px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(241, 149, 21, 0.861);">
+                        <lord-icon
+                        src="https://cdn.lordicon.com/xtkehzkm.json"
+                        trigger="morph"
+                        colors="primary:#ffffff,secondary:#ffffff"
+                        style="width:80px;height:80px">
+                         </lord-icon>
+                        
+                    </div>
+
+                </div>
+
+                <!-- Mappa Style -->
+                <style>
+                    .google-map {
+                        padding-bottom: 50%;
+                        position: relative;
+                    }
+
+                    .google-map iframe {
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                        position: absolute;
+                        border-radius: 28px;
+                        margin-top: 20px;
+                    }
+                </style>
+
+                <div class="google-map" data-aos="fade-up">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2792.464924219066!2d10.171321876378276!3d45.58119777107616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478177372709b707%3A0x5c5d18262ed0c7cf!2sArena%20Beach!5e0!3m2!1sit!2sit!4v1685894680452!5m2!1sit!2sit" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+
+            <!-- # Box Servizi 2 -->
+            <div class="centrato flex-column" style="width: 100%;">
+                
+                <div class="centrato flex-wrap w-100">
+                
+                    <!-- Email -->
+                    <div class="box-contatto">
+                            <!-- Titolo e Icona -->
+                            <div class="centrato flex-row justify-content-start gap-5">
+                            
+                                <div class="centrato flex-row" style="width: 100%; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(241, 149, 21, 0.861);">
+                                    <lord-icon
+                                    src="https://cdn.lordicon.com/tkgyrmwc.json"
+                                    trigger="hover"
+                                    colors="primary:#ffffff,secondary:#ffffff"
+                                    style="width:80px;height:80px">
+                                    </lord-icon>
+                                    
+                                </div>
+                                <!-- <h3 style="padding-top: 8px;" id="titolo-contatto">CHIAMACI</h3> -->
+
+                            </div>
+
+                            <p id="testo-sezione-card" style="margin-top: 10px; text-align:start;" >
+                                <div style="row-gap: 10px; display: flex; justify-content: start; flex-direction: column;">
+                                    <span id="info-contatto" style="width: 100%; text-align: center;"><a id="nominazione-contatto">arenabeach@gmail.com</a></span>
+                                <span id="info-contatto" style="width: 100%; text-align: center;"><a id="nominazione-contatto">stadionvolley@gmail.com</a></span></div>
+                            </p>
+                    </div>
+
+                    <!-- FAQ -->
+                    <div class="box-contatto">
+                        <!-- Titolo e Icona -->
+                        <div class="centrato flex-row justify-content-start gap-5">
+                        
+                            <div class="centrato flex-row" style="width: 480px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(241, 149, 21, 0.861);">
+                                <lord-icon
+                                src="https://cdn.lordicon.com/fbmlrfcd.json"
+                                trigger="hover"
+                                colors="primary:#ffffff,secondary:#ffffff"
+                                style="width:80px;height:80px">
+                                </lord-icon>
+                                
+                            </div>
+                            <!-- <h3 style="padding-top: 8px;" id="titolo-contatto">CHIAMACI</h3> -->
+
+                        </div>
+
+                        <p id="testo-sezione-card" style="margin-top: 10px; text-align:start;" >
+                            <div style="row-gap: 10px; display: flex; justify-content: start; flex-direction: column;">
+                                <span id="info-contatto" style="width: 100%; text-align: center;"><a id="nominazione-contatto">Hai qualche domanda?</a></span>
+                                <span id="info-contatto" style="width: 100%; text-align: center;"><a style="color: var(--primario);" href="index.html#s-faq" id="nominazione-contatto">controlla le F.A.Q</a></span></div>
+                        </p>
+                    </div>
+
+                </div>    
+                
+
+            </div>
+            
+
+        </div>
+
+    </section> <!-- end of CONTATTI ===================== -->
+
     <!-- FOOTER
     ================================================== -->
-    <footer style="position: fixed-bottom;">
+    <footer id="s-footer" style="position: fixed-bottom;">
 
-        <div id="main-container" style="background-color: #181717; flex-direction: row; justify-content: center; height: 450px; gap: 250px;">
+        <!-- Sponsor div -->
+        <div id="main-container" style="background-color: var(--secondario); flex-direction: row; justify-content: center; height: 150px; gap: 150px;">
+
+            <style>
+                #sponsor-immagine {
+                    width: 8%; height: auto;
+                }
+            </style>
+
+            <div class="centrato gap-5" style="flex-wrap: wrap">
+                <img id="sponsor-immagine" src="assets/img/sponsor/sponsor01.png" alt="">
+                <img id="sponsor-immagine" src="assets/img/sponsor/sponsor02.png" alt="">
+                <img id="sponsor-immagine" src="assets/img/sponsor/sponsor03.png" alt="">
+                <img id="sponsor-immagine" src="assets/img/sponsor/sponsor04.png" alt="">
+                <img id="sponsor-immagine" src="assets/img/sponsor/sponsor05.png" alt="">
+                <img id="sponsor-immagine" src="assets/img/sponsor/sponsor06.png" alt="">
+                <img id="sponsor-immagine" src="assets/img/sponsor/sponsor07.png" alt="">
+                <img id="sponsor-immagine" src="assets/img/sponsor/sponsor08.png" alt="">
+            </div>
+
+        </div>        
+
+        <!-- Link Utili -->
+        <div id="main-container" style="flex-wrap: wrap; background-color: #181717; flex-direction: row; justify-content: center; height: auto; padding-block: 80px;  gap: 20%;">
 
 
             <!-- Footer Style -->
             <style>
                 #titolo-footer {
-                    font-size: 22px; color: var(--secondario); font-weight: bold;
+                    font-size: min(max(22px), 4vw); color: var(--secondario); font-weight: bold;
                 }
                 .link-footer {
                     color: var(--secondario); text-decoration: none;transition: all .2s ease-in-out;
@@ -1175,17 +1202,16 @@
                 }
             </style>
 
-
-            <div class="d-flex align-item-center justify-content-center flex-column gap-3">
-                <img src="assets/img/logo/stadionArenaLogo.PNG" style="width: 350px; height: auto;" alt="">
-                <img src="assets/img/sponsor/logoRegesta.png" style="width: 350px; height: auto;" alt="">
-                <p style="font-size: 15px; width: 350px; color: var(--dark-light);" class="mt-3" >Stadion Arena è una realtà innovativa che invoglia e coinvolge persone di tutte le età all'insegna del divertimento e dello sport.</p>
+            <div class="d-flex align-items-center justify-content-center flex-column gap-3">
+                <img src="assets/img/logo/stadionArenaLogo.PNG" style="width: 75%; max-width: 350px; height: auto;" alt="">
+                <img src="assets/img/sponsor/logoRegesta.png" style="width: 60%; max-width: 350px; height: auto;" alt="">
+                <p style="font-size: 15px;width: 90%; max-width: 350px; color: var(--dark-light);" class="mt-3" >Stadion Arena è una realtà innovativa che invoglia e coinvolge persone di tutte le età all'insegna del divertimento e dello sport.</p>
             </div>
 
             <div class="d-flex justify-content-start align-items-start flex-column">
 
-                    <h3 id="titolo-footer">Link Utili</h4>
-                    <ul style="font-size: 20px; line-height: 3rem; font-family: 'montserrat-regular'; color: var(--secondario);">
+                    <!-- <h3 id="titolo-footer">Link Utili</h4> -->
+                    <ul style="font-size: min(max(20px), 4vw); line-height: 3rem; font-family: 'montserrat-regular'; color: var(--secondario);">
                         <li><a class="link-footer"  href="#s-home" title="home">Home</a></li>
                         <li><a class="link-footer"  href="#s-contatti" title="contact">Contatti</a></li>
                         <li><a class="link-footer"  href="mainPage.html#s-faq" title="faq">F.A.Q</a></li>
@@ -1196,12 +1222,14 @@
             </div>
 
         </div>
+
+        <!-- Copyright -->
         <div class="footer-bottom centrato">
 
             <div class="col-twelve">
                 <div class="copyright">
-                    <span>© Copyright studenti dell'Istituto Istruzione Superiore Carlo Beretta, Gardone Val Trompia (BS)</span> 
-                    <a href="https://storyset.com/people" style="color: var(--dark-light);">People illustrations by Storyset</a>
+                    <span style="font-size: min(max(16px), 2.7vw);">© Copyright studenti dell'Istituto Istruzione Superiore Carlo Beretta, Gardone Val Trompia (BS)</span> 
+                    <a style="font-size: min(max(16px), 2.7vw); color: var(--dark-light);" href="https://storyset.com/people">People illustrations by Storyset</a>
                 </div>
 
                 <div class="go-top">
@@ -1209,7 +1237,7 @@
                 </div>
             </div>
 
-        </div> <!-- end footer-bottom -->
+        </div>
 
     </footer> <!-- end FOOTER -->
 

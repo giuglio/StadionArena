@@ -1,0 +1,288 @@
+    
+    /* <!-- CSS generale delle sezioni --> */
+    
+    /* shortcut */
+    .centrato {display: flex; align-items: center; justify-content: center;}
+
+    #titolo-sezione {color: var(--dark); font-size: 22px; font-family: "montserrat-regular"; font-weight: bolder; letter-spacing: 1.8px;}
+    #titolo-sezione-bianco {color: var(--secondario); font-size: 22px; font-family: "montserrat-regular"; font-weight: bolder; letter-spacing: 1.8px;}
+
+    #sottotitolo-sezione {color: var(--primario); font-size: min(max(72px), 10vw); font-family: 'montserrat-regular', sans-serif; font-weight: bolder; text-align: center;}
+    #sottotitolo-sezione-nero {color: var(--dark); font-size: min(max(72px), 10vw); font-family: 'montserrat-regular', sans-serif; font-weight: bolder; text-align: center;}
+    #sottotitolo-sezione-bianco {color: var(--secondario); font-size: min(max(72px), 10vw); font-family: 'montserrat-regular', sans-serif; font-weight: bolder; text-align: center;}
+
+    #testo-sezione {
+        color: var(--dark); font-size: min(max(25px), 5vw); font-family: 'montserrat-regular'; text-align: center; padding-inline: 10% !important;
+    }
+    #testo-sezione-card {
+        color: var(--dark); font-size: min(max(20px), 5vw); font-family: 'montserrat-regular'; text-align: start;
+    }
+
+    #testo-evidenziato-bianco {color: var(--secondario); font-weight: bolder;}
+    #testo-evidenziato-giallo {color: var(--primario); font-weight: bolder;}
+
+    #main-container {
+        display: flex; justify-content: center; align-items: center;
+        width: 100%; height: 800px;
+    }
+
+    #s-home {
+        position: relative;
+    }
+
+    /* HEADER ============================== */
+
+        /* navbar menu */
+
+        #box-menu {background-color: transparent;border-radius: 20px;transition: all .3s ease-in-out; padding: 3px;}
+        #box-menu:hover {transform: translateY(-5px); transition: all ease .3s;}
+        #box-menu:active, #box-menu:focus:not()  {border: none !important;transition: all .3s ease-in-out;}
+        .button-toggler {background-color: transparent; border: none; transition: all .3s ease-in-out;}
+        #header-titolo {font-size: 12px; color: var(--primario); letter-spacing: .3rem; text-transform: uppercase;font-family: "montserrat-medium", sans-serif;}
+        .header-titolo-scrolled {color: var(--secondario) !important;}
+
+        /* offcanvas */
+
+        #offcanvasNavbar { background-color: var(--dark); width: 280px;}
+        #title-offcanvas {
+            font-family: "montserrat-semibold", sans-serif; color: var(--primario);
+            font-size: 10px; line-height: 1.5; text-transform: uppercase;
+            letter-spacing: .25rem; margin-top: 0.5rem; padding-left: 1.2rem;
+        }
+
+        /* navbar list style */
+
+        #offcanvas-link {
+            color: var(--secondario);text-decoration: none;font-size: 18px; line-height: 1.8;font-family: "montserrat-regular", sans-serif;
+            transition: all .1s ease-in-out;
+        }
+        .header-nav__list {
+            list-style: none;
+            padding-left: 2.2rem;
+            margin-top: 25px;
+        }
+        .header-nav__list li {
+            margin-block: 15px;
+        }
+        .header-nav__list li:hover {
+            list-style: square;
+        }
+        .header-nav__list li:hover a {
+            padding-left: 15px;
+            transition: all .1s ease-in-out;
+        }
+
+    /* HOME ================================= */
+
+        /* Home Style */
+        
+        #box-title_button {
+            display: flex; justify-content: center; align-items: center; flex-direction: column;
+            width: 80%; height: 80%; position: absolute;
+        }
+        .home-titolo {
+            font-size: min(max(200px), 21vw); font-family: 'alien_aiitalic'; color: var(--secondario);
+        }
+        .home__btn{
+            font-family: "montserrat-medium", sans-serif; font-size: 14px;letter-spacing: 2px;text-transform: uppercase; text-decoration: none; text-align: center;
+            transition: all .5s ease 0s;
+            width: 280px; padding: 5px;
+            color: white; 
+            border: 2px solid white; border-width: 2px;border-radius: 28px; background-color: transparent;
+        }
+
+        .home__btn:hover {
+            color: white;
+            transition: all .5s ease 0s;
+            background-color: var(--primario);
+            width: 300px;
+            border-color: var(--primario);
+        }
+
+    /* INFORMAZIONI ============================ */
+
+        /* Carousel Informazioni Style */
+
+        #carousel-indicators-info {bottom: 102% !important;}
+        .carousel-indicators .active {background-color: var(--primario) !important; opacity: 1 !important;}
+        .carousel-indicators button {height: 10px !important; background-color: var(--primario) !important; opacity: 0.2 !important;}
+
+        .carousel-illustrazione {
+            /* width: 900px; height: auto; */
+            width: 65%; height: 50%;
+        }
+        .carousel-control-prev, .carousel-control-next {top: 13rem !important;}
+
+        /* Statistiche Style */
+
+        .about-stats {
+            text-align: center;
+        }
+
+        .stats__col {
+            margin: 5.4rem 0;
+            padding: 0 2rem;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        .stats__col:last-child {
+            border-right: none;
+        }
+
+        .stats__count {
+            font-family: "montserrat-bold", sans-serif;
+            font-size: min(max(5.4rem), 14vw);
+            line-height: 1;
+            color: var(--primario);
+            position: relative;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .stats h5 {
+            font-family: "montserrat-semibold", sans-serif;
+            margin-top: 0.5rem;
+            color: #000000;
+            font-size: min(max(1.8rem), 3.5vw);
+            line-height: 1.333;
+            position: relative;
+        }
+
+        .about__line {
+            display: block;
+            width: 2px;
+            height: 10.2rem;
+            background-color: var(--primario);
+            position: absolute;
+            right: 7.2rem;
+            top: 0;
+        }
+
+    /* CORSI =============================== */
+
+            /* Box corsi style */
+
+            .box-orari-orario {margin-top: 28px; font-family: 'montserrat-regular', sans-serif; font-size: min(max(23px), 5.5vw); color: var(--dark);}
+            .testo-categoria, .testo-categoria:active, .testo-categoria:hover {
+                color: var(--primario);
+            }
+            .box-orari-info {font-family: 'montserrat-regular', sans-serif; font-size: min(max(25px), 4.5vw); color: var(--dark);}
+            .box-corso {
+                color: var(--dark); font-family: 'montserrat-regular', sans-serif;
+                background-color: transparent;
+            }
+            .box-corso:active {
+                color: var(--dark); font-family: 'montserrat-regular', sans-serif;
+            }
+            .box-orari {
+                background-color: var(--secondario);
+                font-family: 'montserrat-regular', sans-serif; font-size: min(max(18px), 3.5vw);; color: var(--dark);
+            }
+            .testo-categoria, .testo-categoria:active, .testo-categoria:hover {
+                color: var(--primario);
+            }
+            .nav-link {color: var(--primario) !important; font-size: min(max(15px), 4vw);}
+
+    
+    /* ANNUNCI ================================= */
+
+            /* Annunci carousel Style */
+
+            .etichetta-sezione { padding-inline: 10px; padding-block: 5px; font-size: 15px; font-family: "montserrat-regular", sans-serif; color: white; font-weight: bold; width: auto; border-radius: 28px; text-transform: uppercase;}
+            #SV {background-color: #4251d6;} #AB {background-color: #f29206;}
+
+            #titolo-carousel-annunci {color: #f2f2f2; font-size: min(max(100px), 14vw); font-family: 'montserrat-regular', sans-serif;}
+            #sottotitolo-carousel-annunci {color: #f2f2f2; font-size: min(max(18px), 3.7vw); padding-inline: 15%; font-family: 'montserrat-regular', sans-serif;}
+
+    /* GALLERIA ================================ */
+
+            /* Slide Style */
+
+            #aree-carousel-btn-1 {
+                top: 50% !important; left: 2%;
+                border-radius: 28px;
+                width: 40px; height: 40px;
+                background-color: var(--primario);
+            }
+            #aree-carousel-btn-2 {
+                top: 50% !important; right: 2%;
+                border-radius: 28px;
+                width: 40px; height: 40px;
+                background-color: var(--primario);
+            }
+            
+            #aree-carousel-container, #aree-carousel-container-galleria, #aree-carousel-container-aree {
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                width: 100%; 
+                height: 600px;
+                background-repeat: no-repeat; 
+                background-position: center; 
+                background-size: cover; 
+                background-image: url(imagess/CarouselBeach-02.jpg); 
+                border-radius: 58px;
+            }
+
+    /* CONTATTI ============================================== */
+
+            /* Box Contatti Style */
+
+            .box-contatto{
+                width:400px; height: 205px; font-size: 16px; box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+                background-color: var(--secondario); padding: 20px; margin: 15px; cursor: pointer;
+                border-radius: 28px; transition: all ease 0.3s; 
+            }
+            .box-contatto:hover{transform: translateY(-10px); transition: all ease 0.3s;}
+
+            .link-orari {color: var(--primario) !important;}
+
+            #info-contatto {
+                font-weight: bold; font-style: italic; font-size: min(max(18px), 3.5vw);
+            }
+
+            #titolo-contatto {
+                color: var(--dark); font-size: 28px; font-family: "montserrat-regular"; font-weight: bolder; text-transform: uppercase; text-align: center; padding-right: 20px;
+            }
+
+            #nominazione-contatto {
+                color: var(--dark); padding-block: 5px; font-size: min(max(18px), 4vw) !important; font-family: "montserrat-regular"; font-weight: bolder; text-transform: uppercase; text-align: center; border-radius: 28px;font-style: normal;
+            }
+
+            /* Mappa Style */
+
+            .google-map {
+                padding-bottom: 50%;
+                position: relative;
+            }
+
+            .google-map iframe {
+                height: 100%;
+                width: 100%;
+                top: 0;
+                position: absolute;
+                border-radius: 28px;
+                margin-top: 20px;
+            }
+
+    /* FAQ e EVENTI (Solo Accordion) */
+
+        /* Accordion */
+
+        .accordion-item {width: 80%; border: none !important; background-color: transparent !important;}
+
+        .accordion-button {margin-block: 20px; background-color: var(--secondario); border-radius: 28px !important; color: var(--dark); font-family: 'montserrat-regular';box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1); transition: all .5s ease-in-out;}
+        .accordion-button:active, .accordion-button:focus  {border: none;}
+
+        .accordion-header {
+            border-radius: 28px;
+        }
+
+        .accordion-body {
+            border-radius: 20px; background-color: var(--secondario);box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+            transition: all .5s ease-in-out; font-family: "montserrat-regular"; font-size: min(max(20px), 3.7vw);;
+        }

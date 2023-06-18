@@ -28,6 +28,8 @@
 
     <!-- CSS
     ================================================== -->
+    <link rel="stylesheet" href="assets/css/mainstyle.css">
+    <link rel="stylesheet" href="assets/responsive/responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
@@ -84,40 +86,10 @@
 
 </style>
 
-<!-- CSS generale delle sezioni -->
-<style>
-    #titolo-sezione {color: var(--dark); font-size: 22px; font-family: "montserrat-regular"; font-weight: bolder; letter-spacing: 1.8px;}
-    #titolo-sezione-bianco {color: var(--secondario); font-size: 22px; font-family: "montserrat-regular"; font-weight: bolder; letter-spacing: 1.8px;}
-
-    #sottotitolo-sezione {color: var(--primario); font-size: 72px; font-family: 'montserrat-regular', sans-serif; font-weight: bolder;}
-    #sottotitolo-sezione-nero {color: var(--dark); font-size: 72px; font-family: 'montserrat-regular', sans-serif; font-weight: bolder;}
-    #sottotitolo-sezione-bianco {color: var(--secondario); font-size: 72px; font-family: 'montserrat-regular', sans-serif; font-weight: bolder;}
-
-    #testo-sezione {
-        color: var(--dark); font-size: 25px; font-family: 'montserrat-regular'; text-align: center;
-    }
-    #testo-sezione-card {
-        color: var(--dark); font-size: 20px; font-family: 'montserrat-regular'; text-align: start;
-    }
-
-    #testo-evidenziato-bianco {color: var(--secondario); font-weight: bolder;}
-    #testo-evidenziato-giallo {color: var(--primario); font-weight: bolder;}
-
-    #main-container {
-        display: flex; justify-content: center; align-items: center;
-        width: 100%; height: 800px;
-    }
-
-    #s-home {
-        position: relative;
-    }
-</style>
-
 <body>
 
     <!-- INIZIO DELLE SEZIONI DELLA PAGINA -->
 
-    
     <!-- HEADER
     ================================================== -->
     <header class="s-header">
@@ -131,14 +103,7 @@
               
                 <!-- Style del button per il menu -->
                 <style>
-                    #box-menu {background-color: transparent;border-radius: 20px;transition: all .3s ease-in-out; padding: 3px;}
-                    #box-menu:hover {transform: translateY(-5px); transition: all ease .3s;}
-                    #box-menu:active, #box-menu:focus:not()  {border: none !important;transition: all .3s ease-in-out;}
-                    .button-toggler {background-color: transparent; border: none; transition: all .3s ease-in-out;}
                     .box-menu-scrolled {background-color: var(--primario) !important; transition: all .3s ease-in-out;  box-shadow: 2px 2px 30px rgba(14, 71, 226, 0.825);}
-
-                    #header-titolo {font-size: 12px; color: var(--primario); letter-spacing: .3rem; text-transform: uppercase;font-family: "montserrat-medium", sans-serif;}
-                    .header-titolo-scrolled {color: var(--secondario) !important;}
                 </style>
                 <!-- Script per lo scroll ed il cambio di colore per il button del menu -->
                 <script>
@@ -167,22 +132,12 @@
                     </button>
                 </div>
 
-                <!-- Style Offcanvas -->
-                <style>
-                    #offcanvasNavbar { background-color: var(--dark); width: 280px;}
-                    #title-offcanvas {
-                        font-family: "montserrat-semibold", sans-serif; color: var(--primario);
-                        font-size: 10px; line-height: 1.5; text-transform: uppercase;
-                        letter-spacing: .25rem; margin-top: 0.5rem; padding-left: 1.2rem;
-                    }
-                </style>
-
                 <!-- Offcanvas Navbar -->
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header centrato justify-content-around mt-3 gap-3">
 
                         <!-- offcanvas title -->
-                        <h5 id="title-offcanvas" data-aos="fade-left">MENU NAVIGAZIONE</h5>
+                        <h5 id="title-offcanvas" data-aos="fade-right">MENU NAVIGAZIONE</h5>
 
                         <!-- toggle button -->
                         <lord-icon
@@ -196,41 +151,17 @@
                     </div>
 
                     <div class="header-nav__content">
-
-                        <!-- navbar list style -->
-                        <style>
-                            #offcanvas-link {
-                                color: var(--secondario);text-decoration: none;font-size: 18px; line-height: 1.8;font-family: "montserrat-regular", sans-serif;
-                                transition: all .1s ease-in-out;
-                            }
-                            .header-nav__list {
-                                list-style: none;
-                                padding-left: 2.2rem;
-                                margin-top: 25px;
-                            }
-                            .header-nav__list li {
-                                margin-block: 15px;
-                            }
-                            .header-nav__list li:hover {
-                                list-style: square;
-                            }
-                            .header-nav__list li:hover a {
-                                padding-left: 15px;
-                                transition: all .1s ease-in-out;
-                            }
-                        </style>
                         
                         <ul class="header-nav__list">
                             <li><a id="offcanvas-link"  href="#s-home" title="home">Home</a></li>
-                            <li><a id="offcanvas-link"  href="#s-informazioni" title="about">Informazioni</a></li>
-                            <li><a id="offcanvas-link"  href="#s-servizi" title="services">Servizi</a></li>
-                            <li><a id="offcanvas-link"  href="#s-contatti" title="contact">Contatti</a></li>
-                            <li><a id="offcanvas-link"  href="#s-notizie" title="news">Notizie</a></li>
-                            <li><a id="offcanvas-link"  href="#s-recensioni" title="news">Recensioni</a></li>
-                            <li><a id="offcanvas-link"  href="#s-sponsor" title="news">Sponsor</a></li>
-                            <li><a id="offcanvas-link"  href="#s-faq" title="faq">F.A.Q</a></li>
-                            <li><a id="offcanvas-link" style="color:#3a428b"  href="indexStadionVolley.html" title="faq">Stadion Volley</a></li>
-                            <li><a id="offcanvas-link" style="color:#f29206"  href="indexArenaBeach.html" title="faq">Arena Beach</a></li>
+                            <li><a id="offcanvas-link"  href="#s-informazioni" title="informazioni">Informazioni</a></li>
+                            <li><a id="offcanvas-link"  href="#s-corsi" title="corsi">Corsi</a></li>
+                            <li><a id="offcanvas-link"  href="#s-annunci" title="annunci">Annunci</a></li>
+                            <li><a id="offcanvas-link"  href="#s-galleria" title="galleria">Galleria</a></li>
+                            <li><a id="offcanvas-link"  href="#s-contatti" title="contatti">Contatti</a></li>
+                            <li><a id="offcanvas-link"  href="#s-footer" title="news">Sponsor</a></li>
+                            <li><a id="offcanvas-link" style="color:#eaf206"  href="index.html" title="faq">Torna alla Home</a></li>
+                            <li><a id="offcanvas-link" style="color:#f29206"  href="arenaBeach.html" title="faq">Arena Beach</a></li>
                         </ul>
             
                         <p style="margin-left: 2rem;">Segui Stadion Arena su tutti i canali social!</p>
@@ -298,35 +229,9 @@
                         }
         </style>
 
-        <!-- Filtro davanti al video in Background -->
+        <!-- Background e Filter style -->
         <div class="overlay"></div>
         <div class="shadow-overlay"></div>
-
-        <!-- Home style -->
-        <style>
-            #box-title_button {
-                display: flex; justify-content: center; align-items: center; flex-direction: column;
-                width: 80%; height: 80%; position: absolute;
-            }
-            .home-titolo {
-                font-size: 200px; font-family: 'alien_aiitalic'; color: var(--secondario);
-            }
-            .home__btn{
-                font-family: "montserrat-medium", sans-serif; font-size: 14px;letter-spacing: 2px;text-transform: uppercase; text-decoration: none; text-align: center;
-                transition: all .5s ease 0s;
-                width: 280px; padding: 5px;
-                color: white; 
-                border: 2px solid white; border-width: 2px;border-radius: 28px; background-color: transparent;
-            }
-
-            .home__btn:hover {
-                color: white;
-                transition: all .5s ease 0s;
-                background-color: var(--primario);
-                width: 300px;
-                border-color: var(--primario);
-            }
-        </style>
 
         <!-- # Container Principale 
             contiene tutti i Box-->
@@ -340,11 +245,11 @@
                 <img id="logo" style="width: 160px; height: auto;" src="assets/img/logo/stadionArenaLogo.PNG" alt="Homepage">
 
                 <!-- sub-box titolo -->
-                <h1 class="home-titolo" data-aos="fade-right">STADION</h1>
-                <h1 style="color: var(--primario);" class="home-titolo" data-aos="fade-left">VOLLEY</h1>
+                <h1 style="margin-top: 2%;" class="home-titolo" data-aos="fade-right">STADION</h1>
+                <h1 style="color: var(--primario);" class="home-titolo" data-aos="fade-right">VOLLEY</h1>
 
                 <!-- sub-box buttons -->
-                <div class="centrato gap-5 mt-5" data-aos="fade-up">
+                <div class="centrato gap-5 mt-5 flex-wrap" data-aos="fade-up">
                         <!-- stadion volley button -->
                         <a id="btn__stadionVolley" href="arenaBeach.html" class="home__btn">
                             Arena Beach
@@ -365,33 +270,21 @@
     ================================================== -->
     <section id="s-informazioni">
 
-        <!-- Informazioni style -->
-        <style>
-
-        </style>
-
          <!-- # Container Principale 
             contiene tutti i Box-->
-        <div id="main-container" style="background-color: whitesmoke; flex-direction: column; justify-content: start; height: 1350px;">
+            <div id="main-container" style="background-color: whitesmoke; flex-direction: column; justify-content: start; height: auto; padding-bottom: 50px;">
 
             <!-- Titolo sezione -->
             <div style="width: 100%; height: 10%; margin-top: 100px;" class="centrato"><span id="titolo-sezione" data-aos="fade-up">INFORMAZIONI</span></div>
 
             <!-- # Box titolo con icona -->
             <div class="centrato flex-wrap">
-                <h3 id="sottotitolo-sezione" data-aos="fade-left">CHI SIAMO</h3>
+                <h3 id="sottotitolo-sezione" data-aos="fade-right">CHI SIAMO</h3>
             </div>
 
-            <!-- Carousel Style -->
-            <style>
-                .carousel-illustrazione {
-                    width: 900px; height: auto;
-                }
-            </style>
-
             <!-- Carousel con informazioni -->
-            <div id="carousel-informazioni" class="carousel slide" style="margin-top: 4rem;" data-bs-ride="true">
-                <div class="carousel-indicators">
+            <div id="carousel-informazioni" class="carousel slide" style="margin-top: 4rem;" data-interval="false" data-touch="true">
+                <div class="carousel-indicators" id="carousel-indicators-info">
                   <button type="button" data-bs-target="#carousel-informazioni" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carousel-informazioni" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carousel-informazioni" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -408,7 +301,9 @@
                             l'insegnamento e per i centri di avviamento allo sport,
                             permettono a <a id="testo-evidenziato-giallo">Stadion Volley</a> di sviluppare un
                             progetto per avvicinare i giovanissimi alla <a id="testo-evidenziato-giallo">pallavolo</a>. </p>
-                        <img class="carousel-illustrazione" src="assets/img/StadionVolley/sezioneInformazioni/coaches-animate.svg" class="d-block w-100" alt="...">
+                        <div class="centrato" style="width: 100%; height: 100%;">
+                            <img class="carousel-illustrazione" src="assets/img/StadionVolley/sezioneInformazioni/coaches-animate.svg" class="d-block w-100" alt="...">
+                        </div>
                         
                     </div>
 
@@ -424,8 +319,10 @@
                                 adeguata</a>, l’apprendimento delle tecniche base e
                               la possibilità di <a id="testo-evidenziato-giallo">giocare</a>, <a id="testo-evidenziato-giallo">confrontarsi</a> e <a id="testo-evidenziato-giallo">socializzare</a>
                               con i propri coetanei. </p>
-                        <img class="carousel-illustrazione" src="assets/img/StadionVolley/sezioneInformazioni/floating-animate.svg" class="d-block w-100" alt="...">
-                        
+                        <div class="centrato" style="width: 100%; height: 100%;">
+                            <img class="carousel-illustrazione" src="assets/img/StadionVolley/sezioneInformazioni/floating-animate.svg" class="d-block w-100" alt="...">
+                        </div>
+
                     </div>
 
                   </div>
@@ -440,22 +337,79 @@
                         ai principali <a id="testo-evidenziato-giallo">campionati</a>, organizziamo altre
                         numerose <a id="testo-evidenziato-giallo">attività</a>, manifestazioni sportive, feste,
                         stage e corsi di aggiornamento.</p>
-                        <img class="carousel-illustrazione" src="assets/img/StadionVolley/sezioneInformazioni/celebration-animate.svg" class="d-block w-100" alt="...">
-                        
+                        <div class="centrato" style="width: 100%; height: 100%;">
+                            <img class="carousel-illustrazione" src="assets/img/StadionVolley/sezioneInformazioni/celebration-animate.svg" class="d-block w-100" alt="...">
+                        </div>
                     </div>
 
                   </div>
 
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-informazioni" data-bs-slide="prev">
-                  <span style="background-color: var(--primario); border-radius: 78px; padding: 20px; width: 30px; height: 30px;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <button class="carousel-control-prev" id="aree-carousel-btn-1" type="button" data-bs-target="#carousel-informazioni" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel-informazioni" data-bs-slide="next">
-                  <span style="background-color: var(--primario); border-radius: 78px; padding: 20px; width: 30px; height: 30px;" class="carousel-control-next-icon" aria-hidden="true"></span>
+                <button class="carousel-control-next" id="aree-carousel-btn-2" type="button" data-bs-target="#carousel-informazioni" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
+
+              <!-- Animazione Statistiche -->
+              <script>
+                /* Stat Counter
+                * ------------------------------------------------------ */
+                var clStatCount = function() {
+                    
+                    var statSection = $(".about-stats"),
+                        stats = $(".stats__count");
+
+                    statSection.waypoint({
+
+                        handler: function(direction) {
+
+                            if (direction === "down") {
+
+                                stats.each(function () {
+                                    var $this = $(this);
+
+                                    $({ Counter: 0 }).animate({ Counter: $this.text() }, {
+                                        duration: 4000,
+                                        easing: 'swing',
+                                        step: function (curValue) {
+                                            $this.text(Math.ceil(curValue));
+                                        }
+                                    });
+                                });
+
+                            } 
+
+                            // trigger once only
+                            this.destroy();
+
+                        },
+
+                        offset: "90%"
+
+                    });
+                };
+              </script>
+
+              <!-- Statistiche -->
+            <div class="about-stats stats centrato align-items-start flex-wrap gap-5 mt-5" data-aos="fade-up">
+                    
+                <div style="width: auto; padding-inline: 20px;">
+                    <div class="stats__count">250</div>
+                    <h5>Ragazze e Ragazzi che <br> hanno partecipato alla <br>Scuola di Pallavolo</h5>
+                </div>
+                <div style="width: auto; padding-inline: 20px;">
+                    <div class="stats__count">12</div>
+                    <h5>I nostri team partecipanti <br> 
+                        ai campionati <br>
+                        FIPAV e CSI</h5>
+                </div>               
+
+            </div>
 
 
         </div>
@@ -464,7 +418,7 @@
 
     <!-- CORSI
     ================================================== -->
-    <section id="s-corsi">
+    <section id="s-corsi" style=" height: auto;">
 
         <!-- Informazioni style -->
         <style>
@@ -473,46 +427,29 @@
 
          <!-- # Container Principale 
             contiene tutti i Box-->
-        <div id="main-container" style="background-color: whitesmoke; flex-direction: column; justify-content: start; height: 950px;">
+        <div id="main-container" style="background-color: whitesmoke; flex-direction: column; justify-content: start; height: 100%;">
 
             <!-- Titolo sezione -->
-            <div style="width: 100%; height: 45px; margin-top: 100px;" class="centrato"><span id="titolo-sezione" data-aos="fade-up">IL COMPLESSO</span></div>
+            <div style="width: 100%; height: 45px; margin-top: 100px;" class="centrato"><span id="titolo-sezione" data-aos="fade-up">CORSI</span></div>
 
             <!-- # Box titolo con icona -->
             <div class="centrato flex-wrap">
-                <h3 id="sottotitolo-sezione" data-aos="fade-left">I NOSTRI CORSI</h3>
+                <h3 id="sottotitolo-sezione" data-aos="fade-right">I NOSTRI CORSI</h3>
             </div>
             
             <!-- box-corsi -->
             <style>
-                .box-corso {
-                    color: var(--dark); font-family: 'montserrat-regular', sans-serif;
-                    background-color: transparent;
-                }
-                .box-corso:active {
-                    color: var(--dark); font-family: 'montserrat-regular', sans-serif;
-                }
                 .rounded {
                     border-radius: 28px !important;
                 }
-                .box-orari {
-                    background-color: var(--secondario);
-                    font-family: 'montserrat-regular', sans-serif; font-size: 18px; color: var(--dark);
-                }
                 .box-orari-giorno {
-                    font-family: 'montserrat-regular', sans-serif; font-size: 25px; color: var(--secondario);
+                    font-family: 'montserrat-regular', sans-serif; font-size: min(max(25px), 4.5vw); color: var(--secondario);
                     background-color: var(--primario); box-shadow: 2px 2px 30px rgba(35, 56, 246, 0.689);
                     border-radius: 28px; padding: 20px;
                 }
-                .box-orari-orario {
-                    margin-top: 28px; font-family: 'montserrat-regular', sans-serif; font-size: 23px; color: var(--dark);
-                }
-                .testo-categoria, .testo-categoria:active, .testo-categoria:hover {
-                    color: var(--primario);
-                }
-                .box-orari-info {font-family: 'montserrat-regular', sans-serif; font-size: 25px; color: var(--dark);}
                 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
                 background-color: var(--primario) !important;
+                color: var(--secondario) !important;
                 box-shadow: 2px 2px 30px rgba(35, 56, 246, 0.689);
                 }
             </style>
@@ -540,7 +477,7 @@
                             <a class="nav-link rounded-pill testo-categoria" data-bs-toggle="pill" href="#tab-6">Scuola abilità motorie</a>
                         </li>     
                     </ul>
-                    <ul class="nav nav-pills d-inline-flex d-md-none flex-column justify-content-center bg-dark text-uppercase mb-5 p-3" style="border-radius: 5px;">
+                    <ul class="nav nav-pills d-inline-flex d-md-none flex-column justify-content-center bg-light text-uppercase mb-5 p-3" style="border-radius: 5px;">
                         <li class="box-corso">
                             <a class="nav-link testo-categoria active" data-bs-toggle="pill" href="#tab-1" style="border-radius: 5px;">MASCHILE 2007-2011</a>
                         </li>
@@ -720,13 +657,149 @@
 
     </section> <!-- end of CORSI ===================== -->
 
+    <!-- ANNUNCI 
+    ================================================== -->
+    <section id="s-annunci" style="height: 720px;">
+
+            <!-- # Container Principale 
+            contiene tutti i Box-->
+            <div id="main-container" style="background-color: transparent; flex-direction: column; justify-content: start; height: 100%;">
+    
+                <div id="carouselNotizie" style="height: 100%; width: 100%;" class="carousel slide" data-touch="true" data-interval="false">
+                    <div class="carousel-inner" style="height: 100%; width: 100%;">
+                      
+                        <!-- Primo annuncio -->
+                        <div class="carousel-item active" style="height: 100%;">
+                        
+                            <!-- Contenuto della notizia -->
+                            <div id="aree-carousel-container" style="border-radius: 0px; background-image: url(assets/img/StadionVolley/sezioneNotizie/News01.jpeg); height: 100%; width: 100%;">
+                                <!-- text container -->
+                                <div class="d-flex align-content-around justify-content-center flex-column w-100 h-100" style="backdrop-filter: brightness(40%);">
+                                    <h2 class="w-auto h-auto text-center" id="titolo-carousel-annunci">
+                                        Ripartono i corsi</h2>
+                                    <h4 class="w-auto h-auto text-center" id="sottotitolo-carousel-annunci">
+                                        Sono ripartiti i corsi di pallavolo, all'appello più di 150 ragazze 
+                                        e ragazzi, scopri tutti i dettagli e i nuovi orari per gli 
+                                        allenamenti ...</h4>
+                                    <div class="centrato w-100 mt-5">
+                                        <a id="btn__stadionVolley" href="" class="home__btn">
+                                            Scopri di più
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+
+                        <!-- Seconda annuncio -->
+                        <div class="carousel-item" style="height: 100%; width: 100%;">
+                        
+                            <!-- Contenuto della notizia -->
+                            <div id="aree-carousel-container" style="border-radius: 0px; background-image: url(assets/img/StadionVolley/sezioneNotizie/News02.jpg); height: 100%; width: 100%;">
+                                <!-- text container -->
+                                <div class="d-flex align-content-around justify-content-center flex-column w-100 h-100" style="backdrop-filter: brightness(40%);">
+                                    <h2 class="w-auto h-auto text-center" id="titolo-carousel-annunci">
+                                        Nuovi Orari e Location</h2>
+                                    <h4 class="w-auto h-auto text-center" id="sottotitolo-carousel-annunci">
+                                        Aggiornati suoi nuovi orari e sulle location dei nuovi allenamenti!</h4>
+                                    <div class="centrato w-100 mt-5">
+                                        <a id="btn__stadionVolley" href="" class="home__btn">
+                                            Scopri di più
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+
+                        <!-- Terzo annuncio -->
+                        <div class="carousel-item" style="height: 100%; width: 100%;">
+                        
+                            <!-- Contenuto della notizia -->
+                            <div id="aree-carousel-container" style="border-radius: 0px; background-image: url(assets/img/StadionVolley/sezioneNotizie/News03.jpg); height: 100%; width: 100%;">
+                                <!-- text container -->
+                                <div class="d-flex align-content-around justify-content-center flex-column w-100 h-100" style="backdrop-filter: brightness(40%);">
+                                    <h2 class="w-auto h-auto text-center" id="titolo-carousel-annunci">
+                                        Calendario dei Match</h2>
+                                    <h4 class="w-auto h-auto text-center" id="sottotitolo-carousel-annunci">
+                                        Scopri tutti i prossimi incontri e le partite del campionato 2023-2024!</h4>
+                                    <div class="centrato w-100 mt-5">
+                                        <a id="btn__stadionVolley" href="" class="home__btn">
+                                            Scopri di più
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                    <button class="carousel-control-prev" id="aree-carousel-btn-1" type="button" data-bs-target="#carouselNotizie" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" id="aree-carousel-btn-2" type="button" data-bs-target="#carouselNotizie" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+    
+            </div>
+    
+    </section> <!-- end of ANNUNCI ===================== -->
+
+    <!-- GALLERIA
+    ================================================== -->
+    <section id="s-galleria" style="height: auto;">
+
+        <div id="main-container" style="background-color: whitesmoke; flex-direction: column; justify-content: start; height: 100%; padding-bottom: 100px;">
+        
+            <!-- Titolo sezione -->
+            <div style="width: 100%; height: 45px; margin-top: 100px;" class="centrato"><span id="titolo-sezione" data-aos="fade-up">GALLERIA</span></div>
+
+            <!-- # Box titolo con icona -->
+            <div class="centrato flex-wrap">
+                <h3 id="sottotitolo-sezione" data-aos="fade-right" style="padding-inline: 10%;">FOTO DELLE NOSTRE GIORNATE</h3>
+            </div>
+
+            <!-- Carousel Galleria -->
+            <div id="carouselGalleria" class="carousel slide" data-touch="true" style="padding-inline: 10%; width: 100%; margin-top: 60px;">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselGalleria" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselGalleria" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselGalleria" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselGalleria" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner" id="carousel-inner-galleria" data-aos="fade-up">
+                  
+                    <div class="carousel-item active"><div id="aree-carousel-container-galleria" style="background-image: url(assets/img/ArenaBeach/sezioneGalleria/gallery05.jpeg); "></div></div>
+                    <div class="carousel-item "><div id="aree-carousel-container-galleria" style="background-image: url(assets/img/ArenaBeach/sezioneGalleria/gallery04.jpg); "></div></div>
+                    <div class="carousel-item "><div id="aree-carousel-container-galleria" style="background-image: url(assets/img/ArenaBeach/sezioneGalleria/gallery03.jpg); "></div></div>
+                    <div class="carousel-item "><div id="aree-carousel-container-galleria" style="background-image: url(assets/img/ArenaBeach/sezioneGalleria/gallery01.jpg); "></div></div>
+
+                </div>
+                <button class="carousel-control-prev" id="aree-carousel-btn-1"type="button" data-bs-target="#carouselGalleria" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" id="aree-carousel-btn-2" type="button" data-bs-target="#carouselGalleria" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+
+    </section><!-- end of EVENTI ===================== -->
+
     <!-- CONTATTI
     ================================================== -->
     <section id="s-contatti" style="background-image: url(assets/img/StadionVolley/HomeBackground.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">
 
         <!-- # Container Principale 
             contiene tutti i Box-->
-            <div id="main-container" style="background-color: #4e59b8e8; flex-direction: column; justify-content: start; height:1500px">
+            <div id="main-container" style="background-color: #4e59b8e8; flex-direction: column; justify-content: start; height:auto; padding-bottom: 80px;">
 
             <!-- Titolo sezione -->
             <div style="width: 100%; height: 45px; margin-top: 100px;" class="centrato">
@@ -734,38 +807,13 @@
 
             <!-- # Box titolo con icona -->
             <div class="centrato flex-wrap">
-                <h3 id="sottotitolo-sezione-bianco" data-aos="fade-left">COME PUOI TROVARCI</h3>
+                <h3 id="sottotitolo-sezione-bianco" data-aos="fade-right">COME PUOI TROVARCI</h3>
             </div>
 
-           <!-- Servizi Box Style -->
-           <style>
-               
-            .box-contatto{
-                width:400px; height: 205px; font-size: 16px; box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
-                background-color: var(--secondario); padding: 20px; margin: 15px; cursor: pointer;
-                border-radius: 28px; transition: all ease 0.3s; 
-            }
-            .box-contatto:hover{transform: translateY(-10px); transition: all ease 0.3s;}
-
-            #info-contatto {
-                font-weight: bold; font-style: italic; font-size: 18px;
-            }
-
-            #titolo-contatto {
-                color: var(--dark); font-size: 28px; font-family: "montserrat-regular"; font-weight: bolder; text-transform: uppercase; text-align: center; padding-right: 20px;
-            }
-
-            #nominazione-contatto {
-                color: var(--dark); padding-block: 5px; font-size: 18px; font-family: "montserrat-regular"; font-weight: bolder; text-transform: uppercase; text-align: center; border-radius: 28px;font-style: normal;
-            }
-     
-            
-            </style>
-
             <!-- # Box Servizi -->
-            <div class="centrato flex-column" style="margin-top: 60px;">
+            <div class="centrato flex-column" style="margin-top: 60px; width: 100%;">
                 
-                <div data-aos="fade-up" class="centrato flex-wrap w-100">
+                <div class="centrato flex-wrap w-100">
                 
                     <!-- Numeri telefono -->
                     <div class="box-contatto">
@@ -792,27 +840,30 @@
                             </p>
                     </div>
 
-                    <!-- Email -->
+                    <!-- Orari -->
                     <div class="box-contatto">
                         <!-- Titolo e Icona -->
                         <div class="centrato flex-row justify-content-start gap-5">
                         
                             <div class="centrato flex-row" style="width: 480px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(21, 91, 241, 0.663);">
                                 <lord-icon
-                                src="https://cdn.lordicon.com/tkgyrmwc.json"
-                                trigger="morph"
+                                src="https://cdn.lordicon.com/kbtmbyzy.json"
+                                trigger="hover"
                                 colors="primary:#ffffff,secondary:#ffffff"
                                 style="width:80px;height:80px">
                                 </lord-icon>
                                 
                             </div>
+                            <!-- <h3 style="padding-top: 8px;" id="titolo-contatto">CHIAMACI</h3> -->
 
                         </div>
 
                         <p id="testo-sezione-card" style="margin-top: 10px; text-align:start;" >
-                            <div style="row-gap: 10px; display: flex; justify-content: start; flex-direction: column;">
-                                <span id="info-contatto" style="width: 100%; text-align: center;"><a id="nominazione-contatto">arenabeach@gmail.com</a></span>
-                                <span id="info-contatto" style="width: 100%; text-align: center;"><a id="nominazione-contatto">stadionvolley@gmail.com</a></span>
+                            <div style="display: flex; justify-content: center; flex-direction: column;">
+                                <span id="info-contatto" style="width: 100%; text-align: center;">CONTROLLA GLI</span>
+                                <a style="color: var(--primario);" href="#s-corsi" id="nominazione-contatto">
+                                    orari dei corsi</a>
+                            </div>
                         </p>
                     </div>
 
@@ -837,41 +888,24 @@
 
                 </div>
 
-                <!-- Mappa Style -->
-                <style>
-                    .google-map {
-                        padding-bottom: 50%;
-                        position: relative;
-                    }
-
-                    .google-map iframe {
-                        height: 100%;
-                        width: 100%;
-                        left: 0;
-                        top: 0;
-                        position: absolute;
-                        border-radius: 28px;
-                        margin-top: 20px;
-                    }
-                </style>
-
                 <div class="google-map" data-aos="fade-up">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2792.464924219066!2d10.171321876378276!3d45.58119777107616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478177372709b707%3A0x5c5d18262ed0c7cf!2sArena%20Beach!5e0!3m2!1sit!2sit!4v1685894680452!5m2!1sit!2sit" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe id="mappa01" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2087.091019605832!2d10.174947703791542!3d45.58296860561715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47817748286bf78d%3A0xdbf42f36d0f80c8a!2sViale%20Risorgimento%2C%2023%2C%2025060%20Cellatica%20BS!5e0!3m2!1sit!2sit!4v1686653767532!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe id="mappa02" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2791.830548667251!2d10.155289876371022!3d45.59395107107643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478170baae2bfe9b%3A0x1056a65d84743053!2sVia%20Larga%2C%2023%2C%2025064%20Gussago%20BS!5e0!3m2!1sit!2sit!4v1686653896295!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
             </div>
 
             <!-- # Box Servizi 2 -->
-            <div class="centrato flex-column">
+            <div class="centrato flex-column" style="width: 100%;">
                 
-                <div data-aos="fade-up" class="centrato flex-wrap w-100">
+                <div class="centrato flex-wrap w-100">
                 
                     <!-- Email -->
                     <div class="box-contatto">
                             <!-- Titolo e Icona -->
                             <div class="centrato flex-row justify-content-start gap-5">
                             
-                                <div class="centrato flex-row" style="width: 480px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(21, 91, 241, 0.663);">
+                                <div class="centrato flex-row" style="width: 100%; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(21, 91, 241, 0.663);">
                                     <lord-icon
                                     src="https://cdn.lordicon.com/tkgyrmwc.json"
                                     trigger="hover"
@@ -886,7 +920,6 @@
 
                             <p id="testo-sezione-card" style="margin-top: 10px; text-align:start;" >
                                 <div style="row-gap: 10px; display: flex; justify-content: start; flex-direction: column;">
-                                    <span id="info-contatto" style="width: 100%; text-align: center;"><a id="nominazione-contatto">arenabeach@gmail.com</a></span>
                                 <span id="info-contatto" style="width: 100%; text-align: center;"><a id="nominazione-contatto">stadionvolley@gmail.com</a></span></div>
                             </p>
                     </div>
@@ -912,7 +945,7 @@
                         <p id="testo-sezione-card" style="margin-top: 10px; text-align:start;" >
                             <div style="row-gap: 10px; display: flex; justify-content: start; flex-direction: column;">
                                 <span id="info-contatto" style="width: 100%; text-align: center;"><a id="nominazione-contatto">Hai qualche domanda?</a></span>
-                                <span id="info-contatto" style="width: 100%; text-align: center;"><a style="color: var(--primario);" href="mainPage.html#s-faq" id="nominazione-contatto">controlla le F.A.Q</a></span></div>
+                                <span id="info-contatto" style="width: 100%; text-align: center;"><a style="color: var(--primario);" href="index.html#s-faq" id="nominazione-contatto">controlla le F.A.Q</a></span></div>
                         </p>
                     </div>
 
@@ -925,17 +958,40 @@
 
     </section> <!-- end of CONTATTI ===================== -->
 
-        <!-- FOOTER
+    <!-- FOOTER
     ================================================== -->
-    <footer style="position: fixed-bottom;">
+    <footer id="s-footer" style="position: fixed-bottom;">
 
-        <div id="main-container" style="background-color: #181717; flex-direction: row; justify-content: center; height: 450px; gap: 250px;">
+        <!-- Sponsor div -->
+        <div id="main-container" style="background-color: var(--secondario); flex-direction: row; justify-content: center; height: 150px; gap: 150px;">
+
+            <style>
+                #sponsor-immagine {
+                    width: 8%; height: auto;
+                }
+            </style>
+
+            <div class="centrato gap-5" style="flex-wrap: wrap">
+                <img id="sponsor-immagine" src="assets/img/sponsor/sponsor01.png" alt="">
+                <img id="sponsor-immagine" src="assets/img/sponsor/sponsor02.png" alt="">
+                <img id="sponsor-immagine" src="assets/img/sponsor/sponsor03.png" alt="">
+                <img id="sponsor-immagine" src="assets/img/sponsor/sponsor04.png" alt="">
+                <img id="sponsor-immagine" src="assets/img/sponsor/sponsor05.png" alt="">
+                <img id="sponsor-immagine" src="assets/img/sponsor/sponsor06.png" alt="">
+                <img id="sponsor-immagine" src="assets/img/sponsor/sponsor07.png" alt="">
+                <img id="sponsor-immagine" src="assets/img/sponsor/sponsor08.png" alt="">
+            </div>
+
+        </div>        
+
+        <!-- Link Utili -->
+        <div id="main-container" style="flex-wrap: wrap; background-color: #181717; flex-direction: row; justify-content: center; height: auto; padding-block: 80px;  gap: 20%;">
 
 
             <!-- Footer Style -->
             <style>
                 #titolo-footer {
-                    font-size: 22px; color: var(--secondario); font-weight: bold;
+                    font-size: min(max(22px), 4vw); color: var(--secondario); font-weight: bold;
                 }
                 .link-footer {
                     color: var(--secondario); text-decoration: none;transition: all .2s ease-in-out;
@@ -948,17 +1004,16 @@
                 }
             </style>
 
-
-            <div class="d-flex align-item-center justify-content-center flex-column gap-3">
-                <img src="assets/img/logo/stadionArenaLogo.PNG" style="width: 350px; height: auto;" alt="">
-                <img src="assets/img/sponsor/logoRegesta.png" style="width: 350px; height: auto;" alt="">
-                <p style="font-size: 15px; width: 350px; color: var(--dark-light);" class="mt-3" >Stadion Arena è una realtà innovativa che invoglia e coinvolge persone di tutte le età all'insegna del divertimento e dello sport.</p>
+            <div class="d-flex align-items-center justify-content-center flex-column gap-3">
+                <img src="assets/img/logo/stadionArenaLogo.PNG" style="width: 75%; max-width: 350px; height: auto;" alt="">
+                <img src="assets/img/sponsor/logoRegesta.png" style="width: 60%; max-width: 350px; height: auto;" alt="">
+                <p style="font-size: 15px;width: 90%; max-width: 350px; color: var(--dark-light);" class="mt-3" >Stadion Arena è una realtà innovativa che invoglia e coinvolge persone di tutte le età all'insegna del divertimento e dello sport.</p>
             </div>
 
             <div class="d-flex justify-content-start align-items-start flex-column">
 
-                    <h3 id="titolo-footer">Link Utili</h4>
-                    <ul style="font-size: 20px; line-height: 3rem; font-family: 'montserrat-regular'; color: var(--secondario);">
+                    <!-- <h3 id="titolo-footer">Link Utili</h4> -->
+                    <ul style="font-size: min(max(20px), 4vw); line-height: 3rem; font-family: 'montserrat-regular'; color: var(--secondario);">
                         <li><a class="link-footer"  href="#s-home" title="home">Home</a></li>
                         <li><a class="link-footer"  href="#s-contatti" title="contact">Contatti</a></li>
                         <li><a class="link-footer"  href="mainPage.html#s-faq" title="faq">F.A.Q</a></li>
@@ -969,12 +1024,14 @@
             </div>
 
         </div>
+
+        <!-- Copyright -->
         <div class="footer-bottom centrato">
 
             <div class="col-twelve">
                 <div class="copyright">
-                    <span>© Copyright studenti dell'Istituto Istruzione Superiore Carlo Beretta, Gardone Val Trompia (BS)</span> 
-                    <a href="https://storyset.com/people" style="color: var(--dark-light);">People illustrations by Storyset</a>
+                    <span style="font-size: min(max(16px), 2.7vw);">© Copyright studenti dell'Istituto Istruzione Superiore Carlo Beretta, Gardone Val Trompia (BS)</span> 
+                    <a style="font-size: min(max(16px), 2.7vw); color: var(--dark-light);" href="https://storyset.com/people">People illustrations by Storyset</a>
                 </div>
 
                 <div class="go-top">
@@ -982,7 +1039,7 @@
                 </div>
             </div>
 
-        </div> <!-- end footer-bottom -->
+        </div>
 
     </footer> <!-- end FOOTER -->
     
