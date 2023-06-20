@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
 
@@ -30,7 +30,6 @@
 
     <!-- script
     ================================================== -->
-    <script src="assets/js/modernizr.js"></script>
     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -48,7 +47,7 @@
         --primario-trasparente : #f29406f1;
         --secondario : #ffffff;
         --dark : #0b0b0b;
-        --dark-light : #383838;
+        --dark-light : #686868;
     }
 
     body {
@@ -104,7 +103,7 @@
                 </script>
                 <div id="box-menu">
                     <button class="button-toggler centrato gap-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span id="header-titolo">menu</span>
+                        <span id="header-titolo" class="d-none d-sm-block">menu</span>
                         <lord-icon
                             src="https://cdn.lordicon.com/wgwcqouc.json"
                             colors="primary:#f5f5f5,secondary:#08a88a"
@@ -144,8 +143,8 @@
                             <li><a id="offcanvas-link" style="color:#eaf206"  href="index.html" title="faq">Torna alla Home</a></li>
                             <li><a id="offcanvas-link" style="color:#f29206"  href="arenaBeach.html" title="faq">Arena Beach</a></li>
                         </ul>
-            
-                        <p style="margin-left: 2rem;">Segui Stadion Arena su tutti i canali social!</p>
+                        
+                        <p style="margin-left: 2rem; color: var(--dark-light);">Segui Stadion Arena su tutti i canali social!</p>
             
                         <ul class="header-nav__social centrato justify-content-start gap-3">
                             <li style="list-style: none;">
@@ -264,7 +263,7 @@
             </div>
 
             <!-- Carousel con informazioni -->
-            <div id="carousel-informazioni" class="carousel slide" style="margin-top: 4rem;" data-interval="false" data-touch="true">
+            <div id="carousel-informazioni" class="carousel slide" style="margin-top: 4rem;" data-bs-ride="carousel" data-interval="false" data-touch="true">
                 <div class="carousel-indicators" id="carousel-indicators-info">
                   <button type="button" data-bs-target="#carousel-informazioni" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carousel-informazioni" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -297,7 +296,7 @@
                         
                         <p id="testo-sezione" style="padding-inline: 300px;">
                             Il nostro progetto mira a fornire una <a id="testo-evidenziato-giallo">base motoria
-                                adeguata</a>, l’apprendimento delle tecniche base e
+                                adeguata</a>, l'apprendimento delle tecniche base e
                               la possibilità di <a id="testo-evidenziato-giallo">giocare</a>, <a id="testo-evidenziato-giallo">confrontarsi</a> e <a id="testo-evidenziato-giallo">socializzare</a>
                               con i propri coetanei. </p>
                         <div class="centrato" style="width: 100%; height: 100%;">
@@ -485,14 +484,14 @@
                                     <div class="box-orari rounded text-center py-5 px-3">
                                         <h5 class="text-uppercase box-orari-giorno">Lunedì</h5>
                                         <h6 class="text-uppercase box-orari-orario mb-3">16:00 - 17:30</h6>
-                                        <p class="text-uppercase text-secondary mb-0">I.C. E Mattei (Cellatica)</p>
+                                        <p class="text-uppercase text-secondary mb-0">I.C. "E. Mattei" (Cellatica)</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6">
                                     <div class="box-orari rounded text-center py-5 px-3">
                                         <h5 class="text-uppercase box-orari-giorno">Mercoledì</h5>
                                         <h6 class="text-uppercase box-orari-orario mb-3">15:00 - 16:30</h6>
-                                        <p class="text-uppercase text-secondary mb-0">I.C Venturelli (Gussago)</p>
+                                        <p class="text-uppercase text-secondary mb-0">I.C "Venturelli" (Gussago)</p>
                                     </div>
                                 </div>
                                 <div class="text-center">
@@ -515,7 +514,7 @@
                                     <div class="box-orari rounded text-center py-5 px-3">
                                         <h5 class="text-uppercase box-orari-giorno">Giovedì</h5>
                                         <h6 class="text-uppercase box-orari-orario mb-3">18:00 - 19:30</h6>
-                                        <p class="text-uppercase text-secondary mb-0">I.C. Olivelli (Gussago)</p>
+                                        <p class="text-uppercase text-secondary mb-0">I.C. "Olivelli" (Gussago)</p>
                                     </div>
                                 </div>
                                 <div class="text-center">
@@ -538,7 +537,7 @@
                                     <div class="box-orari rounded text-center py-5 px-3">
                                         <h5 class="text-uppercase box-orari-giorno">Giovedì</h5>
                                         <h6 class="text-uppercase box-orari-orario mb-3">16:30 - 18:00</h6>
-                                        <p class="text-uppercase text-secondary mb-0">I.C. Olivelli (Gussago)</p>
+                                        <p class="text-uppercase text-secondary mb-0">I.C. "Olivelli" (Gussago)</p>
                                     </div>
                                 </div>
                                 <div class="text-center">
@@ -553,14 +552,14 @@
                                     <div class="box-orari rounded text-center py-5 px-3">
                                         <h5 class="text-uppercase box-orari-giorno">Martedì</h5>
                                         <h6 class="text-uppercase box-orari-orario mb-3">19:00 - 21:00</h6>
-                                        <p class="text-uppercase text-secondary mb-0">I.C. Olivelli (Gussago)</p>
+                                        <p class="text-uppercase text-secondary mb-0">I.C. "Olivelli" (Gussago)</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6">
                                     <div class="box-orari rounded text-center py-5 px-3">
                                         <h5 class="text-uppercase box-orari-giorno">Giovedì</h5>
                                         <h6 class="text-uppercase box-orari-orario mb-3">19:30 - 21:30</h6>
-                                        <p class="text-uppercase text-secondary mb-0">I.C. Olivelli (Gussago)</p>
+                                        <p class="text-uppercase text-secondary mb-0">I.C. "Olivelli" (Gussago)</p>
                                     </div>
                                 </div>
                                 <div class="text-center">
@@ -575,14 +574,14 @@
                                     <div class="box-orari rounded text-center py-5 px-3">
                                         <h5 class="text-uppercase box-orari-giorno">Lunedì</h5>
                                         <h6 class="text-uppercase box-orari-orario mb-3">19:30 - 21:15</h6>
-                                        <p class="text-uppercase text-secondary mb-0">I.C. Venturelli (Gussago)</p>
+                                        <p class="text-uppercase text-secondary mb-0">I.C. "Venturelli" (Gussago)</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6">
                                     <div class="box-orari rounded text-center py-5 px-3">
                                         <h5 class="text-uppercase box-orari-giorno">Mercoledì</h5>
                                         <h6 class="text-uppercase box-orari-orario mb-3">19:30 - 21:15</h6>
-                                        <p class="text-uppercase text-secondary mb-0">I.C. Venturelli (Gussago)</p>
+                                        <p class="text-uppercase text-secondary mb-0">I.C. "Venturelli" (Gussago)</p>
                                     </div>
                                 </div>
                                 <div class="text-center">
@@ -597,7 +596,7 @@
                                     <div class="box-orari rounded text-center py-5 px-3">
                                         <h5 class="text-uppercase box-orari-giorno">Lunedì</h5>
                                         <h6 class="text-uppercase box-orari-orario mb-3">18:10 - 19:30</h6>
-                                        <p class="text-uppercase text-secondary mb-0">I.C. Venturelli (Gussago)</p>
+                                        <p class="text-uppercase text-secondary mb-0">I.C. "Venturelli" (Gussago)</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6">
@@ -611,7 +610,7 @@
                                     <div class="box-orari rounded text-center py-5 px-3">
                                         <h5 class="text-uppercase box-orari-giorno">Mercoledì</h5>
                                         <h6 class="text-uppercase box-orari-orario mb-3">18:10 - 19:30</h6>
-                                        <p class="text-uppercase text-secondary mb-0">I.C. Venturelli (Gussago)</p>
+                                        <p class="text-uppercase text-secondary mb-0">I.C. "Venturelli" (Gussago)</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-4 col-sm-6">
@@ -646,7 +645,7 @@
             contiene tutti i Box-->
             <div id="main-container" style="background-color: transparent; flex-direction: column; justify-content: start; height: 100%;">
     
-                <div id="carouselNotizie" style="height: 100%; width: 100%;" class="carousel slide" data-touch="true" data-interval="false">
+                <div id="carouselNotizie" style="height: 100%; width: 100%;" class="carousel slide" data-bs-ride="carousel" data-touch="true" data-interval="false">
                     <div class="carousel-inner" style="height: 100%; width: 100%;">
                       
                         <!-- Primo annuncio -->
@@ -745,7 +744,7 @@
             </div>
 
             <!-- Carousel Galleria -->
-            <div id="carouselGalleria" class="carousel slide" data-touch="true" style="padding-inline: 10%; width: 100%; margin-top: 60px;">
+            <div id="carouselGalleria" class="carousel slide" data-touch="true" data-bs-ride="carousel" style="padding-inline: 10%; width: 100%; margin-top: 60px;">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselGalleria" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselGalleria" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -801,7 +800,7 @@
                             <!-- Titolo e Icona -->
                             <div class="centrato flex-row justify-content-start gap-5">
                             
-                                <div class="centrato flex-row" style="width: 480px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(21, 91, 241, 0.663);">
+                                <div class="centrato flex-row" style="width: 100%; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(21, 91, 241, 0.663);">
                                     <lord-icon
                                     src="https://cdn.lordicon.com/ltxkhbfa.json"
                                     trigger="hover"
@@ -826,7 +825,7 @@
                         <!-- Titolo e Icona -->
                         <div class="centrato flex-row justify-content-start gap-5">
                         
-                            <div class="centrato flex-row" style="width: 480px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(21, 91, 241, 0.663);">
+                            <div class="centrato flex-row" style="width: 100%; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(21, 91, 241, 0.663);">
                                 <lord-icon
                                 src="https://cdn.lordicon.com/kbtmbyzy.json"
                                 trigger="hover"
@@ -910,7 +909,7 @@
                         <!-- Titolo e Icona -->
                         <div class="centrato flex-row justify-content-start gap-5">
                         
-                            <div class="centrato flex-row" style="width: 480px; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(21, 91, 241, 0.663);">
+                            <div class="centrato flex-row" style="width: 100%; height: 80px; border-radius: 28px; background-color: var(--primario); box-shadow: 2px 2px 30px rgba(21, 91, 241, 0.663);">
                                 <lord-icon
                                 src="https://cdn.lordicon.com/fbmlrfcd.json"
                                 trigger="hover"
@@ -981,7 +980,7 @@
                     padding-left: 20px;transition: all .2s ease-in-out; color: var(--secondario); font-weight: bold;
                 }
                 .footer-bottom {
-                    height: 50px; background-color: var(--dark); color: var(--secondario);
+                    background-color: var(--dark); color: var(--secondario);
                 }
             </style>
 
@@ -1007,19 +1006,11 @@
         </div>
 
         <!-- Copyright -->
-        <div class="footer-bottom centrato">
-
-            <div class="col-twelve">
-                <div class="copyright">
-                    <span style="font-size: min(max(16px), 2.7vw);">© Copyright studenti dell'Istituto Istruzione Superiore Carlo Beretta, Gardone Val Trompia (BS)</span> 
-                    <a style="font-size: min(max(16px), 2.7vw); color: var(--dark-light);" href="https://storyset.com/people">People illustrations by Storyset</a>
-                </div>
-
-                <div class="go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
-                </div>
+        <div class="footer-bottom">
+            <div class="d-flex flex-column justify-content-center text-center p-2">
+                <span style="font-size: min(max(16px), 2.7vw);">&copy; Copyright studenti dell'Istituto Istruzione Superiore Carlo Beretta Gardone Val Trompia (BS)</span>
+                <a style="font-size: min(max(16px), 2.7vw); color: var(--dark-light);" href="https://storyset.com/people">People illustrations by Storyset</a>
             </div>
-
         </div>
 
     </footer> <!-- end FOOTER -->

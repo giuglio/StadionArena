@@ -30,7 +30,6 @@
 
     <!-- script
     ================================================== -->
-    <script src="js/modernizr.js"></script>
     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -49,7 +48,7 @@
         --primario-trasparente : #f8de14f9;
         --secondario : #ffffff;
         --dark : #0b0b0b;
-        --dark-light : #383838;
+        --dark-light : #686868;
     }
 
     body {
@@ -75,9 +74,6 @@
         <!-- Navbar con logo -->
         <nav class="navbar fixed-top" style="background-color: transparent;">
             <div class="container-fluid justify-content-end mt-4">
-                
-                <!-- Logo piccolo in alto a sinistra -->
-                <!-- <img id="logo" style="width: 160px; height: auto;" src="assets/img/logo/stadionArenaLogo.PNG" alt="Homepage"> -->
               
                 <!-- Style del button per il menu -->
                 <style>
@@ -102,7 +98,7 @@
                 </script>
                 <div id="box-menu">
                     <button class="button-toggler centrato gap-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span id="header-titolo">menu</span>
+                        <span id="header-titolo" class="d-none d-sm-block">menu</span>
                         <lord-icon
                             src="https://cdn.lordicon.com/wgwcqouc.json"
                             colors="primary:#f5f5f5,secondary:#08a88a"
@@ -142,7 +138,7 @@
                             <li><a id="offcanvas-link" style="color:#f29206"  href="arenaBeach.html" title="faq">Arena Beach</a></li>
                         </ul>
             
-                        <p style="margin-left: 2rem;">Segui Stadion Arena su tutti i canali social!</p>
+                        <p style="margin-left: 2rem; color: var(--dark-light);">Segui Stadion Arena su tutti i canali social!</p>
             
                         <ul class="header-nav__social centrato justify-content-start gap-3">
                             <li style="list-style: none;">
@@ -249,7 +245,7 @@
 
          <!-- # Container Principale 
             contiene tutti i Box-->
-        <div id="main-container" style="background-color: whitesmoke; flex-direction: column; justify-content: start; height: auto; padding-bottom: 80px;">
+        <div id="main-container" class="mc-informazioni" style="background-color: whitesmoke; flex-direction: column; justify-content: start; height: auto; padding-bottom: 80px;">
 
             <!-- Titolo sezione -->
             <div style="width: 100%; height: 45px; margin-top: 100px;" class="centrato"><span id="titolo-sezione" data-aos="fade-up">INFORMAZIONI</span></div>
@@ -260,7 +256,7 @@
             </div>
 
             <!-- Carousel con informazioni -->
-            <div id="carousel-informazioni" class="carousel slide" style="margin-top: 4rem;" data-interval="false" data-touch="true">
+            <div id="carousel-informazioni" class="carousel slide" style="margin-top: 4rem;" data-bs-ride="carousel" data-interval="false" data-touch="true">
                 <div class="carousel-indicators" id="carousel-indicators-info">
                   <button type="button" data-bs-target="#carousel-informazioni" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carousel-informazioni" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -275,7 +271,7 @@
                     <div class="centrato flex-column">
                         
                         <p id="testo-sezione" style="padding-inline: 300px;">
-                            Stadion Arena Sport è un progetto dedicato a bambini, 
+                            <span id="testo-evidenziato-giallo">Stadion Arena Sport</span> è un progetto dedicato a bambini,
                             ragazzi e adulti che <a id="testo-evidenziato-giallo">amano gli sport</a> sulla sabbia e non.</p>
                         <div class="centrato" style="width: 100%; height: 100%;">
                             <img class="carousel-illustrazione" src="assets/img/sezione-informazioni/beach-volleyball-animate.svg" class="d-block w-100" alt="...">
@@ -292,7 +288,8 @@
                         
                         <p id="testo-sezione" style="padding-inline: 300px;">
                             Il nostro <a id="testo-evidenziato-giallo">obiettivo</a> è promuovere lo <a id="testo-evidenziato-giallo">sport a 360°</a>, concentrandoci 
-                    sulla formazione dell'atleta attraverso il percorso " <a id="testo-evidenziato-giallo">corpo, movimento, prestazione</a></p>
+                            sulla formazione dell'atleta attraverso il percorso <span id="testo-evidenziato-giallo">corpo</span>, <span id="testo-evidenziato-giallo">movimento</span>,
+                            <span id="testo-evidenziato-giallo">prestazione</span>.</p>
                         <div class="centrato" style="width: 100%; height: 100%;">    
                             <img class="carousel-illustrazione" src="assets/img/sezione-informazioni/coaches-animate.svg" class="d-block w-100" alt="...">
                         </div>
@@ -307,7 +304,7 @@
                         
                         <p id="testo-sezione" style="padding-inline: 300px;">
                             Tra le colline di Cellatica, siamo <a id="testo-evidenziato-giallo">facilmente raggiungibili</a> 
-                            da tutte le zone della provincia di Brescia</p>
+                            da tutte le zone della provincia di Brescia.</p>
                             <div class="centrato" style="width: 100%; height: 100%;">
                                 <img class="carousel-illustrazione" src="assets/img/sezione-informazioni/forest-animate.svg" class="d-block w-100" alt="...">
                             </div>
@@ -321,7 +318,7 @@
                     <div class="centrato flex-column">
                         
                         <p id="testo-sezione" style="padding-inline: 300px;">
-                            Partecipa ai nostri eventi,competizioni e iniziative, e scopri come <a id="testo-evidenziato-giallo">Stadion Arena Sport</a> può 
+                            Partecipa ai nostri eventi, competizioni e iniziative, e scopri come <a id="testo-evidenziato-giallo">Stadion Arena Sport</a> può
                             appassionarti e coinvolgerti nello sport.</p>
                         <div class="centrato" style="width: 100%; height: 100%;">
                             <img class="carousel-illustrazione" src="assets/img/sezione-informazioni/winners-animate.svg" class="d-block w-100" alt="...">
@@ -719,14 +716,14 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      <div class="w-100 d-flex justify-content-center align-item-center flex-row-reverse gap-3"><span id="titolo-accordion">Come si prenota un campo? e quali requisiti necessita la prenotazione?</span>
+                        <div class="w-100 d-flex justify-content-center align-item-center flex-row-reverse gap-3"><span id="titolo-accordion">Come si prenota un campo? Quali requisiti necessita la prenotazione?</span>
                     </button>
                   </h2>
                   <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
 
                         <ul>
-                            <li>Chiama oppure scrivi un messaggio Whatsapp al numero della segreteria riportato nella sezione 
+                            <li>Chiama, oppure, scrivi un messaggio Whatsapp al numero della segreteria riportato nella sezione
                                 <a style="color: var(--primario-trasparente);" href="arenaBeach.html#s-contatti">Arena Beach</a>, basta lasciare un nominativo, 
                                 il giorno desiderato ed il numero di persone che saranno presenti. Vi risponderemo al più presto!</li>
                         </ul>
@@ -747,8 +744,8 @@
                       <div class="accordion-body">
   
                         <ul>
-                            <li>Per quanto riguarda i corsi di Stadion Volley l'iscrizione è da effettuare prima dell'inizio del corso, entro una data specifica.
-                                Mentre per quanto riguarda i corsi di Arena Beach è possibile iscriversi anche quanto il corso è già partito.</li>
+                            <li>Per quanto riguarda i corsi di Stadion Volley, l'iscrizione è da effettuare prima dell'inizio del corso, entro una data specifica.
+                                Mentre per quanto riguarda i corsi di Arena Beach, è possibile iscriversi anche quanto il corso è già partito.</li>
                         </ul>
                           
                       </div>
@@ -767,7 +764,7 @@
                       <div class="accordion-body">
   
                         <ul>
-                            <li>NO! l'accompagnatore di un minore non ha l'obbligo di pagare.</li>
+                            <li>NO! L'accompagnatore di un minore non ha l'obbligo di pagare.</li>
                         </ul>
                           
                       </div>
@@ -960,7 +957,7 @@
                     padding-left: 20px;transition: all .2s ease-in-out; color: var(--secondario); font-weight: bold;
                 }
                 .footer-bottom {
-                    height: 50px; background-color: var(--dark); color: var(--secondario);
+                    background-color: var(--dark); color: var(--secondario);
                 }
             </style>
 
@@ -986,32 +983,18 @@
         </div>
 
         <!-- Copyright -->
-        <div class="footer-bottom centrato">
-
-            <div class="col-twelve">
-                <div class="copyright">
-                    <span style="font-size: min(max(16px), 2.7vw);">© Copyright studenti dell'Istituto Istruzione Superiore Carlo Beretta, Gardone Val Trompia (BS)</span> 
-                    <a style="font-size: min(max(16px), 2.7vw); color: var(--dark-light);" href="https://storyset.com/people">People illustrations by Storyset</a>
-                </div>
-
-                <div class="go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
-                </div>
+        <div class="footer-bottom">
+            <div class="d-flex flex-column justify-content-center text-center p-2">
+                <span style="font-size: min(max(16px), 2.7vw);">&copy; Copyright studenti dell'Istituto Istruzione Superiore Carlo Beretta Gardone Val Trompia (BS)</span>
+                <a style="font-size: min(max(16px), 2.7vw); color: var(--dark-light);" href="https://storyset.com/people">People illustrations by Storyset</a>
             </div>
-
         </div>
 
     </footer> <!-- end FOOTER -->
 
-    <!-- Visualizzazione mobile del video -->
-    <script src="js/object-fit-videos.js"></script>
-    <script src="js/app.js"></script>
-
     <script>
         AOS.init();
     </script>
-
-<!-- <a href="https://storyset.com/people">People illustrations by Storyset</a> -->
 
 </body>
 </html>
